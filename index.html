@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Field Codes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="title-row">
+      <h1 class="app-title">Field Codes</h1>
+      <button id="settingsBtn" class="icon-btn" type="button" aria-label="Search settings">⚙</button>
+    </div>
+    <div class="search-row">
+      <input id="searchInput" class="search-input" type="search" placeholder="Search codes…" autocomplete="off" />
+    </div>
+  </header>
+
+  <main class="app-main">
+    <div class="table-wrap" role="region" aria-label="Field codes table">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th data-key="name">
+              <button class="th-btn" type="button">
+                <span class="th-label">Name</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="description">
+              <button class="th-btn" type="button">
+                <span class="th-label">Description</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="zone">
+              <button class="th-btn" type="button">
+                <span class="th-label">Zone</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="altName">
+              <button class="th-btn" type="button">
+                <span class="th-label">Alt-Name</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="notes">
+              <button class="th-btn" type="button">
+                <span class="th-label">Notes</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <div id="modalOverlay" class="modal-overlay" hidden></div>
+
+  <div id="settingsModal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div id="settingsTitle" class="modal-title">Search Settings</div>
+        <button id="closeModalBtn" class="icon-btn" type="button" aria-label="Close">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-hint">Choose which columns are searched</div>
+
+        <label class="check-row">
+          <input type="checkbox" id="chk_name" data-key="name" />
+          <span>Name</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="chk_description" data-key="description" />
+          <span>Description</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="chk_zone" data-key="zone" />
+          <span>Zone</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="chk_altName" data-key="altName" />
+          <span>Alt-Name</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" id="chk_notes" data-key="notes" />
+          <span>Notes</span>
+        </label>
+
+        <div class="modal-actions">
+          <button id="enableAllBtn" class="btn" type="button">Enable all</button>
+          <button id="disableAllBtn" class="btn" type="button">Disable all</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
