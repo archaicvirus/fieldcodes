@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     name: (r["Name"] ?? "").toString(),
     code: (r["Code"] ?? "").toString(),
     category: (r["Category"] ?? "").toString(),
-    featureLayer: (r["Feature_Layer"] ?? "").toString(),
+    featureLayer: (r["Feature Layer"] ?? "").toString(),
     notes: (r["Notes"] ?? "").toString()
   }));
 
