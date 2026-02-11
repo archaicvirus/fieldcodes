@@ -83,10 +83,12 @@ body {
 .table-wrap {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
   background: var(--panel);
   height: calc(100vh - 132px);
   min-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .data-table {
