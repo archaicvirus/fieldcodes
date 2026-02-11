@@ -84,10 +84,10 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--panel);
-  height: calc(100vh - 132px);
+ // height: calc(100vh - 132px);
   min-height: 280px;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
