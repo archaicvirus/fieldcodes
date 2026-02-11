@@ -166,7 +166,7 @@ tbody tr:active td {
 
 @media (max-width: 520px) {
   .app-title { font-size: 20px; }
-  .table-wrap { height: calc(100vh - 128px); }
+  //.table-wrap { height: calc(100vh - 128px); }
   tbody td { font-size: 13px; padding: 10px 8px; }
   .th-btn { padding: 11px 8px; }
 }
