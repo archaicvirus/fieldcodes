@@ -86,9 +86,9 @@ body {
   background: var(--panel);
   height: calc(100vh - 132px);
   min-height: 280px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .table-scroll {
