@@ -84,10 +84,17 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--panel);
- // height: calc(100vh - 132px);
+  height: calc(100vh - 132px);
   min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.table-scroll {
+  flex: 1 1 auto;
   overflow-y: auto;
-  overflow-x: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
