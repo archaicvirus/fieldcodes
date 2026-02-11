@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const points = (window.FIELD_CODES || []).map(r => ({
-    name: (r.name ?? "").toString(),
-    description: (r.description ?? "").toString(),
-    zone: (r.zone ?? "").toString(),
-    altName: (r.altName ?? "").toString(),
-    notes: (r.notes ?? "").toString()
+    name: (r["Name"] ?? "").toString(),
+    code: (r["Code"] ?? "").toString(),
+    category: (r["Category"] ?? "").toString(),
+    featureLayer: (r["Feature Layer"] ?? "").toString(),
+    notes: (r["Notes"] ?? "").toString()
   }));
 
 
   const columns = [
     { key: "name", label: "Name" },
-    { key: "description", label: "Description" },
-    { key: "zone", label: "Zone" },
-    { key: "altName", label: "Alt-Name" },
+    { key: "code", label: "Code" },
+    { key: "category", label: "Category" },
+    { key: "featureLayer", label: "Feature Layer" },
     { key: "notes", label: "Notes" }
   ];
 
