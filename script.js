@@ -1,13 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const points = (window.FIELD_CODES || []).map(r => ({
-    name: (r["Name"] ?? "").toString(),
-    code: (r["Code"] ?? "").toString(),
-    category: (r["Category"] ?? "").toString(),
-    featureLayer: (r["Feature_Layer"] ?? "").toString(),
-    notes: (r["Notes"] ?? "").toString()
-  }));
-
-
   const columns = [
     { key: "name", label: "Name" },
     { key: "code", label: "Code" },
@@ -16,9 +7,16 @@ document.addEventListener("DOMContentLoaded", () => {
     { key: "notes", label: "Notes" }
   ];
 
+  const points = (window.FIELD_CODES || []).map(r => ({
+    name: (r["Name"] ?? "").toString().trim(),
+    code: (r["Code"] ?? "").toString().trim(),
+    category: (r["Category"] ?? "").toString().trim(),
+    featureLayer: (r["Feature_Layer"] ?? "").toString().trim(),
+    notes: (r["Notes"] ?? "").toString().trim()
+  }));
+
   const searchInput = document.getElementById("searchInput");
   const tableBody = document.getElementById("tableBody");
-
   const settingsBtn = document.getElementById("settingsBtn");
   const modalOverlay = document.getElementById("modalOverlay");
   const settingsModal = document.getElementById("settingsModal");
@@ -92,21 +90,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const arrow = th.querySelector(".th-arrow");
       if (!arrow) continue;
 
-      if (key === sortKey) {
-        arrow.textContent = sortDir === "asc" ? "↑" : "↓";
-      } else {
-        arrow.textContent = "↕";
-      }
+      if (key === sortKey) arrow.textContent = sortDir === "asc" ? "↑" : "↓";
+      else arrow.textContent = "↕";
     }
   }
 
   function setSort(key) {
-    if (sortKey === key) {
-      sortDir = sortDir === "asc" ? "desc" : "asc";
-    } else {
-      sortKey = key;
-      sortDir = "asc";
-    }
+    if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
+    else { sortKey = key; sortDir = "asc"; }
     setHeaderArrows();
     renderTable();
   }
@@ -114,8 +105,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal() {
     modalOverlay.hidden = false;
     settingsModal.hidden = false;
-    const first = settingsModal.querySelector('input[type="checkbox"]');
-    if (first) first.focus();
   }
 
   function closeModal() {
@@ -140,19 +129,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   searchInput.addEventListener("input", renderTable);
 
-  settingsBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
+  settingsBtn.addEventListener("click", () => {
     syncCheckboxesFromState();
     openModal();
   });
 
-  closeModalBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    closeModal();
-  });
-
+  closeModalBtn.addEventListener("click", () => closeModal());
   modalOverlay.addEventListener("click", () => closeModal());
 
   document.addEventListener("keydown", (e) => {
