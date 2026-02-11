@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const points = [
-    { name: "BM", description: "Bench Mark", zone: "A", altName: "BENCH", notes: "Control point" },
-    { name: "TP", description: "Traverse Point", zone: "A", altName: "TRAV", notes: "" },
-    { name: "CL", description: "Centerline", zone: "B", altName: "CTR", notes: "Often roadway" },
-    { name: "EP", description: "Edge of Pavement", zone: "B", altName: "EOP", notes: "" },
-    { name: "MH", description: "Manhole", zone: "C", altName: "MANH", notes: "Check lid type" },
-    { name: "FH", description: "Fire Hydrant", zone: "C", altName: "HYD", notes: "" },
-    { name: "PO", description: "Power Pole", zone: "D", altName: "PWR", notes: "Tag if numbered" },
-    { name: "WM", description: "Water Meter", zone: "D", altName: "WTRM", notes: "" }
-  ];
+  const points = (window.FIELD_CODES || []).map(r => ({
+    name: (r.name ?? "").toString(),
+    description: (r.description ?? "").toString(),
+    zone: (r.zone ?? "").toString(),
+    altName: (r.altName ?? "").toString(),
+    notes: (r.notes ?? "").toString()
+  }));
+
 
   const columns = [
     { key: "name", label: "Name" },
