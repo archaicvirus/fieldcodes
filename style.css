@@ -110,7 +110,7 @@ body {
 
 .data-table {
   width: max-content;
-  min-width: 100%;
+  min-width: max-content;
   border-collapse: separate;
   border-spacing: 0;
   table-layout: fixed;
