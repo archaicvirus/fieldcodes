@@ -87,22 +87,16 @@ body {
   height: calc(100vh - 132px);
   min-height: 280px;
   overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
-.table-scroll {
-  flex: 1 1 auto;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .data-table {
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  table-layout: fixed;
+  table-layout: auto;
 }
 
 thead th {
@@ -152,21 +146,19 @@ tbody td {
   overflow-wrap: anywhere;
 }
 
+thead th, tbody td {
+  min-width: 240px;
+}
+
 tbody tr:last-child td { border-bottom: 0; }
 
 tbody tr:active td {
   background: rgba(255,255,255,0.04);
 }
 
-.data-table th:nth-child(1), .data-table td:nth-child(1) { width: 22%; }
-.data-table th:nth-child(2), .data-table td:nth-child(2) { width: 28%; }
-.data-table th:nth-child(3), .data-table td:nth-child(3) { width: 12%; }
-.data-table th:nth-child(4), .data-table td:nth-child(4) { width: 18%; }
-.data-table th:nth-child(5), .data-table td:nth-child(5) { width: 20%; }
-
 @media (max-width: 520px) {
   .app-title { font-size: 20px; }
-  //.table-wrap { height: calc(100vh - 128px); }
+  .table-wrap { height: calc(100vh - 128px); }
   tbody td { font-size: 13px; padding: 10px 8px; }
   .th-btn { padding: 11px 8px; }
 }
@@ -188,7 +180,7 @@ tbody tr:active td {
 }
 
 .modal-card {
-  width: min(520px, 100%);
+  width: min(560px, 100%);
   border-radius: 16px;
   border: 1px solid var(--border2);
   background: rgba(18,20,26,0.98);
@@ -220,6 +212,12 @@ tbody tr:active td {
   color: var(--muted);
   font-size: 13px;
   margin-bottom: 2px;
+}
+
+.modal-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 10px 0;
 }
 
 .check-row {
