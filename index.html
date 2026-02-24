@@ -10,102 +10,143 @@
   <header class="app-header">
     <div class="title-row">
       <h1 class="app-title">Field Codes</h1>
-      <button id="settingsBtn" class="icon-btn" type="button" aria-label="Search settings">⚙</button>
+      <button id="settingsBtn" class="icon-btn" type="button" aria-label="Settings">⚙</button>
     </div>
     <div class="search-row">
-      <input id="searchInput" class="search-input" type="search" placeholder="Search codes…" autocomplete="off" />
+      <input id="searchInput" class="search-input" type="search" placeholder="Search…" autocomplete="off" />
     </div>
   </header>
 
   <main class="app-main">
-  <div class="table-wrap" role="region" aria-label="Field codes table">
-    <table class="data-table">
-      <thead>
-        <tr>
-          <th data-key="name">
-            <button class="th-btn" type="button">
-              <span class="th-label">Name</span>
-              <span class="th-arrow" aria-hidden="true">↕</span>
-            </button>
-          </th>
-          <th data-key="code">
-            <button class="th-btn" type="button">
-              <span class="th-label">Code</span>
-              <span class="th-arrow" aria-hidden="true">↕</span>
-            </button>
-          </th>
-          <th data-key="category">
-            <button class="th-btn" type="button">
-              <span class="th-label">Category</span>
-              <span class="th-arrow" aria-hidden="true">↕</span>
-            </button>
-          </th>
-          <th data-key="featureLayer">
-            <button class="th-btn" type="button">
-              <span class="th-label">Feature Layer</span>
-              <span class="th-arrow" aria-hidden="true">↕</span>
-            </button>
-          </th>
-          <th data-key="notes">
-            <button class="th-btn" type="button">
-              <span class="th-label">Notes</span>
-              <span class="th-arrow" aria-hidden="true">↕</span>
-            </button>
-          </th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
-    </table>
-  </div>
-</main>
-
-<div id="modalOverlay" class="modal-overlay" hidden></div>
-
-<div id="settingsModal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
-  <div class="modal-card">
-    <div class="modal-header">
-      <div id="settingsTitle" class="modal-title">Search Settings</div>
-      <button id="closeModalBtn" class="icon-btn" type="button" aria-label="Close">✕</button>
+    <div class="table-wrap" role="region" aria-label="Field codes table">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th data-key="featureCode">
+              <button class="th-btn" type="button">
+                <span class="th-label">Feature Code</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="levelName">
+              <button class="th-btn" type="button">
+                <span class="th-label">Level Name</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="levelDescription">
+              <button class="th-btn" type="button">
+                <span class="th-label">Level Description</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="pointLine">
+              <button class="th-btn" type="button">
+                <span class="th-label">Point / Line</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+            <th data-key="zone">
+              <button class="th-btn" type="button">
+                <span class="th-label">Zone</span>
+                <span class="th-arrow" aria-hidden="true">↕</span>
+              </button>
+            </th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
     </div>
+  </main>
 
-    <div class="modal-body">
-      <div class="modal-hint">Choose which columns are searched</div>
+  <div id="modalOverlay" class="modal-overlay" hidden></div>
 
-      <label class="check-row">
-        <input type="checkbox" data-key="name" />
-        <span>Name</span>
-      </label>
+  <div id="settingsModal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div id="settingsTitle" class="modal-title">Settings</div>
+        <button id="closeModalBtn" class="icon-btn" type="button" aria-label="Close">✕</button>
+      </div>
 
-      <label class="check-row">
-        <input type="checkbox" data-key="code" />
-        <span>Code</span>
-      </label>
+      <div class="modal-body">
+        <div class="modal-hint">CSV source</div>
 
-      <label class="check-row">
-        <input type="checkbox" data-key="category" />
-        <span>Category</span>
-      </label>
+        <div class="file-row">
+          <input id="csvFileInput" class="file-input" type="file" accept=".csv,text/csv" />
+          <button id="clearCsvBtn" class="btn" type="button">Clear saved CSV</button>
+        </div>
 
-      <label class="check-row">
-        <input type="checkbox" data-key="featureLayer" />
-        <span>Feature Layer</span>
-      </label>
+        <div class="modal-divider"></div>
 
-      <label class="check-row">
-        <input type="checkbox" data-key="notes" />
-        <span>Notes</span>
-      </label>
+        <div class="modal-hint">Search in columns</div>
 
-      <div class="modal-actions">
-        <button id="enableAllBtn" class="btn" type="button">Enable all</button>
-        <button id="disableAllBtn" class="btn" type="button">Disable all</button>
+        <label class="check-row">
+          <input type="checkbox" data-search-key="featureCode" />
+          <span>Feature Code</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-search-key="levelName" />
+          <span>Level Name</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-search-key="levelDescription" />
+          <span>Level Description</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-search-key="pointLine" />
+          <span>Point / Line</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-search-key="zone" />
+          <span>Zone</span>
+        </label>
+
+        <div class="modal-actions">
+          <button id="enableAllBtn" class="btn" type="button">Enable all</button>
+          <button id="disableAllBtn" class="btn" type="button">Disable all</button>
+        </div>
+
+        <div class="modal-divider"></div>
+
+        <div class="modal-hint">Show columns</div>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="featureCode" />
+          <span>Feature Code</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="levelName" />
+          <span>Level Name</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="levelDescription" />
+          <span>Level Description</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="pointLine" />
+          <span>Point / Line</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="zone" />
+          <span>Zone</span>
+        </label>
+
+        <div class="modal-actions">
+          <button id="showAllBtn" class="btn" type="button">Show all</button>
+          <button id="hideAllBtn" class="btn" type="button">Hide all</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<script src="./codes.js"></script>
-<script src="./script.js"></script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
