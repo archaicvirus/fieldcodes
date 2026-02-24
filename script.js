@@ -77,11 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (parts.length < 5) continue;
 
       const first = normalize(parts[0]);
-      const second = normalize(parts[1]);
+      if (first.includes("fdot") && line.includes(",,,,")) continue;
 
-      if (first.includes("fdot") && (line.includes(",,,") || parts.length >= 5)) continue;
-      if (first === "feature code" || first === '"feature code"' || first.replace(/"/g, "") === "feature code") continue;
-      if (first === "" && second === "") continue;
+      const firstNoQuotes = first.replace(/"/g, "");
+      if (firstNoQuotes === "feature code") continue;
 
       rows.push({
         featureCode: (parts[0] ?? "").trim(),
@@ -131,6 +130,22 @@ document.addEventListener("DOMContentLoaded", () => {
       const key = th.getAttribute("data-key");
       const visible = !!showEnabled[key];
       th.style.display = visible ? "" : "none";
+    }
+  }
+
+  function applyColumnVisibilityToBody() {
+    const ths = document.querySelectorAll("thead th");
+    const visibleKeys = new Set(columns.filter(c => showEnabled[c.key]).map(c => c.key));
+    for (const th of ths) {
+      const key = th.getAttribute("data-key");
+      const idx = Array.prototype.indexOf.call(th.parentElement.children, th);
+      const visible = visibleKeys.has(key);
+
+      const rows = document.querySelectorAll("tbody tr");
+      for (const tr of rows) {
+        const td = tr.children[idx];
+        if (td) td.style.display = visible ? "" : "none";
+      }
     }
   }
 
@@ -224,6 +239,73 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTable();
   }
 
+  function setupColumnResizers() {
+    const table = document.getElementById("dataTable");
+    if (!table) return;
+
+    const colEls = table.querySelectorAll("colgroup col[data-col-key]");
+    const colMap = new Map();
+    for (const col of colEls) colMap.set(col.getAttribute("data-col-key"), col);
+
+    let active = null;
+
+    function getClientX(e) {
+      if (e.touches && e.touches.length) return e.touches[0].clientX;
+      return e.clientX;
+    }
+
+    function onMove(e) {
+      if (!active) return;
+      const x = getClientX(e);
+      const dx = x - active.startX;
+      const w = Math.max(active.minW, active.startW + dx);
+      active.col.style.width = w + "px";
+      e.preventDefault();
+    }
+
+    function end() {
+      if (!active) return;
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+      active = null;
+      window.removeEventListener("mousemove", onMove, { passive: false });
+      window.removeEventListener("touchmove", onMove, { passive: false });
+      window.removeEventListener("mouseup", end);
+      window.removeEventListener("touchend", end);
+    }
+
+    const resizers = table.querySelectorAll(".col-resizer[data-resize-key]");
+    for (const rz of resizers) {
+      const key = rz.getAttribute("data-resize-key");
+      const col = colMap.get(key);
+      if (!col) continue;
+
+      function start(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const startW = parseFloat((col.style.width || "0").replace("px", "")) || rz.parentElement.getBoundingClientRect().width;
+        active = {
+          col,
+          startX: getClientX(e),
+          startW,
+          minW: 70
+        };
+
+        document.body.style.cursor = "col-resize";
+        document.body.style.userSelect = "none";
+
+        window.addEventListener("mousemove", onMove, { passive: false });
+        window.addEventListener("touchmove", onMove, { passive: false });
+        window.addEventListener("mouseup", end);
+        window.addEventListener("touchend", end);
+      }
+
+      rz.addEventListener("mousedown", start);
+      rz.addEventListener("touchstart", start, { passive: false });
+    }
+  }
+
   async function loadCsvFromRepo() {
     const res = await fetch("./codes.csv", { cache: "no-store" });
     if (!res.ok) throw new Error("codes.csv_not_found");
@@ -288,8 +370,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   syncSettingsUI();
-  loadCsvFromRepo().catch(() => {
+  loadCsvFromRepo().then(() => {
+    setupColumnResizers();
+  }).catch(() => {
     points = [];
     renderTable();
+    setupColumnResizers();
   });
 });
