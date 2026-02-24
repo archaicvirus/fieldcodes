@@ -19,43 +19,57 @@
 
   <main class="app-main">
     <div class="table-wrap" role="region" aria-label="Field codes table">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th data-key="featureCode">
-              <button class="th-btn" type="button">
-                <span class="th-label">Feature Code</span>
-                <span class="th-arrow" aria-hidden="true">↕</span>
-              </button>
-            </th>
-            <th data-key="levelName">
-              <button class="th-btn" type="button">
-                <span class="th-label">Level Name</span>
-                <span class="th-arrow" aria-hidden="true">↕</span>
-              </button>
-            </th>
-            <th data-key="levelDescription">
-              <button class="th-btn" type="button">
-                <span class="th-label">Level Description</span>
-                <span class="th-arrow" aria-hidden="true">↕</span>
-              </button>
-            </th>
-            <th data-key="pointLine">
-              <button class="th-btn" type="button">
-                <span class="th-label">Point / Line</span>
-                <span class="th-arrow" aria-hidden="true">↕</span>
-              </button>
-            </th>
-            <th data-key="zone">
-              <button class="th-btn" type="button">
-                <span class="th-label">Zone</span>
-                <span class="th-arrow" aria-hidden="true">↕</span>
-              </button>
-            </th>
-          </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-      </table>
+      <div class="table-scroll">
+        <table class="data-table" id="dataTable">
+          <colgroup>
+            <col data-col-key="featureCode" style="width:140px" />
+            <col data-col-key="levelName" style="width:180px" />
+            <col data-col-key="levelDescription" style="width:420px" />
+            <col data-col-key="pointLine" style="width:120px" />
+            <col data-col-key="zone" style="width:90px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th data-key="featureCode">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Feature Code</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="featureCode" aria-hidden="true"></span>
+              </th>
+              <th data-key="levelName">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Level Name</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="levelName" aria-hidden="true"></span>
+              </th>
+              <th data-key="levelDescription">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Level Description</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="levelDescription" aria-hidden="true"></span>
+              </th>
+              <th data-key="pointLine">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Point / Line</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="pointLine" aria-hidden="true"></span>
+              </th>
+              <th data-key="zone">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Zone</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="zone" aria-hidden="true"></span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
     </div>
   </main>
 
@@ -69,15 +83,6 @@
       </div>
 
       <div class="modal-body">
-        <div class="modal-hint">CSV source</div>
-
-        <div class="file-row">
-          <input id="csvFileInput" class="file-input" type="file" accept=".csv,text/csv" />
-          <button id="clearCsvBtn" class="btn" type="button">Clear saved CSV</button>
-        </div>
-
-        <div class="modal-divider"></div>
-
         <div class="modal-hint">Search in columns</div>
 
         <label class="check-row">
