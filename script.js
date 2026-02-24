@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const disableAllBtn = document.getElementById("disableAllBtn");
   const showAllBtn = document.getElementById("showAllBtn");
   const hideAllBtn = document.getElementById("hideAllBtn");
+  const fontZoomRange = document.getElementById("fontZoomRange");
+  const fontZoomValue = document.getElementById("fontZoomValue");
 
-  if (!searchInput || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn || !showAllBtn || !hideAllBtn) {
+  if (!searchInput || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn || !showAllBtn || !hideAllBtn || !fontZoomRange || !fontZoomValue) {
     return;
   }
 
@@ -28,6 +30,31 @@ document.addEventListener("DOMContentLoaded", () => {
   let sortKey = "featureCode";
   let sortDir = "asc";
   let points = [];
+
+  const fontZoomStorageKey = "fieldcodes_font_zoom";
+
+  function clampZoom(v) {
+    return Math.max(0.85, Math.min(1.8, v));
+  }
+
+  function applyFontZoom(v) {
+    const zoom = clampZoom(v);
+    document.documentElement.style.setProperty("--font-zoom", zoom.toFixed(2));
+    fontZoomRange.value = zoom.toFixed(2);
+    fontZoomValue.textContent = Math.round(zoom * 100) + "%";
+  }
+
+  function loadSavedFontZoom() {
+    let saved = null;
+    try {
+      saved = window.localStorage.getItem(fontZoomStorageKey);
+    } catch (_) {
+      saved = null;
+    }
+
+    const parsed = saved == null ? 1 : parseFloat(saved);
+    applyFontZoom(Number.isFinite(parsed) ? parsed : 1);
+  }
 
   function normalize(s) {
     return (s ?? "").toString().trim().toLowerCase();
@@ -314,6 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderTable();
   }
 
+  loadSavedFontZoom();
   closeModal();
 
   searchInput.addEventListener("input", renderTable);
@@ -334,6 +362,19 @@ document.addEventListener("DOMContentLoaded", () => {
   disableAllBtn.addEventListener("click", () => setAllSearch(false));
   showAllBtn.addEventListener("click", () => setAllShow(true));
   hideAllBtn.addEventListener("click", () => setAllShow(false));
+
+  fontZoomRange.addEventListener("input", () => {
+    const zoom = parseFloat(fontZoomRange.value);
+    applyFontZoom(Number.isFinite(zoom) ? zoom : 1);
+  });
+
+  fontZoomRange.addEventListener("change", () => {
+    try {
+      window.localStorage.setItem(fontZoomStorageKey, fontZoomRange.value);
+    } catch (_) {
+      // Ignore storage errors (private mode / blocked storage).
+    }
+  });
 
   const searchChecks = document.querySelectorAll(`input[type="checkbox"][data-search-key]`);
   for (const chk of searchChecks) {
