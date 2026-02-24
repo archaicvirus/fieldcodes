@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const columns = [
     { key: "featureCode", label: "Feature Code" },
-    { key: "levelDescription", label: "Level Description" },
     { key: "levelName", label: "Level Name" },
+    { key: "levelDescription", label: "Level Description" },
     { key: "pointLine", label: "Point / Line" },
     { key: "zone", label: "Zone" }
   ];
