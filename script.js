@@ -1,19 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const columns = [
-    { key: "name", label: "Name" },
-    { key: "code", label: "Code" },
-    { key: "category", label: "Category" },
-    { key: "featureLayer", label: "Feature Layer" },
-    { key: "notes", label: "Notes" }
+    { key: "featureCode", label: "Feature Code" },
+    { key: "levelName", label: "Level Name" },
+    { key: "levelDescription", label: "Level Description" },
+    { key: "pointLine", label: "Point / Line" },
+    { key: "zone", label: "Zone" }
   ];
-
-  const points = (window.FIELD_CODES || []).map(r => ({
-    name: (r["Name"] ?? "").toString().trim(),
-    code: (r["Code"] ?? "").toString().trim(),
-    category: (r["Category"] ?? "").toString().trim(),
-    featureLayer: (r["Feature_Layer"] ?? "").toString().trim(),
-    notes: (r["Notes"] ?? "").toString().trim()
-  }));
 
   const searchInput = document.getElementById("searchInput");
   const tableBody = document.getElementById("tableBody");
@@ -23,15 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.getElementById("closeModalBtn");
   const enableAllBtn = document.getElementById("enableAllBtn");
   const disableAllBtn = document.getElementById("disableAllBtn");
+  const showAllBtn = document.getElementById("showAllBtn");
+  const hideAllBtn = document.getElementById("hideAllBtn");
 
-  if (!searchInput || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn) {
+  if (!searchInput || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn || !showAllBtn || !hideAllBtn) {
     return;
   }
 
   const searchEnabled = Object.fromEntries(columns.map(c => [c.key, true]));
+  const showEnabled = Object.fromEntries(columns.map(c => [c.key, true]));
 
-  let sortKey = "name";
+  let sortKey = "featureCode";
   let sortDir = "asc";
+  let points = [];
 
   function normalize(s) {
     return (s ?? "").toString().trim().toLowerCase();
@@ -41,8 +37,69 @@ document.addEventListener("DOMContentLoaded", () => {
     return a.localeCompare(b, undefined, { sensitivity: "base", numeric: true });
   }
 
-  function getEnabledKeys() {
+  function parseCsvLine(line) {
+    const out = [];
+    let cur = "";
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+
+      if (ch === '"') {
+        if (inQuotes && i + 1 < line.length && line[i + 1] === '"') {
+          cur += '"';
+          i++;
+        } else {
+          inQuotes = !inQuotes;
+        }
+        continue;
+      }
+
+      if (ch === "," && !inQuotes) {
+        out.push(cur);
+        cur = "";
+        continue;
+      }
+
+      cur += ch;
+    }
+
+    out.push(cur);
+    return out.map(v => v.trim());
+  }
+
+  function parseCodesCsv(text) {
+    const lines = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n").map(l => l.trim()).filter(l => l.length > 0);
+
+    const rows = [];
+    for (const line of lines) {
+      const parts = parseCsvLine(line);
+      if (parts.length < 5) continue;
+
+      const first = normalize(parts[0]);
+      const second = normalize(parts[1]);
+
+      if (first.includes("fdot") && (line.includes(",,,") || parts.length >= 5)) continue;
+      if (first === "feature code" || first === '"feature code"' || first.replace(/"/g, "") === "feature code") continue;
+      if (first === "" && second === "") continue;
+
+      rows.push({
+        featureCode: (parts[0] ?? "").trim(),
+        levelName: (parts[1] ?? "").trim(),
+        levelDescription: (parts[2] ?? "").trim(),
+        pointLine: (parts[3] ?? "").trim(),
+        zone: (parts[4] ?? "").trim()
+      });
+    }
+    return rows;
+  }
+
+  function getSearchKeys() {
     return columns.map(c => c.key).filter(k => searchEnabled[k]);
+  }
+
+  function getVisibleColumns() {
+    return columns.filter(c => showEnabled[c.key]);
   }
 
   function matchesQuery(row, q, enabledKeys) {
@@ -55,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function filteredAndSorted() {
     const q = normalize(searchInput.value);
-    const enabledKeys = getEnabledKeys();
+    const enabledKeys = getSearchKeys();
     const rows = points.filter(r => matchesQuery(r, q, enabledKeys));
 
     rows.sort((ra, rb) => {
@@ -68,18 +125,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return rows;
   }
 
-  function renderTable() {
-    const rows = filteredAndSorted();
-    tableBody.innerHTML = "";
-
-    for (const r of rows) {
-      const tr = document.createElement("tr");
-      for (const c of columns) {
-        const td = document.createElement("td");
-        td.textContent = (r[c.key] ?? "").toString();
-        tr.appendChild(td);
-      }
-      tableBody.appendChild(tr);
+  function applyColumnVisibilityToHeader() {
+    const ths = document.querySelectorAll("thead th");
+    for (const th of ths) {
+      const key = th.getAttribute("data-key");
+      const visible = !!showEnabled[key];
+      th.style.display = visible ? "" : "none";
     }
   }
 
@@ -90,14 +141,42 @@ document.addEventListener("DOMContentLoaded", () => {
       const arrow = th.querySelector(".th-arrow");
       if (!arrow) continue;
 
+      if (!showEnabled[key]) {
+        arrow.textContent = "";
+        continue;
+      }
+
       if (key === sortKey) arrow.textContent = sortDir === "asc" ? "↑" : "↓";
       else arrow.textContent = "↕";
     }
   }
 
+  function renderTable() {
+    const rows = filteredAndSorted();
+    const visibleCols = getVisibleColumns();
+
+    tableBody.innerHTML = "";
+
+    for (const r of rows) {
+      const tr = document.createElement("tr");
+      for (const c of visibleCols) {
+        const td = document.createElement("td");
+        td.textContent = (r[c.key] ?? "").toString();
+        tr.appendChild(td);
+      }
+      tableBody.appendChild(tr);
+    }
+
+    applyColumnVisibilityToHeader();
+    setHeaderArrows();
+  }
+
   function setSort(key) {
+    if (!showEnabled[key]) return;
+
     if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
     else { sortKey = key; sortDir = "asc"; }
+
     setHeaderArrows();
     renderTable();
   }
@@ -112,16 +191,44 @@ document.addEventListener("DOMContentLoaded", () => {
     settingsModal.hidden = true;
   }
 
-  function syncCheckboxesFromState() {
-    for (const c of columns) {
-      const chk = document.querySelector(`input[type="checkbox"][data-key="${c.key}"]`);
-      if (chk) chk.checked = !!searchEnabled[c.key];
+  function syncSettingsUI() {
+    const searchChecks = document.querySelectorAll(`input[type="checkbox"][data-search-key]`);
+    for (const chk of searchChecks) {
+      const k = chk.getAttribute("data-search-key");
+      chk.checked = !!searchEnabled[k];
+    }
+
+    const showChecks = document.querySelectorAll(`input[type="checkbox"][data-show-key]`);
+    for (const chk of showChecks) {
+      const k = chk.getAttribute("data-show-key");
+      chk.checked = !!showEnabled[k];
     }
   }
 
-  function setAllCheckboxes(v) {
+  function setAllSearch(v) {
     for (const c of columns) searchEnabled[c.key] = v;
-    syncCheckboxesFromState();
+    syncSettingsUI();
+    renderTable();
+  }
+
+  function setAllShow(v) {
+    for (const c of columns) showEnabled[c.key] = v;
+
+    if (!showEnabled[sortKey]) {
+      const firstVisible = columns.find(col => showEnabled[col.key]);
+      sortKey = firstVisible ? firstVisible.key : columns[0].key;
+      sortDir = "asc";
+    }
+
+    syncSettingsUI();
+    renderTable();
+  }
+
+  async function loadCsvFromRepo() {
+    const res = await fetch("./codes.csv", { cache: "no-store" });
+    if (!res.ok) throw new Error("codes.csv_not_found");
+    const text = await res.text();
+    points = parseCodesCsv(text);
     renderTable();
   }
 
@@ -130,7 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
   searchInput.addEventListener("input", renderTable);
 
   settingsBtn.addEventListener("click", () => {
-    syncCheckboxesFromState();
+    syncSettingsUI();
     openModal();
   });
 
@@ -141,18 +248,35 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!settingsModal.hidden && e.key === "Escape") closeModal();
   });
 
-  for (const c of columns) {
-    const chk = document.querySelector(`input[type="checkbox"][data-key="${c.key}"]`);
-    if (chk) {
-      chk.addEventListener("change", () => {
-        searchEnabled[c.key] = chk.checked;
-        renderTable();
-      });
-    }
+  enableAllBtn.addEventListener("click", () => setAllSearch(true));
+  disableAllBtn.addEventListener("click", () => setAllSearch(false));
+  showAllBtn.addEventListener("click", () => setAllShow(true));
+  hideAllBtn.addEventListener("click", () => setAllShow(false));
+
+  const searchChecks = document.querySelectorAll(`input[type="checkbox"][data-search-key]`);
+  for (const chk of searchChecks) {
+    chk.addEventListener("change", () => {
+      const k = chk.getAttribute("data-search-key");
+      searchEnabled[k] = chk.checked;
+      renderTable();
+    });
   }
 
-  enableAllBtn.addEventListener("click", () => setAllCheckboxes(true));
-  disableAllBtn.addEventListener("click", () => setAllCheckboxes(false));
+  const showChecks = document.querySelectorAll(`input[type="checkbox"][data-show-key]`);
+  for (const chk of showChecks) {
+    chk.addEventListener("change", () => {
+      const k = chk.getAttribute("data-show-key");
+      showEnabled[k] = chk.checked;
+
+      if (!showEnabled[sortKey]) {
+        const firstVisible = columns.find(col => showEnabled[col.key]);
+        sortKey = firstVisible ? firstVisible.key : columns[0].key;
+        sortDir = "asc";
+      }
+
+      renderTable();
+    });
+  }
 
   const thButtons = document.querySelectorAll("thead th .th-btn");
   for (const btn of thButtons) {
@@ -163,6 +287,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  setHeaderArrows();
-  renderTable();
+  syncSettingsUI();
+  loadCsvFromRepo().catch(() => {
+    points = [];
+    renderTable();
+  });
 });
