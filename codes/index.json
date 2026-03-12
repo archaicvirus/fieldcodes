@@ -1,5 +1,4 @@
 [
-  { "file": "boca_fdot_2019.csv", "label": "FDOT" },
-  { "file": "central.csv", "label": "Central Region" },
-  { "file": "south.csv", "label": "South Region" }
+  { "file": "codes.csv", "label": "Boca 2019 FDOT" },
+  { "file": "FDOTFeatureCodes-Levels-TerrainAttribute.csv", "label": "Jacksonville" },
 ]
