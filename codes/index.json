@@ -1,4 +1,5 @@
 [
   { "file": "codes.csv", "label": "Boca 2019 FDOT" },
-  { "file": "FDOTFeatureCodes-Levels-TerrainAttribute.csv", "label": "Jacksonville" }
+  { "file": "FDOTFeatureCodes-Levels-TerrainAttribute.csv", "label": "Jacksonville" },
+  { "file": "FDOT_Zone3_Utility_Codes.csv", "label": "Jacksonville Utility Codes" }
 ]
