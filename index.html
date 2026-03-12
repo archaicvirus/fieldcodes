@@ -17,187 +17,157 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header class="app-header">
-  <div class="title-row">
-    <h1 class="app-title">Field Codes</h1>
-    <button id="settingsBtn" class="icon-btn" type="button" aria-label="Settings">⚙</button>
-  </div>
-
-  <div class="search-row">
-    <input id="searchInput"
-           class="search-input"
-           type="search"
-           placeholder="Search..."
-           autocomplete="off">
-  </div>
-</header>
-
-<main class="app-main">
-  <div class="table-wrap" role="region" aria-label="Field codes table">
-
-    <div class="table-scroll">
-
-      <table class="data-table" id="dataTable">
-
-        <colgroup>
-          <col data-col-key="featureCode" style="width:120px">
-          <col data-col-key="levelName" style="width:160px">
-          <col data-col-key="levelDescription" style="width:360px">
-          <col data-col-key="pointLine" style="width:90px">
-          <col data-col-key="zone" style="width:80px">
-        </colgroup>
-
-        <thead>
-          <tr>
-
-            <th data-key="featureCode">
-              <button class="th-btn" type="button">
-                <span class="th-label">Feature Code</span>
-                <span class="th-arrow">↕</span>
-              </button>
-              <span class="col-resizer" data-resize-key="featureCode"></span>
-            </th>
-
-            <th data-key="levelName">
-              <button class="th-btn" type="button">
-                <span class="th-label">Level Name</span>
-                <span class="th-arrow">↕</span>
-              </button>
-              <span class="col-resizer" data-resize-key="levelName"></span>
-            </th>
-
-            <th data-key="levelDescription">
-              <button class="th-btn" type="button">
-                <span class="th-label">Level Description</span>
-                <span class="th-arrow">↕</span>
-              </button>
-              <span class="col-resizer" data-resize-key="levelDescription"></span>
-            </th>
-
-            <th data-key="pointLine">
-              <button class="th-btn" type="button">
-                <span class="th-label">Point / Line</span>
-                <span class="th-arrow">↕</span>
-              </button>
-              <span class="col-resizer" data-resize-key="pointLine"></span>
-            </th>
-
-            <th data-key="zone">
-              <button class="th-btn" type="button">
-                <span class="th-label">Zone</span>
-                <span class="th-arrow">↕</span>
-              </button>
-              <span class="col-resizer" data-resize-key="zone"></span>
-            </th>
-
-          </tr>
-        </thead>
-
-        <tbody id="tableBody"></tbody>
-
-      </table>
-
+  <header class="app-header">
+    <div class="title-row">
+      <h1 class="app-title">Field Codes</h1>
+      <button id="settingsBtn" class="icon-btn" type="button" aria-label="Settings">⚙</button>
     </div>
 
-  </div>
-</main>
-
-
-<div id="modalOverlay" class="modal-overlay" hidden></div>
-
-<div id="settingsModal"
-     class="modal"
-     hidden
-     role="dialog"
-     aria-modal="true"
-     aria-labelledby="settingsTitle">
-
-  <div class="modal-card">
-
-    <div class="modal-header">
-      <div id="settingsTitle" class="modal-title">Settings</div>
-      <button id="closeModalBtn" class="icon-btn" type="button">✕</button>
+    <div class="search-row">
+      <input id="searchInput" class="search-input" type="search" placeholder="Search..." autocomplete="off">
     </div>
 
-    <div class="modal-body">
+    <div class="picker-row">
+      <select id="codeListSelect" class="picker-select" aria-label="Code list selection"></select>
+    </div>
+  </header>
 
-      <div class="modal-hint">Search in columns</div>
+  <main class="app-main">
+    <div class="table-wrap" role="region" aria-label="Field codes table">
+      <div class="table-scroll">
+        <table class="data-table" id="dataTable">
+          <colgroup>
+            <col data-col-key="featureCode" style="width:110px">
+            <col data-col-key="levelName" style="width:150px">
+            <col data-col-key="levelDescription" style="width:300px">
+            <col data-col-key="pointLine" style="width:90px">
+            <col data-col-key="zone" style="width:70px">
+          </colgroup>
+          <thead>
+            <tr>
+              <th data-key="featureCode">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Feature Code</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="featureCode" aria-hidden="true"></span>
+              </th>
+              <th data-key="levelName">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Level Name</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="levelName" aria-hidden="true"></span>
+              </th>
+              <th data-key="levelDescription">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Level Description</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="levelDescription" aria-hidden="true"></span>
+              </th>
+              <th data-key="pointLine">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Point / Line</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="pointLine" aria-hidden="true"></span>
+              </th>
+              <th data-key="zone">
+                <button class="th-btn" type="button">
+                  <span class="th-label">Zone</span>
+                  <span class="th-arrow" aria-hidden="true">↕</span>
+                </button>
+                <span class="col-resizer" data-resize-key="zone" aria-hidden="true"></span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
 
-      <label class="check-row">
-        <input type="checkbox" data-search-key="featureCode">
-        <span>Feature Code</span>
-      </label>
+  <div id="modalOverlay" class="modal-overlay" hidden></div>
 
-      <label class="check-row">
-        <input type="checkbox" data-search-key="levelName">
-        <span>Level Name</span>
-      </label>
-
-      <label class="check-row">
-        <input type="checkbox" data-search-key="levelDescription">
-        <span>Level Description</span>
-      </label>
-
-      <label class="check-row">
-        <input type="checkbox" data-search-key="pointLine">
-        <span>Point / Line</span>
-      </label>
-
-      <label class="check-row">
-        <input type="checkbox" data-search-key="zone">
-        <span>Zone</span>
-      </label>
-
-      <div class="modal-actions">
-        <button id="enableAllBtn" class="btn">Enable all</button>
-        <button id="disableAllBtn" class="btn">Disable all</button>
+  <div id="settingsModal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div id="settingsTitle" class="modal-title">Settings</div>
+        <button id="closeModalBtn" class="icon-btn" type="button" aria-label="Close">✕</button>
       </div>
 
-      <div class="modal-divider"></div>
+      <div class="modal-body">
+        <div class="modal-hint">Search in columns</div>
 
-      <div class="modal-hint">Show columns</div>
+        <label class="check-row">
+          <input type="checkbox" data-search-key="featureCode">
+          <span>Feature Code</span>
+        </label>
 
-      <label class="check-row">
-        <input type="checkbox" data-show-key="featureCode">
-        <span>Feature Code</span>
-      </label>
+        <label class="check-row">
+          <input type="checkbox" data-search-key="levelName">
+          <span>Level Name</span>
+        </label>
 
-      <label class="check-row">
-        <input type="checkbox" data-show-key="levelName">
-        <span>Level Name</span>
-      </label>
+        <label class="check-row">
+          <input type="checkbox" data-search-key="levelDescription">
+          <span>Level Description</span>
+        </label>
 
-      <label class="check-row">
-        <input type="checkbox" data-show-key="levelDescription">
-        <span>Level Description</span>
-      </label>
+        <label class="check-row">
+          <input type="checkbox" data-search-key="pointLine">
+          <span>Point / Line</span>
+        </label>
 
-      <label class="check-row">
-        <input type="checkbox" data-show-key="pointLine">
-        <span>Point / Line</span>
-      </label>
+        <label class="check-row">
+          <input type="checkbox" data-search-key="zone">
+          <span>Zone</span>
+        </label>
 
-      <label class="check-row">
-        <input type="checkbox" data-show-key="zone">
-        <span>Zone</span>
-      </label>
+        <div class="modal-actions">
+          <button id="enableAllBtn" class="btn" type="button">Enable all</button>
+          <button id="disableAllBtn" class="btn" type="button">Disable all</button>
+        </div>
 
-      <div class="modal-actions">
-        <button id="showAllBtn" class="btn">Show all</button>
-        <button id="hideAllBtn" class="btn">Hide all</button>
+        <div class="modal-divider"></div>
+
+        <div class="modal-hint">Show columns</div>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="featureCode">
+          <span>Feature Code</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="levelName">
+          <span>Level Name</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="levelDescription">
+          <span>Level Description</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="pointLine">
+          <span>Point / Line</span>
+        </label>
+
+        <label class="check-row">
+          <input type="checkbox" data-show-key="zone">
+          <span>Zone</span>
+        </label>
+
+        <div class="modal-actions">
+          <button id="showAllBtn" class="btn" type="button">Show all</button>
+          <button id="hideAllBtn" class="btn" type="button">Hide all</button>
+        </div>
       </div>
-
     </div>
-
   </div>
 
-</div>
-
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
