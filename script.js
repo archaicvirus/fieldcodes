@@ -1,4 +1,5 @@
-console.log("LOADED v5")
+console.log("NEW SCRIPT LOADED v6")
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("searchInput")
   const codeListSelect = document.getElementById("codeListSelect")
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     !searchSettingsList ||
     !showSettingsList
   ) {
+    console.log("Missing required DOM nodes")
     return
   }
 
@@ -58,8 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const cleaned = (header ?? "")
       .toString()
       .trim()
+      .replace(/^"+|"+$/g, "")
       .toLowerCase()
-      .replace(/["']/g, "")
       .replace(/[^a-z0-9]+/g, " ")
       .trim()
       .replace(/\s+/g, "_")
@@ -104,42 +106,26 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\r/g, "\n")
       .split("\n")
       .map(l => l.trimEnd())
+      .filter(l => l.trim() !== "")
 
-    const nonEmpty = lines.filter(l => l.trim().length > 0)
-    if (nonEmpty.length === 0) {
+    if (lines.length === 0) {
       return { columns: [], rows: [] }
     }
 
-    let headerIndex = -1
-    for (let i = 0; i < nonEmpty.length; i++) {
-      const parts = parseCsvLine(nonEmpty[i])
-      const filled = parts.filter(v => v.trim() !== "")
-      if (filled.length >= 2) {
-        headerIndex = i
-        break
-      }
+    const rawHeader = parseCsvLine(lines[0])
+    let headerCount = rawHeader.length
+    while (headerCount > 0 && (rawHeader[headerCount - 1] ?? "").trim() === "") {
+      headerCount--
     }
 
-    if (headerIndex === -1) {
-      return { columns: [], rows: [] }
-    }
-
-    const rawHeaders = parseCsvLine(nonEmpty[headerIndex])
-    const effectiveHeaders = rawHeaders.filter((_, i) => i < rawHeaders.length && rawHeaders[i].trim() !== "")
-    const headerCount = effectiveHeaders.length
-
-    const seen = new Map()
-    const builtColumns = effectiveHeaders.map((label, i) => {
-      let key = slugifyHeader(label, i)
-      const count = seen.get(key) || 0
-      seen.set(key, count + 1)
-      if (count > 0) key = `${key}_${count + 1}`
-      return { key, label: label.trim() || `Column ${i + 1}` }
-    })
+    const builtColumns = rawHeader.slice(0, headerCount).map((label, i) => ({
+      key: slugifyHeader(label, i),
+      label: (label ?? "").replace(/^"+|"+$/g, "").trim() || `Column ${i + 1}`
+    }))
 
     const rows = []
-    for (let i = headerIndex + 1; i < nonEmpty.length; i++) {
-      const parts = parseCsvLine(nonEmpty[i]).slice(0, headerCount)
+    for (let i = 1; i < lines.length; i++) {
+      const parts = parseCsvLine(lines[i]).slice(0, headerCount)
       while (parts.length < headerCount) parts.push("")
       if (!parts.some(v => v.trim() !== "")) continue
 
@@ -240,34 +226,32 @@ document.addEventListener("DOMContentLoaded", () => {
     showSettingsList.innerHTML = ""
 
     for (const col of columns) {
-      const searchLabel = document.createElement("label")
-      searchLabel.className = "check-row"
+      const sLabel = document.createElement("label")
+      sLabel.className = "check-row"
 
-      const searchChk = document.createElement("input")
-      searchChk.type = "checkbox"
-      searchChk.setAttribute("data-search-key", col.key)
-      searchChk.checked = !!searchEnabled[col.key]
-      searchChk.addEventListener("change", () => {
-        searchEnabled[col.key] = searchChk.checked
+      const sChk = document.createElement("input")
+      sChk.type = "checkbox"
+      sChk.checked = !!searchEnabled[col.key]
+      sChk.addEventListener("change", () => {
+        searchEnabled[col.key] = sChk.checked
         renderTable()
       })
 
-      const searchText = document.createElement("span")
-      searchText.textContent = col.label
+      const sText = document.createElement("span")
+      sText.textContent = col.label
 
-      searchLabel.appendChild(searchChk)
-      searchLabel.appendChild(searchText)
-      searchSettingsList.appendChild(searchLabel)
+      sLabel.appendChild(sChk)
+      sLabel.appendChild(sText)
+      searchSettingsList.appendChild(sLabel)
 
-      const showLabel = document.createElement("label")
-      showLabel.className = "check-row"
+      const vLabel = document.createElement("label")
+      vLabel.className = "check-row"
 
-      const showChk = document.createElement("input")
-      showChk.type = "checkbox"
-      showChk.setAttribute("data-show-key", col.key)
-      showChk.checked = !!showEnabled[col.key]
-      showChk.addEventListener("change", () => {
-        showEnabled[col.key] = showChk.checked
+      const vChk = document.createElement("input")
+      vChk.type = "checkbox"
+      vChk.checked = !!showEnabled[col.key]
+      vChk.addEventListener("change", () => {
+        showEnabled[col.key] = vChk.checked
 
         if (sortKey && !showEnabled[sortKey]) {
           const firstVisible = columns.find(c => showEnabled[c.key])
@@ -278,17 +262,17 @@ document.addEventListener("DOMContentLoaded", () => {
         renderTable()
       })
 
-      const showText = document.createElement("span")
-      showText.textContent = col.label
+      const vText = document.createElement("span")
+      vText.textContent = col.label
 
-      showLabel.appendChild(showChk)
-      showLabel.appendChild(showText)
-      showSettingsList.appendChild(showLabel)
+      vLabel.appendChild(vChk)
+      vLabel.appendChild(vText)
+      showSettingsList.appendChild(vLabel)
     }
   }
 
   function getSearchKeys() {
-    return columns.map(c => c.key).filter(k => searchEnabled[k])
+    return columns.filter(c => searchEnabled[c.key]).map(c => c.key)
   }
 
   function getVisibleColumns() {
@@ -309,11 +293,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const rows = points.filter(r => matchesQuery(r, q, enabledKeys))
 
     if (sortKey) {
-      rows.sort((ra, rb) => {
-        const av = (ra[sortKey] ?? "").toString()
-        const bv = (rb[sortKey] ?? "").toString()
-        const c = compareAlpha(av, bv)
-        return sortDir === "asc" ? c : -c
+      rows.sort((a, b) => {
+        const av = (a[sortKey] ?? "").toString()
+        const bv = (b[sortKey] ?? "").toString()
+        const cmp = compareAlpha(av, bv)
+        return sortDir === "asc" ? cmp : -cmp
       })
     }
 
@@ -343,13 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const key = th.getAttribute("data-key")
       const arrow = th.querySelector(".th-arrow")
       if (!arrow) continue
-
-      if (!showEnabled[key]) {
-        arrow.textContent = ""
-        continue
-      }
-
-      arrow.textContent = key === sortKey ? (sortDir === "asc" ? "↑" : "↓") : "↕"
+      arrow.textContent = !showEnabled[key] ? "" : (key === sortKey ? (sortDir === "asc" ? "↑" : "↓") : "↕")
     }
   }
 
@@ -359,11 +337,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tableBody.innerHTML = ""
 
-    for (const r of rows) {
+    for (const row of rows) {
       const tr = document.createElement("tr")
-      for (const c of visibleCols) {
+      for (const col of visibleCols) {
         const td = document.createElement("td")
-        td.textContent = (r[c.key] ?? "").toString()
+        td.textContent = (row[col.key] ?? "").toString()
         tr.appendChild(td)
       }
       tableBody.appendChild(tr)
@@ -376,13 +354,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setSort(key) {
     if (!showEnabled[key]) return
-
     if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc"
     else {
       sortKey = key
       sortDir = "asc"
     }
-
     renderTable()
   }
 
@@ -404,13 +380,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setAllShow(v) {
     for (const c of columns) showEnabled[c.key] = v
-
     if (sortKey && !showEnabled[sortKey]) {
       const firstVisible = columns.find(c => showEnabled[c.key])
       sortKey = firstVisible ? firstVisible.key : (columns[0]?.key || "")
       sortDir = "asc"
     }
-
     buildSettingsLists()
     renderTable()
   }
@@ -429,8 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function onMove(e) {
       if (!active) return
-      const x = getClientX(e)
-      const dx = x - active.startX
+      const dx = getClientX(e) - active.startX
       const w = Math.max(active.minW, active.startW + dx)
       columnWidths[active.key] = w
       active.col.style.width = `${w}px`
@@ -459,13 +432,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.stopPropagation()
 
         const startW = parseFloat((col.style.width || "0").replace("px", "")) || rz.parentElement.getBoundingClientRect().width
-        active = {
-          key,
-          col,
-          startX: getClientX(e),
-          startW,
-          minW: 60
-        }
+        active = { key, col, startX: getClientX(e), startW, minW: 60 }
 
         document.body.style.cursor = "col-resize"
         document.body.style.userSelect = "none"
@@ -492,21 +459,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function loadCodeListManifest() {
-    const url = "./codes/index.json"
-    const res = await fetch(url, { cache: "no-store" })
-    console.log("Fetching manifest:", url, "status:", res.status)
-
+    const res = await fetch("./codes/index.json", { cache: "no-store" })
     if (!res.ok) throw new Error("codes_manifest_not_found")
-
-    const raw = await res.text()
-    console.log("Manifest raw text:", raw)
-
-    const data = JSON.parse(raw)
-    console.log("Manifest JSON:", data)
-
-    if (!Array.isArray(data) || data.length === 0) {
-      throw new Error("codes_manifest_empty")
-    }
+    const data = await res.json()
+    if (!Array.isArray(data) || data.length === 0) throw new Error("codes_manifest_empty")
 
     return data
       .filter(item => item && typeof item.file === "string" && item.file.toLowerCase().endsWith(".csv"))
@@ -517,32 +473,26 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function loadCsvFile(fileName) {
-    const safeFile = fileName.replace(/^\/+/, "")
-    const url = `./codes/${safeFile}`
+    const url = `./codes/${fileName.replace(/^\/+/, "")}`
     const res = await fetch(url, { cache: "no-store" })
-    console.log("Fetching csv:", url, "status:", res.status)
-
     if (!res.ok) throw new Error("codes_csv_not_found")
-
     const text = await res.text()
-    const parsed = parseGenericCsv(text)
 
+    const parsed = parseGenericCsv(text)
     columns = parsed.columns
     points = parsed.rows
+
+    console.log("Detected columns:", columns.map(c => c.label))
+    console.log("Parsed rows:", points.length)
 
     ensureStateForColumns()
     buildTableStructure()
     buildSettingsLists()
     renderTable()
-
-    console.log("Detected columns:", columns.map(c => c.label))
-    console.log("Parsed rows:", points.length)
   }
 
   async function initCodeLists() {
     const lists = await loadCodeListManifest()
-    console.log("Loaded code list manifest:", lists)
-
     buildSelectOptions(lists)
 
     const saved = localStorage.getItem("fieldcodes.selectedList")
@@ -561,12 +511,10 @@ document.addEventListener("DOMContentLoaded", () => {
   closeModal()
 
   searchInput.addEventListener("input", renderTable)
-
   settingsBtn.addEventListener("click", () => {
     buildSettingsLists()
     openModal()
   })
-
   closeModalBtn.addEventListener("click", () => closeModal())
   modalOverlay.addEventListener("click", () => closeModal())
 
@@ -589,5 +537,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tableColGroup.innerHTML = ""
     tableHead.innerHTML = ""
     tableBody.innerHTML = ""
+    searchSettingsList.innerHTML = ""
+    showSettingsList.innerHTML = ""
   })
 })
