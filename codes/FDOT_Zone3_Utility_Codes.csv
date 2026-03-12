@@ -1,0 +1,183 @@
+Feature Code,Level Name,Level Description,Point / Line,Zone
+AGV,VaultsAG_ep,Vaults Above Grade (Existing),L,3
+ANT,Antenna_ep,Antenna (Existing),P,3
+BCATVA,CATVBurA_ep,Cable TV Line Quality Level A Locate (Buried) (Existing),L,3
+BCATVB,CATVBurB_ep,Cable TV Line Quality Level B Designate (Buried) (Existing),L,3
+BCATVC,CATVBurC_ep,Cable TV Line Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+BCATVD,CATVBurD_ep,Cable TV Line Quality Level D Existing Records (Buried) (Existing),L,3
+BGV,VaultsBG_ep,Vaults Below Grade (Existing),L,3
+BN,Beacons_ep,Beacons and Path Illumination (Existing),P,3
+BPWRA,ElecBurA_ep,Electrical Quality Level A Locate (Buried) (Existing),L,3
+BPWRB,ElecBurB_ep,Electrical Quality Level B Designate (Buried) (Existing),L,3
+BPWRC,ElecBurC_ep,Electrical Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+BPWRD,ElecBurD_ep,Electrical Quality Level D Existing Records (Buried) (Existing),L,3
+BSECA,ElecBurSecA_ep,Conductor (Secondary Distribution) Quality Level A Locate (Buried) (Existing),L,3
+BSECB,ElecBurSecB_ep,Conductor (Secondary Distribution) Quality Level B Designate (Buried) (Existing),L,3
+BSECC,ElecBurSecC_ep,Conductor (Secondary Distribution) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+BSECD,ElecBurSecD_ep,Conductor (Secondary Distribution) Quality Level D Existing Records (Buried) (Existing),L,3
+BTA,TeleBurA_ep,Telephone (All Sizes) Quality Level A Locate (Buried) (Existing),L,3
+BTB,TeleBurB_ep,Telephone (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+BTC,TeleBurC_ep,Telephone (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+BTD,TeleBurD_ep,Telephone (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+BTDA,TeleBurDA_ep,Telephone DUCT (All Sizes) Quality Level A Locate (Buried) (Existing),L,3
+BTDB,TeleBurDB_ep,Telephone DUCT (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+BTDC,TeleBurDC_ep,Telephone DUCT (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+BTDD,TeleBurDD_ep,Telephone DUCT (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+BTTA,TeleBurTA_ep,Telephone TOLL (All Sizes) Quality Level A Locate (Buried) (Existing),L,3
+BTTB,TeleBurTB_ep,Telephone TOLL (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+BTTC,TeleBurTC_ep,Telephone TOLL (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+BTTD,TeleBurTD_ep,Telephone TOLL (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+CAPA,ElecCAPA_ep,Capacitors (Above Ground) (Existing),L,3
+CAPB,ElecCAPB_ep,Capacitors (Buried) (Existing),L,3
+CATV,CATVAer_ep,Cable TV Line (Aerial) (Existing),L,3
+CATVCA,CATVCondBurA_ep,Cable TV Conduit System Quality Level A Locate (Buried) (Existing),L,3
+CATVCB,CATVCondBurB_ep,Cable TV Conduit System Quality Level B Designate (Buried) (Existing),L,3
+CATVCC,CATVCondBurC_ep,Cable TV Conduit System Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+CATVCD,CATVCondBurD_ep,Cable TV Conduit System Quality Level D Existing Records (Buried) (Existing),L,3
+CATVS,CATVMisc_ep,Cable TV Service Box and Miscellaneous Pole (Existing),P,3
+CLMT,TowerTrans_ep,Transmission Tower (Single Column) (Existing),P,3
+CLNO,SanitarySewerCLNO_ep,Sanitary Sewer Cleanout (Existing),P,3
+DMPS,SanitarySewerDSta_ep,Sanitary Sewer Dump Station (SS) (Existing),P,3
+DUCTA,ConduitA_ep,Utility Conduit & Encasements Quality Level A Locate (Existing),L,3
+DUCTB,ConduitB_ep,Utility Conduit & Encasements Quality Level B Designate (Buried) (Existing),L,3
+DUCTC,ConduitC_ep,Utility Conduit & Encasements Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+DUCTD,ConduitD_ep,Utility Conduit & Encasements Quality Level D Existing Records (Buried) (Existing),L,3
+ECP,ElecMultiCtrl_ep,Electric Control Panel with Multiple Controls (Existing),L,3
+ELECS,ElecServBox_ep,Electric Service Box (Large) (Existing),L,3
+ELEO,ElecOutlet_ep,Electrical Outlet (Existing),P,3
+EOI,SU_Interupt_ep,Subsurface Utility (End of Interruption) (Existing),P,3
+FAU,WaterFct_ep,Faucet (Existing),P,3
+FH,FireHydrant_ep,Fire Hydrant (Existing),P,3
+FLD,FloodLight_ep,Flood Light (Existing),P,3
+FMA,SanitaryFM_A_ep,Force Main (All Sizes) Quality Level A Locate (Existing),L,3
+FMB,SanitaryFM_B_ep,Force Main (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+FMC,SanitaryFM_C_ep,Force Main (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+FMD,SanitaryFM_D_ep,Force Main (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+FO,FOTAer_ep,Fiber Optics Telephone (Aerial) (Size Unknown) (Existing),L,3
+FOC,FOCAer_ep,Fiber Optics Cable (Aerial) (Existing),L,3
+FOCUA,FOCBurA_ep,Fiber Optics Cable Quality Level A Locate (Buried) (Existing),L,3
+FOCUB,FOCBurB_ep,Fiber Optics Cable Quality Level B Designate (Buried) (Existing),L,3
+FOCUC,FOCBurC_ep,Fiber Optics Cable Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+FOCUD,FOCBurD_ep,Fiber Optics Cable Quality Level D Existing Records (Buried) (Existing),L,3
+FOP,FOEAer_ep,Fiber Optics Electrical (Aerial) (Existing),L,3
+FOPUA,FOEBurA_ep,Fiber Optics Electrical Quality Level A Locate (Buried) (Existing),L,3
+FOPUB,FOEBurB_ep,Fiber Optics Electrical Quality Level B Designate (Buried) (Existing),L,3
+FOPUC,FOEBurC_ep,Fiber Optics Electrical Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+FOPUD,FOEBurD_ep,Fiber Optics Electrical Quality Level D Existing Records (Buried) (Existing),L,3
+FOTVUA,FOTVBurA_ep,Fiber Optics Television Quality Level A Locate (Buried) (Existing),L,3
+FOTVUB,FOTVBurB_ep,Fiber Optics Television Quality Level B Designate (Buried) (Existing),L,3
+FOTVUC,FOTVBurC_ep,Fiber Optics Television Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+FOTVUD,FOTVBurD_ep,Fiber Optics Television Quality Level D Existing Records (Buried) (Existing),L,3
+FOUA,FOTBurA_ep,Fiber Optics Telephone Quality Level A Locate (Buried) (Existing),L,3
+FOUB,FOTBurB_ep,Fiber Optics Telephone Quality Level B Designate (Buried) (Existing),L,3
+FOUC,FOTBurC_ep,Fiber Optics Telephone Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+FOUD,FOTBurD_ep,Fiber Optics Telephone Quality Level D Existing Records (Buried) (Existing),L,3
+FUSE,ElecFuse_ep,Fuses (Existing),L,3
+GA,Gauges_ep,Gauges (Existing),P,3
+GASA,GasA_ep,Gas Line (All Sizes) Quality Level A Locate (Existing),L,3
+GASB,GasB_ep,Gas Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+GASC,GasC_ep,Gas Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+GASD,GasD_ep,Gas Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+GTM,GasTestMisc_ep,Gas Test & Miscellaneous (Existing),L,3
+GYA,GuyWireAnchor_ep,Guy Anchor (Existing),P,3
+GYP,GuyWirePole_ep,Guy Pole (Dead-man) (Existing),P,3
+GYS,GuyWireSpan_ep,Span Guys (Existing),L,3
+HML,Tower_ep,High Mast Lighting Poles (Existing),P,3
+HVL,ElecAerHVL_ep,High Voltage Transmission Line (Existing),L,3
+LP,Luminaire_ep,Street Light / Pole (Existing),P,3
+ME,MeterElec_ep,Meter (Electric) (Existing),P,3
+MEU,MeterElecBur_ep,Meter (Electric) (Buried) (Existing),P,3
+MG,MeterGas_ep,Meter (Gas) (Existing),P,3
+MH,ManholeUnknown_ep,Manhole (Unknown) (Existing),P,3
+MHCATV,ManholeCOMM_ep,Manhole (Communications) (Existing),P,3
+MHE,ManholeElec_ep,Manhole (Electric) (Existing),P,3
+MHG,ManholeGas_ep,Manhole (Gas) (Existing),P,3
+MHS,ManholeSS_ep,Manhole (Sanitary Sewer) (Existing),P,3
+MHT,ManholeTel_ep,Manhole (Telephone) (Existing),P,3
+MHW,ManholeWater_ep,Manhole (Water) (Existing),P,3
+MONW,WellMon_ep,Well Monitoring Taps (Existing),P,3
+MU,MeterUnk_ep,Meter (Unknown) (Existing),P,3
+MW,MeterWater_ep,Meter (Water) (Existing),P,3
+NPWLA,WaterNP_A_ep,Non-potable Water Line (All Sizes) Quality Level A Locate (Existing),L,3
+NPWLB,WaterNP_B_ep,Non-potable Water Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+NPWLC,WaterNP_C_ep,Non-potable Water Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+NPWLD,WaterNP_D_ep,Non-potable Water Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+PETROA,Oil_A_ep,Oil Line (All Sizes) Quality Level A Locate (Existing),L,3
+PETROB,Oil_B_ep,Oil Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+PETROC,Oil_C_ep,Oil Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+PETROD,Oil_D_ep,Oil Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+PIPENA,PipeEncaseA_ep,Pipe Encasements Quality Level A Locate (Existing),L,3
+PIPENB,PipeEncaseB_ep,Pipe Encasements Quality Level B Designate (Buried) (Existing),L,3
+PIPENC,PipeEncaseC_ep,Pipe Encasements Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+PIPEND,PipeEncaseD_ep,Pipe Encasements Quality Level D Existing Records (Buried) (Existing),L,3
+PMP,PumpNonPet_ep,Pump (Non Petroleum) (Existing),P,3
+PMPF,Pump_ep,Pump (Petroleum / Fuel) (Existing),P,3
+PMPST,SanitarySewerPSta_ep,Pump Station (Sanitary Sewer) (Existing),P,3
+PP,PoleElec_ep,Electrical Pole (Existing),P,3
+PPT,PoleElecT_ep,Electrical Pole With Transformer (Existing),P,3
+PRI,ElecAerPri_ep,Conductors (Primary Distribution) (Aerial) (Existing),L,3
+PWR,ElecAer_ep,Electrical Conductors (Distribution & Transmission) (Aerial) (Existing),L,3
+QDEL,SU_Delineator_ep,Subsurface Utility (Quality Level Delineator) (Existing),P,3
+QLA,SU_QLA_ep,Subsurface Utility Quality Level A Locate (Existing),P,3
+QLB,SU_QLB_ep,Subsurface Utility Quality Level B Designate (Existing),P,3
+QLC,SU_QLC_ep,Subsurface Utility Quality Level C Above Ground Evidence (Existing),P,3
+QLD,SU_QLD_ep,Subsurface Utility Quality Level D Existing Records (Existing),P,3
+RG,GasReg_ep,Gas Regulator (Existing),P,3
+SATD,SateDish_ep,Satellite Dish Antenna (Existing),P,3
+SE,SanitarySewerEff_ep,Sanitary Effluent (Open Channel) (Existing),L,3
+SEC,ElecAerSec_ep,Conductors (Secondary Distribution) (Aerial) (Existing),L,3
+SHP,PoleShared_ep,Shared Pole (Existing),P,3
+SHPT,PoleSharedT_ep,Shared Pole with Transformer (Existing),P,3
+SLC,LiteCond_ep,Street Lighting Conduit (Existing),L,3
+SP,WaterStandpipe_ep,Standpipe (Existing),P,3
+SPH,Sprinkler_ep,Sprinkler Head (Existing),P,3
+SRVC,JunctBox_ep,Junction Box / Service Cabinet (Elec/Tel) (Existing),P,3
+SSA,SanitarySewerA_ep,Sanitary Sewer (All Sizes) Quality Level A Locate (Existing),L,3
+SSB,SanitarySewerB_ep,Sanitary Sewer (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+SSC,SanitarySewerC_ep,Sanitary Sewer (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+SSD,SanitarySewerD_ep,Sanitary Sewer (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+STEAMA,SteamA_ep,Steam Line Quality Level A Locate (Existing),L,3
+STEAMB,SteamB_ep,Steam Line Quality Level B Designate (Buried) (Existing),L,3
+STEAMC,SteamC_ep,Steam Line Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+STEAMD,SteamD_ep,Steam Line Quality Level D Existing Records (Buried) (Existing),L,3
+SW,Switchgear_ep,Switchgear & Appurtenances (Existing),L,3
+TB,TeleBooth_ep,Telephone Booth (Existing),P,3
+TEL,TeleAer_ep,Telephone Line (Aerial) (Existing),L,3
+TELP,TelePole_ep,Telephone Pole (Existing),P,3
+TELS,TeleServBox_ep,Telephone Service Box (Large) (Existing),L,3
+THA,SU_QLATestHole_ep,Subsurface Utility Test Hole (QLA Only) (Existing),P,3
+TPD,TelePed_ep,Telephone Pedestal / Service (Existing),P,3
+TRANSA,ElecBurPriA_ep,Conductors (Primary Distribution) Quality Level A Locate (Buried) (Existing),L,3
+TRANSB,ElecBurPriB_ep,Conductors (Primary Distribution) Quality Level B Designate (Buried) (Existing),L,3
+TRANSC,ElecBurPriC_ep,Conductors (Primary Distribution) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+TRANSD,ElecBurPriD_ep,Conductors (Primary Distribution) Quality Level D Existing Records (Buried) (Existing),L,3
+TRNF,Transformer_ep,Transformer (Existing),P,3
+UMISC,UtilMisc_ep,Utility Items (Miscellaneous) (Existing),L,3
+UMKR,UtilMarker_ep,Subsurface Utility Marker (Existing),P,3
+VB,ValveBox_ep,Valve Box (Existing),P,3
+VBG,ValveBoxGas_ep,Valve Box (Gas) (Existing),P,3
+VBNPW,ValveBoxWtrNP_ep,Valve Box (Non-potable Water) (Existing),P,3
+VBS,ValveBoxSwr_ep,Valve Box (Sewer) (Existing),P,3
+VBW,ValveBoxWtr_ep,Valve Box (Water) (Existing),P,3
+VC,ValveCover_ep,Valve Cover (Unknown) (Existing),P,3
+VCEF,ValveCvrEff_ep,Valve Cover (Effluent) (Existing),P,3
+VCG,ValveCvrGas_ep,Valve Cover (Gas) (Existing),P,3
+VCNPW,ValveCvrWaterNP_ep,Valve Cover (Non-potable Water) (Existing),P,3
+VCRW,ValveCvrWtrRaw_ep,Valve Cover (Raw Water) (Existing),P,3
+VCS,ValveCvrSewer_ep,Valve Cover (Sewer) (Existing),P,3
+VCW,ValveCvrWater_ep,Valve Cover (Water) (Existing),P,3
+VLV,Valve_ep,Valve (Unknown) (Existing),P,3
+VLVB,ValveBFP_ep,Valve (Back Flow Preventer) Valve Box (Existing),P,3
+VLVG,ValveGas_ep,Valve Valve Box (Gas) (Existing),P,3
+VLVNPW,ValveWaterNP_ep,Valve Valve Box (Water) (Non Potable) (Existing),P,3
+VLVS,ValveSewer_ep,Valve Valve Box (Sewer) (Existing),P,3
+VLVW,ValveWater_ep,Valve Valve Box (Water) (Existing),P,3
+VNT,Vent_ep,Vent (Unknown) (Existing),P,3
+VNTG,VentGas_ep,Vent (Gas) (Existing),P,3
+VNTS,VentSewer_ep,Vent (Sewer) (Existing),P,3
+WELL,Well_ep,Well (Any Size) (Existing),P,3
+WLA,WaterA_ep,Water Line (All Sizes) Quality Level A Locate (Existing),L,3
+WLB,WaterB_ep,Water Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3
+WLC,WaterC_ep,Water Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3
+WLD,WaterD_ep,Water Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3
+WPB,PullBox_ep,Wiring Pull Box (Existing),P,3
