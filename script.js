@@ -19,7 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const showAllBtn = document.getElementById("showAllBtn");
   const hideAllBtn = document.getElementById("hideAllBtn");
 
-  if (!searchInput || !codeListSelect || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn || !showAllBtn || !hideAllBtn) {
+  if (
+    !searchInput ||
+    !codeListSelect ||
+    !tableBody ||
+    !settingsBtn ||
+    !modalOverlay ||
+    !settingsModal ||
+    !closeModalBtn ||
+    !enableAllBtn ||
+    !disableAllBtn ||
+    !showAllBtn ||
+    !hideAllBtn
+  ) {
     return;
   }
 
@@ -308,10 +320,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function loadCodeListManifest() {
-    const res = await fetch("./codes/index.json", { cache: "no-store" });
+    const url = "./codes/index.json";
+    const res = await fetch(url, { cache: "no-store" });
+
+    console.log("Fetching manifest:", url, "status:", res.status);
+
     if (!res.ok) throw new Error("codes_manifest_not_found");
+
     const data = await res.json();
-    if (!Array.isArray(data) || data.length === 0) throw new Error("codes_manifest_empty");
+    console.log("Manifest JSON:", data);
+
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("codes_manifest_empty");
+    }
 
     return data
       .filter(item => item && typeof item.file === "string" && item.file.toLowerCase().endsWith(".csv"))
@@ -323,15 +344,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadCsvFile(fileName) {
     const safeFile = fileName.replace(/^\/+/, "");
-    const res = await fetch(`./codes/${safeFile}`, { cache: "no-store" });
+    const url = `./codes/${safeFile}`;
+    const res = await fetch(url, { cache: "no-store" });
+
+    console.log("Fetching csv:", url, "status:", res.status);
+
     if (!res.ok) throw new Error("codes_csv_not_found");
+
     const text = await res.text();
     points = parseCodesCsv(text);
+    console.log("Parsed rows:", points.length);
     renderTable();
   }
 
   async function initCodeLists() {
     const lists = await loadCodeListManifest();
+    console.log("Loaded code list manifest:", lists);
+
     buildSelectOptions(lists);
 
     const saved = localStorage.getItem("fieldcodes.selectedList");
@@ -405,7 +434,8 @@ document.addEventListener("DOMContentLoaded", () => {
   syncSettingsUI();
   setupColumnResizers();
 
-  initCodeLists().catch(() => {
+  initCodeLists().catch(err => {
+    console.error("Code list init failed:", err);
     points = [];
     buildSelectOptions([{ file: "", label: "No code lists found" }]);
     codeListSelect.value = "";
