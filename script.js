@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const searchInput = document.getElementById("searchInput");
+  const codeListSelect = document.getElementById("codeListSelect");
   const tableBody = document.getElementById("tableBody");
   const settingsBtn = document.getElementById("settingsBtn");
   const modalOverlay = document.getElementById("modalOverlay");
@@ -17,10 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const disableAllBtn = document.getElementById("disableAllBtn");
   const showAllBtn = document.getElementById("showAllBtn");
   const hideAllBtn = document.getElementById("hideAllBtn");
-  const fontZoomRange = document.getElementById("fontZoomRange");
-  const fontZoomValue = document.getElementById("fontZoomValue");
 
-  if (!searchInput || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn || !showAllBtn || !hideAllBtn || !fontZoomRange || !fontZoomValue) {
+  if (!searchInput || !codeListSelect || !tableBody || !settingsBtn || !modalOverlay || !settingsModal || !closeModalBtn || !enableAllBtn || !disableAllBtn || !showAllBtn || !hideAllBtn) {
     return;
   }
 
@@ -30,31 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let sortKey = "featureCode";
   let sortDir = "asc";
   let points = [];
-
-  const fontZoomStorageKey = "fieldcodes_font_zoom";
-
-  function clampZoom(v) {
-    return Math.max(0.85, Math.min(1.8, v));
-  }
-
-  function applyFontZoom(v) {
-    const zoom = clampZoom(v);
-    document.documentElement.style.setProperty("--font-zoom", zoom.toFixed(2));
-    fontZoomRange.value = zoom.toFixed(2);
-    fontZoomValue.textContent = Math.round(zoom * 100) + "%";
-  }
-
-  function loadSavedFontZoom() {
-    let saved = null;
-    try {
-      saved = window.localStorage.getItem(fontZoomStorageKey);
-    } catch (_) {
-      saved = null;
-    }
-
-    const parsed = saved == null ? 1 : parseFloat(saved);
-    applyFontZoom(Number.isFinite(parsed) ? parsed : 1);
-  }
 
   function normalize(s) {
     return (s ?? "").toString().trim().toLowerCase();
@@ -96,7 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function parseCodesCsv(text) {
-    const lines = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n").map(l => l.trim()).filter(l => l.length > 0);
+    const lines = text
+      .replace(/\r\n/g, "\n")
+      .replace(/\r/g, "\n")
+      .split("\n")
+      .map(l => l.trim())
+      .filter(l => l.length > 0);
 
     const rows = [];
     for (const line of lines) {
@@ -104,9 +83,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if (parts.length < 5) continue;
 
       const first = normalize(parts[0]);
-      if (first.includes("fdot") && line.includes(",,,,")) continue;
-
       const firstNoQuotes = first.replace(/"/g, "");
+
+      if (first.includes("fdot") && line.includes(",,,,")) continue;
       if (firstNoQuotes === "feature code") continue;
 
       rows.push({
@@ -117,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         zone: (parts[4] ?? "").trim()
       });
     }
+
     return rows;
   }
 
@@ -155,24 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ths = document.querySelectorAll("thead th");
     for (const th of ths) {
       const key = th.getAttribute("data-key");
-      const visible = !!showEnabled[key];
-      th.style.display = visible ? "" : "none";
-    }
-  }
-
-  function applyColumnVisibilityToBody() {
-    const ths = document.querySelectorAll("thead th");
-    const visibleKeys = new Set(columns.filter(c => showEnabled[c.key]).map(c => c.key));
-    for (const th of ths) {
-      const key = th.getAttribute("data-key");
-      const idx = Array.prototype.indexOf.call(th.parentElement.children, th);
-      const visible = visibleKeys.has(key);
-
-      const rows = document.querySelectorAll("tbody tr");
-      for (const tr of rows) {
-        const td = tr.children[idx];
-        if (td) td.style.display = visible ? "" : "none";
-      }
+      th.style.display = showEnabled[key] ? "" : "none";
     }
   }
 
@@ -188,8 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
         continue;
       }
 
-      if (key === sortKey) arrow.textContent = sortDir === "asc" ? "↑" : "↓";
-      else arrow.textContent = "↕";
+      arrow.textContent = key === sortKey ? (sortDir === "asc" ? "↑" : "↓") : "↕";
     }
   }
 
@@ -217,9 +179,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!showEnabled[key]) return;
 
     if (sortKey === key) sortDir = sortDir === "asc" ? "desc" : "asc";
-    else { sortKey = key; sortDir = "asc"; }
+    else {
+      sortKey = key;
+      sortDir = "asc";
+    }
 
-    setHeaderArrows();
     renderTable();
   }
 
@@ -234,13 +198,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function syncSettingsUI() {
-    const searchChecks = document.querySelectorAll(`input[type="checkbox"][data-search-key]`);
+    const searchChecks = document.querySelectorAll('input[type="checkbox"][data-search-key]');
     for (const chk of searchChecks) {
       const k = chk.getAttribute("data-search-key");
       chk.checked = !!searchEnabled[k];
     }
 
-    const showChecks = document.querySelectorAll(`input[type="checkbox"][data-show-key]`);
+    const showChecks = document.querySelectorAll('input[type="checkbox"][data-show-key]');
     for (const chk of showChecks) {
       const k = chk.getAttribute("data-show-key");
       chk.checked = !!showEnabled[k];
@@ -295,8 +259,8 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.cursor = "";
       document.body.style.userSelect = "";
       active = null;
-      window.removeEventListener("mousemove", onMove, { passive: false });
-      window.removeEventListener("touchmove", onMove, { passive: false });
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("touchmove", onMove);
       window.removeEventListener("mouseup", end);
       window.removeEventListener("touchend", end);
     }
@@ -316,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
           col,
           startX: getClientX(e),
           startW,
-          minW: 70
+          minW: 60
         };
 
         document.body.style.cursor = "col-resize";
@@ -333,15 +297,56 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  async function loadCsvFromRepo() {
-    const res = await fetch("./codes.csv", { cache: "no-store" });
-    if (!res.ok) throw new Error("codes.csv_not_found");
+  function buildSelectOptions(items) {
+    codeListSelect.innerHTML = "";
+    for (const item of items) {
+      const opt = document.createElement("option");
+      opt.value = item.file;
+      opt.textContent = item.label;
+      codeListSelect.appendChild(opt);
+    }
+  }
+
+  async function loadCodeListManifest() {
+    const res = await fetch("./codes/index.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("codes_manifest_not_found");
+    const data = await res.json();
+    if (!Array.isArray(data) || data.length === 0) throw new Error("codes_manifest_empty");
+
+    return data
+      .filter(item => item && typeof item.file === "string" && item.file.toLowerCase().endsWith(".csv"))
+      .map(item => ({
+        file: item.file,
+        label: item.label || item.file.replace(/\.csv$/i, "")
+      }));
+  }
+
+  async function loadCsvFile(fileName) {
+    const safeFile = fileName.replace(/^\/+/, "");
+    const res = await fetch(`./codes/${safeFile}`, { cache: "no-store" });
+    if (!res.ok) throw new Error("codes_csv_not_found");
     const text = await res.text();
     points = parseCodesCsv(text);
     renderTable();
   }
 
-  loadSavedFontZoom();
+  async function initCodeLists() {
+    const lists = await loadCodeListManifest();
+    buildSelectOptions(lists);
+
+    const saved = localStorage.getItem("fieldcodes.selectedList");
+    const initial = lists.find(x => x.file === saved) ? saved : lists[0].file;
+
+    codeListSelect.value = initial;
+    await loadCsvFile(initial);
+
+    codeListSelect.addEventListener("change", async () => {
+      const file = codeListSelect.value;
+      localStorage.setItem("fieldcodes.selectedList", file);
+      await loadCsvFile(file);
+    });
+  }
+
   closeModal();
 
   searchInput.addEventListener("input", renderTable);
@@ -354,7 +359,7 @@ document.addEventListener("DOMContentLoaded", () => {
   closeModalBtn.addEventListener("click", () => closeModal());
   modalOverlay.addEventListener("click", () => closeModal());
 
-  document.addEventListener("keydown", (e) => {
+  document.addEventListener("keydown", e => {
     if (!settingsModal.hidden && e.key === "Escape") closeModal();
   });
 
@@ -363,20 +368,7 @@ document.addEventListener("DOMContentLoaded", () => {
   showAllBtn.addEventListener("click", () => setAllShow(true));
   hideAllBtn.addEventListener("click", () => setAllShow(false));
 
-  fontZoomRange.addEventListener("input", () => {
-    const zoom = parseFloat(fontZoomRange.value);
-    applyFontZoom(Number.isFinite(zoom) ? zoom : 1);
-  });
-
-  fontZoomRange.addEventListener("change", () => {
-    try {
-      window.localStorage.setItem(fontZoomStorageKey, fontZoomRange.value);
-    } catch (_) {
-      // Ignore storage errors (private mode / blocked storage).
-    }
-  });
-
-  const searchChecks = document.querySelectorAll(`input[type="checkbox"][data-search-key]`);
+  const searchChecks = document.querySelectorAll('input[type="checkbox"][data-search-key]');
   for (const chk of searchChecks) {
     chk.addEventListener("change", () => {
       const k = chk.getAttribute("data-search-key");
@@ -385,7 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const showChecks = document.querySelectorAll(`input[type="checkbox"][data-show-key]`);
+  const showChecks = document.querySelectorAll('input[type="checkbox"][data-show-key]');
   for (const chk of showChecks) {
     chk.addEventListener("change", () => {
       const k = chk.getAttribute("data-show-key");
@@ -411,11 +403,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   syncSettingsUI();
-  loadCsvFromRepo().then(() => {
-    setupColumnResizers();
-  }).catch(() => {
+  setupColumnResizers();
+
+  initCodeLists().catch(() => {
     points = [];
+    buildSelectOptions([{ file: "", label: "No code lists found" }]);
+    codeListSelect.value = "";
+    codeListSelect.disabled = true;
     renderTable();
-    setupColumnResizers();
   });
 });
