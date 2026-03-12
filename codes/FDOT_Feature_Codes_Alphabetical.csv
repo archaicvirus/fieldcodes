@@ -1,0 +1,528 @@
+Feature Code,Point / Line,Name,Category
+AC,L,Asphalt Pavement Crown,F-ZONE 1
+ACU,P,Air Conditioning Unit,F-ZONE 1
+AGF,L,Agricultural Field or Farmland (Not Groves or Orchards),NOT USED
+AGV,L,Vaults Above Grade,F-ZONE 3
+AHEAD,P,Ahead Symbol,F-ZONE 1
+ANT,P,Antenna,F-ZONE 3
+AP,L,Asphalt Pavement Edge,F-ZONE 1
+APRS,L,Bridge Approaches and Slabs,F-ZONE 1
+ARST,L,Archeological Site,NOT USED
+AT,P,Control Monuments - Aerial Targets,F-ZONE 5
+ATTN,L,Attenuator Systems,F-ZONE 1
+BARW,L,Barrier Wall Dividing Traffic (All Types),F-ZONE 1
+BAS,L,Sediment Basins Retention Ponds,F-ZONE 2
+BCATVA,L,Cable TV Line Quality Level A Locate (Buried),F-ZONE 3
+BCATVB,L,Cable TV Line Quality Level B Designate (Buried),F-ZONE 3
+BCATVC,L,Cable TV Line Quality Level C Visual Inspection (Buried),F-ZONE 3
+BCATVD,L,Cable TV Line Quality Level D Existing Records (Buried),F-ZONE 3
+BGV,L,Vaults Below Grade,F-ZONE 3
+BIKE,P,Bicycle Symbol,F-ZONE 1
+BKRK,P,Bicycle Rack (All Sizes),F-ZONE 1
+BL,L,Baseline Survey,F-ZONE 6
+BLC,L,Baseline Survey Control (Traverse Line),NOT USED
+BLDG,L,Buildings,F-ZONE 1
+BLF,L,Baseline Survey Field (Calculated from BLC),NOT USED
+BLSS,L,Baseline Side Street,F-ZONE 6
+BN,P,Beacons and Path Illumination,F-ZONE 3
+BNCH,P,Bench,F-ZONE 1
+BNK,L,Embankment (Manmade Top or Bottom),F-ZONE 1
+BOH,L,Building Roof Overhangs (Encroachments),F-ZONE 1
+BOL,P,Bollards,F-ZONE 1
+BPWRA,L,Electrical Quality Level A Locate (Buried),F-ZONE 3
+BPWRB,L,Electrical Quality Level B Designate (Buried),F-ZONE 3
+BPWRC,L,Electrical Quality Level C Visual Inspection (Buried),F-ZONE 3
+BPWRD,L,Electrical Quality Level D Existing Records (Buried),F-ZONE 3
+BRCK,L,Brick Pavement Edge (Brick Roadways and Sidewalks),F-ZONE 1
+BRDG,L,Bridge Elements,F-ZONE 4
+BSECA,L,Conductor (Secondary Distribution) Quality Level A Locate (Buried),F-ZONE 3
+BSECB,L,Conductor (Secondary Distribution) Quality Level B Designate (Buried),F-ZONE 3
+BSECC,L,Conductor (Secondary Distribution) Quality Level C Visual Inspection (Buried),F-ZONE 3
+BSECD,L,Conductor (Secondary Distribution) Quality Level D Existing Records (Buried),F-ZONE 3
+BSTP,L,Bus Stop,F-ZONE 1
+BTA,L,Telephone (All Sizes) Quality Level A Locate (Buried),F-ZONE 3
+BTB,L,Telephone (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+BTC,L,Telephone (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+BTD,L,Telephone (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+BTDA,L,Telephone DUCT (All Sizes) Quality Level A Locate (Buried),F-ZONE 3
+BTDB,L,Telephone DUCT (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+BTDC,L,Telephone DUCT (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+BTDD,L,Telephone DUCT (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+BTTA,L,Telephone TOLL (All Sizes) Quality Level A Locate (Buried),F-ZONE 3
+BTTB,L,Telephone TOLL (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+BTTC,L,Telephone TOLL (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+BTTD,L,Telephone TOLL (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+BUOY,P,Buoy,F-ZONE 1
+BUS,P,Bus Symbol,F-ZONE 1
+BXC,L,Box Culvert,F-ZONE 2
+CAN,L,Canal Lock,F-ZONE 1
+CAPA,L,Capacitors (Above Ground),F-ZONE 3
+CAPB,L,Capacitors (Buried),F-ZONE 3
+CATV,L,Cable TV Line (Aerial),F-ZONE 3
+CATVCA,L,Cable TV Conduit System Quality Level A Locate (Buried),F-ZONE 3
+CATVCB,L,Cable TV Conduit System Quality Level B Designate (Buried),F-ZONE 3
+CATVCC,L,Cable TV Conduit System Quality Level C Visual Inspection (Buried),F-ZONE 3
+CATVCD,L,Cable TV Conduit System Quality Level D Existing Records (Buried),F-ZONE 3
+CATVS,P,Cable TV Service Box and Miscellaneous Pole,F-ZONE 3
+CB,L,Catch Basins,F-ZONE 2
+CBR,L,Cable Barrier,F-ZONE 1
+CCMON,P,Control Monuments - Concrete (Cast),F-ZONE 5
+CCR,L,Curb Cut Ramp,F-ZONE 1
+CDH,P,Control Monuments - Drill Hole Plug,F-ZONE 5
+CDRM,P,Control Monuments - Deep Rod Mark,F-ZONE 5
+CEM,L,Cemetery Grave Outlines,F-ZONE 1
+CG,L,Curb / Curb and Gutter (at EP & FL),F-ZONE 1
+CGB,L,Curb and Gutter (Back),F-ZONE 1
+CGD,P,Cattle Guard,F-ZONE 1
+CGF,L,Curb and Gutter (Face),F-ZONE 1
+CINL,L,Curb Inlets,F-ZONE 2
+CIRC,P,Control Monuments - 5/8 Rod and Cap,F-ZONE 5
+CLC,L,Centerline Construction,F-ZONE 6
+CLMT,P,Transmission Tower (Single Column),F-ZONE 3
+CLNO,P,Cleanout,F-ZONE 3
+CMON,P,Monuments - Concrete (Cast),F-ZONE 6
+CMPST,P,Campstove Grill Firepit BBQ,F-ZONE 1
+CNL,P,Control Monuments - Nail Spike Pin,F-ZONE 5
+CNPY,L,Shelters (All Types),F-ZONE 1
+COE,L,United States Army Corps of Engineers (COE) Wetlands (Marsh or Swamp),F-ZONE 1
+COL,L,Government: County Line,F-ZONE 9
+COM,P,Control Monuments - Other Marker?,F-ZONE 5
+CONV,L,Conveyor Belts (All Types),NOT USED
+CPIP,P,Control Monuments - Metal Pipe Rod Bar,F-ZONE 5
+CPMON,P,Control Monuments - Concrete (Poured),F-ZONE 5
+CPST,P,Control Monuments - Post Stake Staub,F-ZONE 5
+CPVC,L,Concrete Pavement Crown,F-ZONE 1
+CPVJ,L,Concrete Pavement Joints,F-ZONE 1
+CPVT,L,Concrete Pavement Edge,F-ZONE 1
+CRW,L,Detectable Warnings on Curb Ramps,F-ZONE 1
+CSH,P,Core Sample or Test Hole,F-ZONE 1
+CSL,L,Concrete Slabs,F-ZONE 1
+CSTMD,P,Control Monuments - Stamped Disk,F-ZONE 5
+CSTMP,P,Control Monuments - Stamped Plate,F-ZONE 5
+CYL,L,Government: City Limit Line,F-ZONE 9
+DECK,L,Deck / Porch,F-ZONE 1
+DEFAULT,P,Point Locator Symbol,F-ZONE 1
+DEFAULT_POINT,P,Point Locator Symbol,F-ZONE 1
+DEP,L,WMD & Florida (DEP) Wetlands,F-ZONE 1
+DF,P,Dolphins and Fenders,F-ZONE 1
+DFL,L,Ditch Flow Line Direction (Ditches Swells etc.),F-ZONE 2
+DH,P,Monuments - Drill Hole Plug,F-ZONE 6
+DLP,P,Delineator Post Metal and Flexible,F-ZONE 1
+DMP,P,Dumpster Trash Disposal,F-ZONE 1
+DMPS,P,Dump Station (SS),F-ZONE 3
+DOCK,L,Docks and Wharfs,F-ZONE 1
+DRIP,L,Drip Line of Trees (Roots),F-ZONE 1
+DRM,P,Monuments - Deep Rod Mark,F-ZONE 6
+DRNB,L,Drainage Structure Bottoms,F-ZONE 2
+DRNP,L,Drainage Pipes and Spouts,F-ZONE 2
+DTCH,L,Ditch (Top Bottom and Flow Lines),F-ZONE 2
+DTCHI,L,Ditch Bottom Inlet,F-ZONE 2
+DTCHP,L,Ditch Pavement,F-ZONE 2
+DUCTA,L,Utility Conduit & Encasements Quality Level A Locate,F-ZONE 3
+DUCTB,L,Utility Conduit & Encasements Quality Level B Designate (Buried),F-ZONE 3
+DUCTC,L,Utility Conduit & Encasements Quality Level C Visual Inspection (Buried),F-ZONE 3
+DUCTD,L,Utility Conduit & Encasements Quality Level D Existing Records (Buried),F-ZONE 3
+DUMB,L,Dummy Chains,F-ZONE 1
+DWY,L,Driveway (Drive Lane Turnouts),F-ZONE 1
+ECP,L,Electric Control Panel with Multiple Controls,F-ZONE 3
+ELECS,L,Electric Service Box (Large),F-ZONE 3
+ELEO,P,Electrical Outlet,F-ZONE 3
+EM,L,Edge of Mangrove,F-ZONE 1
+EOI,P,Subsurface Utility (End of Interruption),F-ZONE 3
+ESL,L,Endangered Species Line,F-ZONE 1
+ESMT,L,Easement Lines,F-ZONE 9
+ESMTP,L,Easement Lines Proposed Perpetual,F-ZONE 9
+ESP,P,Endangered Species Point,F-ZONE 1
+EXIST,L,Digital Terrain Model (DTM) Boundary,F-ZONE 1
+FAU,P,Faucet,F-ZONE 3
+FC,P,Fill Cap (Buried Tank),F-ZONE 1
+FES,L,Flared End Section,F-ZONE 2
+FH,P,Fire Hydrant,F-ZONE 3
+FLD,P,Flood Light,F-ZONE 3
+FMA,L,Force Main (All Sizes) Quality Level A Locate,F-ZONE 3
+FMB,L,Force Main (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+FMC,L,Force Main (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+FMD,L,Force Main (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+FNC,L,Fence (All Types),F-ZONE 1
+FO,L,Fiber Optics Telephone (Aerial) (Size Unknown),F-ZONE 3
+FOC,L,Fiber Optics Cable (Aerial),F-ZONE 3
+FOCUA,L,Fiber Optics Cable Quality Level A Locate (Buried),F-ZONE 3
+FOCUB,L,Fiber Optics Cable Quality Level B Designate (Buried),F-ZONE 3
+FOCUC,L,Fiber Optics Cable Quality Level C Visual Inspection (Buried),F-ZONE 3
+FOCUD,L,Fiber Optics Cable Quality Level D Existing Records (Buried),F-ZONE 3
+FOP,L,Fiber Optics Electrical (Aerial),F-ZONE 3
+FOPUA,L,Fiber Optics Electrical Quality Level A Locate (Buried),F-ZONE 3
+FOPUB,L,Fiber Optics Electrical Quality Level B Designate (Buried),F-ZONE 3
+FOPUC,L,Fiber Optics Electrical Quality Level C Visual Inspection (Buried),F-ZONE 3
+FOPUD,L,Fiber Optics Electrical Quality Level D Existing Records (Buried),F-ZONE 3
+FOTVUA,L,Fiber Optics Television Quality Level A Locate (Buried),F-ZONE 3
+FOTVUB,L,Fiber Optics Television Quality Level B Designate (Buried),F-ZONE 3
+FOTVUC,L,Fiber Optics Television Quality Level C Visual Inspection (Buried),F-ZONE 3
+FOTVUD,L,Fiber Optics Television Quality Level D Existing Records (Buried),F-ZONE 3
+FOUA,L,Fiber Optics Telephone Quality Level A Locate (Buried),F-ZONE 3
+FOUB,L,Fiber Optics Telephone Quality Level B Designate (Buried),F-ZONE 3
+FOUC,L,Fiber Optics Telephone Quality Level C Visual Inspection (Buried),F-ZONE 3
+FOUD,L,Fiber Optics Telephone Quality Level D Existing Records (Buried),F-ZONE 3
+FP,P,Flag Pole,F-ZONE 1
+FUSE,L,Fuses,F-ZONE 3
+GA,P,Gauges,F-ZONE 3
+GASA,L,Gas Line (All Sizes) Quality Level A Locate,F-ZONE 3
+GASB,L,Gas Line (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+GASC,L,Gas Line (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+GASD,L,Gas Line (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+GBRK,L,Ground Break Line (Not a Slope or Bank),F-ZONE 1
+GI,L,Gutter Inlets (All Types),F-ZONE 2
+GND,P,Ground Shot for DTM (Soft Shot),F-ZONE 1
+GOLF,L,Golf Course Features (All Types),F-ZONE 1
+GRDBL,L,Guardrail Double Face,F-ZONE 1
+GRL,L,Guardrail Left,F-ZONE 1
+GRR,L,Guardrail Right,F-ZONE 1
+GRT,L,Drainage Grate within Concrete Structure,F-ZONE 2
+GRTL,L,Government: Grant Line,F-ZONE 9
+GRV,L,Groves & Orchards (Boundary),F-ZONE 1
+GT,L,Gates,F-ZONE 1
+GTM,L,Gas Test & Miscellaneous,F-ZONE 3
+GYA,P,Guy Anchor,F-ZONE 3
+GYP,P,Guy Pole (Dead-man),F-ZONE 3
+GYS,L,Span Guys,F-ZONE 3
+HED,L,Hedges and Shrubs (Boundary),F-ZONE 1
+HML,P,High Mast Lighting Poles,F-ZONE 3
+HNDC,P,Accessible (Handicap) Pavement Marking,F-ZONE 1
+HNDRL,L,Railings (All Types); Used for Pedestrian and Bicycles,F-ZONE 1
+HOLE,P,Hole,F-ZONE 1
+HUMP,P,Hump Symbol,F-ZONE 1
+HVL,L,High Voltage Transmission Line,F-ZONE 3
+INCN,P,Incinerator Boiler or Furnace,F-ZONE 1
+INV,P,Flow Line or Invert Elevations,F-ZONE 2
+IRC,P,Monuments - 5/8 Rod and Cap,F-ZONE 6
+ITCP,P,Int.Trans.Sys. (ITS) Closed Caption TV Camera Pole,NOT USED
+ITFCA,L,Int.Trans.Sys. (ITS) Fiber Cable Quality Level A Locate (Buried),NOT USED
+ITFCB,L,Int.Trans.Sys. (ITS) Fiber Cable Quality Level B Designate (Buried),NOT USED
+ITFCC,L,Int.Trans.Sys. (ITS) Fiber Cable Quality Level C Visual Inspection (Buried),NOT USED
+ITFCD,L,Int.Trans.Sys. (ITS) Fiber Cable Quality Level D Existing Records (Buried),NOT USED
+ITPS,P,Int.Trans.Sys. (ITS) Closed Caption TV Power Supply (Wired Solar etc),NOT USED
+ITVS,P,Int.Trans.Sys. (ITS) Vehicle Sensor Infared,NOT USED
+JB,L,Drainage Junction Box,F-ZONE 2
+LANE,P,Lane Symbol,F-ZONE 1
+LARW,L,Limited Access Right of Way Lines,F-ZONE 9
+LARWP,L,Limited Access Right of Way Lines,F-ZONE 9
+LL,L,Lane Lines - Delineates Travel Lanes,F-ZONE 1
+LMB,L,Low Members of the Bridge,F-ZONE 4
+LOC,L,Construction Limits,F-ZONE 9
+LOTLN,L,Government: Lot Line,F-ZONE 9
+LP,P,Street Light / Pole,F-ZONE 3
+LV,L,Levees Dikes or Dams (Top or Bottom),F-ZONE 1
+MAINT,L,Maintenance Line,F-ZONE 9
+MAR,L,Edge of Wetlands (Marsh or Swamp),F-ZONE 1
+MBX,P,Mailbox(s),F-ZONE 1
+ME,P,Meter (Electric),F-ZONE 3
+MEDI,L,Median Inlets,F-ZONE 2
+MEDRL,L,Government: Meander Line,F-ZONE 9
+MERGE,P,Merge Symbol,F-ZONE 1
+MES,L,Mitered End Section,F-ZONE 2
+MEU,P,Meter (Electric) (Buried),F-ZONE 3
+MG,P,Meter (Gas),F-ZONE 3
+MH,P,Manhole (Unknown),F-ZONE 3
+MHCATV,P,Manhole (Communications),F-ZONE 3
+MHD,P,Manhole (Storm Water),F-ZONE 2
+MHE,P,Manhole (Electric),F-ZONE 3
+MHG,P,Manhole (Gas),F-ZONE 3
+MHS,P,Manhole (Sanitary Sewer),F-ZONE 3
+MHT,P,Manhole (Telephone),F-ZONE 3
+MHW,P,Manhole (Water),F-ZONE 3
+MHWL,L,TIITF:Mean High Water Lines or Ordinary High Water Lines,F-ZONE 9
+MISC,L,Topography (Miscellaneous),F-ZONE 1
+MON,P,Mapping Concrete Monument Right of Way (Annotation Cell),F-ZONE 9
+MONRD,P,Mapping Rod Monument Open (Found) (Annotation Cell),F-ZONE 9
+MONRDS,P,Mapping Rod Monument Solid (Set) (Annotation Cell),F-ZONE 9
+MONSQ,P,Mapping Concrete Monument Open (Found) (Annotation Cell),F-ZONE 9
+MONSQS,P,Mapping Concrete Monument Solid (Set) (Annotation Cell),F-ZONE 9
+MONW,P,Well Monitoring Taps,F-ZONE 3
+MP,L,Pavement Parking Lot/Guardrail/Miscellaneous Pavement,F-ZONE 1
+MS,L,Multi-column Sign (Large Sign),F-ZONE 1
+MU,P,Meter (Unknown),F-ZONE 3
+MURPHY,L,TIITF: Upland TIITF:Murphy Reservations Lines,F-ZONE 9
+MW,P,Meter (Water),F-ZONE 3
+NL,P,Monuments - Nail Spike Pin,F-ZONE 6
+NOTE,P,Text Survey Labels,F-ZONE 1
+NPWLA,L,Non-potable Water Line (All Sizes) Quality Level A Locate,F-ZONE 3
+NPWLB,L,Non-potable Water Line (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+NPWLC,L,Non-potable Water Line (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+NPWLD,L,Non-potable Water Line (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+NSPF,L,Government: National or State Park or Forest Line,F-ZONE 9
+OBSC,L,Obscured Area,F-ZONE 1
+OM,P,Monuments - Other Marker?,F-ZONE 6
+ONLY,P,Only Symbol,F-ZONE 1
+OP,P,Ornamental Plant,F-ZONE 1
+PAVBRK,L,Pavement Slope Break Line,F-ZONE 1
+PCULV,L,Pipe Culvert,F-ZONE 2
+PETROA,L,Oil Line (All Sizes) Quality Level A Locate,F-ZONE 3
+PETROB,L,Oil Line (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+PETROC,L,Oil Line (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+PETROD,L,Oil Line (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+PHW,P,Potential Hazardous Waste Site (Old Gas Stations Dry Cleaners etc.),F-ZONE 1
+PIL,P,Pilings Piers or Columns,F-ZONE 1
+PILE,L,Pilings and Columns (All Types),F-ZONE 1
+PIP,P,Monuments - Metal Pipe Rod Bar,F-ZONE 6
+PIPENA,L,Pipe Encasements Quality Level A Locate,F-ZONE 3
+PIPENB,L,Pipe Encasements Quality Level B Designate (Buried),F-ZONE 3
+PIPENC,L,Pipe Encasements Quality Level C Visual Inspection (Buried),F-ZONE 3
+PIPEND,L,Pipe Encasements Quality Level D Existing Records (Buried),F-ZONE 3
+PKGM,P,Parking Meter,F-ZONE 1
+PLEQ,P,Playground Equipment,F-ZONE 1
+PLNT,L,Landscape Borders (Including Planters),F-ZONE 1
+PMON,P,Monuments - Concrete (Poured),F-ZONE 6
+PMP,P,Pump (Non Petroleum),F-ZONE 3
+PMPF,P,Pump (Petroleum / Fuel),F-ZONE 3
+PMPIS,L,Pump Island,F-ZONE 1
+PMPST,P,Pump Station (Sanitary Sewer),F-ZONE 3
+PMRK,L,Pavement Markings (Exclude Travel Lanes),F-ZONE 1
+POOL,L,Pools (Not Ponds) (All Types),F-ZONE 1
+POST,P,Post or Pole (Not Monuments),F-ZONE 1
+PP,P,Electrical Pole,F-ZONE 3
+PPT,P,Electrical Pole With Transformer,F-ZONE 3
+PRI,L,Conductors (Primary Distribution) (Aerial),F-ZONE 3
+PROP,L,Property Lines / Lot Lines,F-ZONE 9
+PRWM,P,Mapping Permanent Right of Way Monument (Annotation Cell),F-ZONE 9
+PS,P,Pedestrian Signal Unit Signage,F-ZONE 1
+PST,P,Monuments - Post Stake Staub,F-ZONE 6
+PWR,L,Electrical Conductors (Distribution & Transmission) (Aerial),F-ZONE 3
+QDEL,P,Subsurface Utility (Quality Level Delineator),F-ZONE 3
+QLA,P,Subsurface Utility Quality Level A Locate,F-ZONE 3
+QLB,P,Subsurface Utility Quality Level B Designate,F-ZONE 3
+QLC,P,Subsurface Utility Quality Level C Visual Inspection,F-ZONE 3
+QLD,P,Subsurface Utility Quality Level D Existing Records,F-ZONE 3
+QQTRS,L,Government: Quarter / Quarter Section Line,F-ZONE 9
+QTREW,P,Government: 1/4 Section Corner E or W,F-ZONE 9
+QTRNS,P,Government: 1/4 Section Corner N or S,F-ZONE 9
+QTRS,L,Government: Quarter Section Line,F-ZONE 9
+RAMP,L,Accessible Ramp (For Buildings Docks Sidewalks etc.) (Not Curbs),F-ZONE 1
+RD,L,Roadway Trail (Unpaved),F-ZONE 1
+REFL,L,Survey Reference Point Line / Detail (Miscellaneous),F-ZONE 6
+RETW,L,Wall Holding Earth (All),F-ZONE 1
+RG,P,Gas Regulator,F-ZONE 3
+RIP,L,Rip Rap Rubble,F-ZONE 1
+RLS,P,Restricted Lane Symbol,F-ZONE 1
+ROW,L,Right of Way Lines,F-ZONE 9
+ROWP,L,Right of Way Lines,F-ZONE 9
+RR,L,Railroad Tracks (Rail Bed),F-ZONE 1
+RRCL,L,Baseline:Rail Road Centerline,F-ZONE 6
+RRMP,P,Railroad Milepost,F-ZONE 1
+RRS,P,Railroad Switch,F-ZONE 1
+RRWS,P,Railroad Warning Sign,F-ZONE 1
+RRX,L,Railroad Crossing (Roadway Platforms) Railroad Signal w/ Gate,F-ZONE 1
+RXR,P,Railroad Crossing Symbol,F-ZONE 1
+SAT,P,Monuments - Hub and Tac,F-ZONE 6
+SATD,P,Satellite Dish Antenna,F-ZONE 3
+SCHOOL,P,School Symbol,F-ZONE 1
+SCT,L,Scattered Trees (Boundary),F-ZONE 1
+SE,L,Sanitary Effluent (Open Channel),F-ZONE 3
+SEAW,L,Sea Walls,F-ZONE 1
+SEC,L,Conductors (Secondary Distribution) (Aerial),F-ZONE 3
+SECT,L,Government: Section Lines (Existing),F-ZONE 9
+SEW,L,Straight Endwall,F-ZONE 2
+SGNC,P,Cantilevered Sign Column (Large),F-ZONE 1
+SGNT,L,Trusses and Cantilevers for Overhead Signs,F-ZONE 1
+SHLDR,L,Shoulder Edge (Paved),F-ZONE 1
+SHP,P,Shared Pole,F-ZONE 3
+SHPT,P,Shared Pole with Transformer,F-ZONE 3
+SHR,P,Shrub Bush,F-ZONE 1
+SHRC,P,Coniferous Shrub,F-ZONE 1
+SHRD,P,Deciduous Shrub,F-ZONE 1
+SHWM,P,Seasonal High Water Mark (as marked by Environmental),F-ZONE 2
+SIG,P,Signal Head,F-ZONE 1
+SIGC,P,Signal Controller,F-ZONE 1
+SIGNAL,P,Signal Pavement Symbol,F-ZONE 1
+SIGP,P,Signal on Pedestal,F-ZONE 1
+SILO,P,Silo,F-ZONE 1
+SILT,P,Ground Shot for Digital Terrain Model (DTM),F-ZONE 1
+SLC,L,Street Lighting Conductors,F-ZONE 3
+SLOW,P,Slow Symbol,F-ZONE 1
+SLP,L,Natural Slopes (Top or Bottom),F-ZONE 1
+SLV,L,Subdivision Vacated or Original Lot Line,F-ZONE 9
+SMA,P,Signal Supports including Mast Arm,F-ZONE 1
+SMAE,L,Support Mast Arm Extension,F-ZONE 1
+SP,P,Standpipe,F-ZONE 3
+SPD,L,Special Drainage Feature (Describe),F-ZONE 2
+SPEW,L,Special Endwall,F-ZONE 2
+SPH,P,Sprinkler Head,F-ZONE 3
+SPL,L,Spillways Flumes or Scuppers,F-ZONE 2
+SPLE,P,Int.Trans.Sys. (ITS) Fiber Spliced Enclosure,NOT USED
+SPLV,P,Int.Trans.Sys. (ITS) Fiber Spliced Vault (Buried),NOT USED
+SPR,P,Spring (Water Source),F-ZONE 1
+SRVC,P,Junction Box / Service Cabinet (Elec/Tel),F-ZONE 3
+SSA,L,Sanitary Sewer (All Sizes) Quality Level A Locate,F-ZONE 3
+SSB,L,Sanitary Sewer (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+SSC,L,Sanitary Sewer (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+SSD,L,Sanitary Sewer (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+SSP,P,Signal / Span Wire Pole,F-ZONE 1
+SSS,P,Sign (Single Support),F-ZONE 1
+SSW,L,Signal / Span Wire,F-ZONE 1
+STAL,P,Straight and Turn Arrow Left,F-ZONE 1
+STAR,P,Straight and Turn Arrow Right,F-ZONE 1
+STAROW,P,Straight Direction Arrow,F-ZONE 1
+STCKP,L,Stock Piles of All Types (Dirt Gravel Sand etc.),F-ZONE 1
+STEAMA,L,Steam Line Quality Level A Locate,F-ZONE 3
+STEAMB,L,Steam Line Quality Level B Designate (Buried),F-ZONE 3
+STEAMC,L,Steam Line Quality Level C Visual Inspection (Buried),F-ZONE 3
+STEAMD,L,Steam Line Quality Level D Existing Records (Buried),F-ZONE 3
+STL,L,Government: State Line,F-ZONE 9
+STM,P,Stump,F-ZONE 1
+STMD,P,Monuments - Stamped Disk,F-ZONE 6
+STMP,P,Monuments - Stamped Plate,F-ZONE 6
+STOP,P,Stop Symbol,F-ZONE 1
+STP,L,Stairways Steps,F-ZONE 1
+STRM,L,Stream Edge,F-ZONE 1
+STRMC,L,Stream Center,F-ZONE 1
+STS,L,Storm Sewer (All Sizes) Drain Pipes and Spouts,F-ZONE 2
+STTK,P,Storage Tank,F-ZONE 1
+SUBL,L,Subdivision Line,F-ZONE 9
+SUEL,L,DEP:TIITF:Safe Upland or Jurisdictional Lines,F-ZONE 9
+SW,L,Switchgear & Appurtenances,F-ZONE 3
+SWG,P,Railroad Signal with Gate,F-ZONE 1
+SWK,L,Front of Sidewalk,F-ZONE 1
+SWKB,L,Back of Sidewalk,F-ZONE 1
+TAL,P,Turn Arrow Left,F-ZONE 1
+TALR,P,Turn Arrow Left and Right Symbol,F-ZONE 1
+TALRS,P,Turn Arrow Left Right and Straight Symbol,F-ZONE 1
+TAR,P,Turn Arrow Right,F-ZONE 1
+TB,P,Telephone Booth,F-ZONE 3
+TEL,L,Telephone Line (Aerial),F-ZONE 3
+TELP,P,Telephone Pole,F-ZONE 3
+TELS,L,Telephone Service Box (Large),F-ZONE 3
+TESMT,L,Easement Lines Temporary,F-ZONE 9
+TESMTP,L,Easement Lines Temporary (Proposed),F-ZONE 9
+TFD,L,Traffic Detector Loops,F-ZONE 1
+TFSP,L,Traffic Separator,F-ZONE 1
+TG,P,Stream or Tide Gauge,F-ZONE 1
+THA,P,Subsurface Utility Test Hole (QLA Only),F-ZONE 3
+TMPW,L,Barrier Wall Dividing Traffic,F-ZONE 1
+TPD,P,Telephone Pedestal / Service,F-ZONE 3
+TRANSA,L,Conductors (Primary Distribution) Quality Level A Locate (Buried),F-ZONE 3
+TRANSB,L,Conductors (Primary Distribution) Quality Level B Designate (Buried),F-ZONE 3
+TRANSC,L,Conductors (Primary Distribution) Quality Level C Visual Inspection (Buried),F-ZONE 3
+TRANSD,L,Conductors (Primary Distribution) Quality Level D Existing Records (Buried),F-ZONE 3
+TRD,L,Treadle Axle Sensor,F-ZONE 1
+TREE,P,Trees (Unknown),F-ZONE 1
+TREEC,P,Coniferous Tree,F-ZONE 1
+TREECI,P,Citrus Tree,F-ZONE 1
+TREECY,P,Cypress Tree,F-ZONE 1
+TREED,P,Deciduous Tree,F-ZONE 1
+TREEOA,P,Oak Tree,F-ZONE 1
+TREEPA,P,Palm Tree,F-ZONE 1
+TREEPC,P,Palm Tree Cluster,F-ZONE 1
+TREEPI,P,Pine Tree,F-ZONE 1
+TRNF,P,Transformer,F-ZONE 3
+TURN,P,Turn Symbol,F-ZONE 1
+TWP,L,Government: Township and Range Government Survey Line,F-ZONE 9
+TX,L,Tractor Crossings,F-ZONE 1
+UD,L,Underdrains and Cross Drains,F-ZONE 2
+UDBX,P,Underdrain Box,F-ZONE 2
+UEW,L,U-Type Endwall,F-ZONE 2
+UMISC,L,Utility Items (Miscellaneous),F-ZONE 3
+UMKR,P,Subsurface Utility Marker,F-ZONE 3
+UNPS,L,Shoulders (Unpaved),F-ZONE 1
+VB,P,Valve Box,F-ZONE 3
+VBG,P,Valve Box (Gas),F-ZONE 3
+VBNPW,P,Valve Box (Non-potable Water),F-ZONE 3
+VBS,P,Valve Box (Sewer),F-ZONE 3
+VBW,P,Valve Box (Water),F-ZONE 3
+VC,P,Valve Cover (Unknown),F-ZONE 3
+VCEF,P,Valve Cover (Effluent),F-ZONE 3
+VCG,P,Valve Cover (Gas),F-ZONE 3
+VCNPW,P,Valve Cover (Non-potable Water),F-ZONE 3
+VCRW,P,Valve Cover (Raw Water),F-ZONE 3
+VCS,P,Valve Cover (Sewer),F-ZONE 3
+VCW,P,Valve Cover (Water),F-ZONE 3
+VLV,P,Valve (Unknown),F-ZONE 3
+VLVB,P,Valve (Back Flow Preventer) Valve Box,F-ZONE 3
+VLVG,P,Valve Valve Box (Gas),F-ZONE 3
+VLVNPW,P,Valve Valve Box (Water) (Non Potable),F-ZONE 3
+VLVS,P,Valve Valve Box (Sewer),F-ZONE 3
+VLVW,P,Valve Valve Box (Water),F-ZONE 3
+VNT,P,Vent (Unknown),F-ZONE 3
+VNTG,P,Vent (Gas),F-ZONE 3
+VNTS,P,Vent (Sewer),F-ZONE 3
+VOID,L,Void Area (Not Collected),F-ZONE 1
+WALL,L,Walls,F-ZONE 1
+WDL,L,Woods Line,F-ZONE 1
+WEDG,L,Edge of Water,F-ZONE 1
+WELL,P,Well (Any Size),F-ZONE 3
+WEW,L,Winged Endwall,F-ZONE 2
+WIM,P,Wind Mill,F-ZONE 1
+WLA,L,Water Line (All Sizes) Quality Level A Locate,F-ZONE 3
+WLB,L,Water Line (All Sizes) Quality Level B Designate (Buried),F-ZONE 3
+WLC,L,Water Line (All Sizes) Quality Level C Visual Inspection (Buried),F-ZONE 3
+WLD,L,Water Line (All Sizes) Quality Level D Existing Records (Buried),F-ZONE 3
+WLPT,P,Wetland Point,F-ZONE 1
+WPB,P,Wiring Pull Box,F-ZONE 3
+XO,L,Crossovers and Detours (Temporary),F-ZONE 1
+XS,P,Cross Section Point Station,F-ZONE 7
+XSC,L,Cross Section Chain,F-ZONE 7
+YD,L,Yard Drain,F-ZONE 2
+YIELD,P,Yield Symbol,F-ZONE 1
+ZONE,P,Zone Symbol,F-ZONE 1
+BENCH,L,Bench - Outlines,DRMP
+BPZA,L,Burried Power Duct / Electric Duct,DRMP
+BPZB,L,Burried Power Duct / Electric Duct,DRMP
+BPZC,L,Burried Power Duct / Electric Duct,DRMP
+BPZD,L,Burried Power Duct / Electric Duct,DRMP
+CALC,P,Calc,DRMP
+CHECK,P,Check Shot,DRMP
+CWLA,L,Chilled Water,DRMP
+CWLB,L,Chilled Water,DRMP
+CWLC,L,Chilled Water,DRMP
+CWLD,L,Chilled Water,DRMP
+DO,P,Direction Only,DRMP
+DTCHCL,L,Ditch Centerline (Dot Top Bottom Flowline = Dtch),DRMP
+FNCBW,L,Fence Barbed Wire,DRMP
+FNCCH,L,Fence Chainlink,DRMP
+FNCHG,L,Fence Hog Wire,DRMP
+FNCSR,L,Fence Split Rail,DRMP
+FNCWD,L,Fence Wood Privacy,DRMP
+FNCWI,L,Fence Wrought Iron,DRMP
+GNDH,P,Ground - Hard Shots (Excludes Ffe),DRMP
+GTOR,P,Gophor Tortise,DRMP
+LLBW,L,Lane Line - Broken White,DRMP
+LLBY,L,Lane Line - Broken Yellow,DRMP
+LLDY,L,Lane Line - Double Yellow,DRMP
+LLSW,L,Lane Line - Solid White,DRMP
+LLSY,L,Lane Line - Solid Yellow,DRMP
+LPC,P,Light Pole - Concrete,DRMP
+LPM,P,Light Pole - Metal,DRMP
+LPW,P,Light Pole - Wood,DRMP
+MHCATVR,P,Manhole Communication Rim,DRMP
+MHDR,P,Manhole Electric Rim,DRMP
+MHER,P,Manhole Gas Rim,DRMP
+MHGR,P,Manhole Sanitary Rim,DRMP
+MHSR,P,Manhole Drainage Rim,DRMP
+MHTR,P,Manhole Telephone Rim,DRMP
+MHUR,P,Manhole Unknown Rim,DRMP
+MHWR,P,Manhole Water Rim,DRMP
+OHU,L,Overhead Utilities,DRMP
+PMCW,L,Pavement Marking - Crosswalk,DRMP
+PMSB,L,Pavement Marking - Stop Bar,DRMP
+PPC,P,Power Pole - Concrete,DRMP
+PPM,P,Power Pole - Metal,DRMP
+PPW,P,Power Pole - Wood,DRMP
+TRBAY,P,Tree Bay,DRMP
+TRCAM,P,Tree Camphor,DRMP
+TRCED,P,Tree Cedar,DRMP
+TRCHE,P,Tree Cherry,DRMP
+TRCIT,P,Tree Citrus,DRMP
+TRCYP,P,Tree Cypress,DRMP
+TRGUM,P,Tree Sweet Gum,DRMP
+TRHOL,P,Tree Holly,DRMP
+TRMAG,P,Tree Magnolia,DRMP
+TRMAP,P,Tree Maple,DRMP
+TRMIM,P,Tree Mimosa,DRMP
+TRMYR,P,Tree Crepe Myrtle,DRMP
+WLFIRA,L,Water Line - Fire Line,DRMP
+WLFIRB,L,Water Line - Fire Line,DRMP
+WLFIRC,L,Water Line - Fire Line,DRMP
+WLFIRD,L,Water Line - Fire Line,DRMP
+WLRECA,L,Water Line - Reclaimed,DRMP
+WLRECB,L,Water Line - Reclaimed,DRMP
+WLRECC,L,Water Line - Reclaimed,DRMP
+WLRECD,L,Water Line - Reclaimed,DRMP
+UMKR*,,,
