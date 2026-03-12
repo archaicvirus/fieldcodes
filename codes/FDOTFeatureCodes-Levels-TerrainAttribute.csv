@@ -1,500 +1,500 @@
 Feature Code,LEVEL NAME,Level Description,Point / Line, ZONE,Terrain Attribute Ground / Feature
-25MPH,PM25MPH_ep,Pavement Marking Message - 25 MPH (Existing),P,1,F
-AC,PavtAsphaltCrown_ep,Asphalt Pavement Crown (Existing),L,1,G
-ACU,AirCondition_ep,Air Conditioning Unit (Existing),P,1,F
-AGF,AgricultField_ep,Agricultural Field or Farmland (Not Groves or Orchards) (Existing),L,1,F
-AGV,VaultsAG_ep,Vaults Above Grade (Existing),L,3,F
-AHEAD,PMAHEAD_ep,Pavement Marking Message - AHEAD (Existing),P,1,F
-ANT,Antenna_ep,Antenna (Existing),P,3,F
-AP,PavtAsphalt_ep,Asphalt Pavement Edge (Existing),L,1,G
-APRS,Bridge_ep,Bridge Approaches and Slabs (Existing),L,1,G
-ARST,ArchSite_ep,Archeological Site (Existing),L,1,F
-AT,MonumentAT_ep,Control Monuments - Aerial Targets,P,5,F
-ATTN,Attenuator_ep,Attenuator Systems (Existing),L,1,F
-BARW,WallBarrier_ep,Barrier Wall Dividing Traffic (All Types) (Existing),L,1,F
-BAS,Basins_ep,"Sediment Basins, Retention Ponds (Existing)",L,2,G
-BCATVA,CATVBurA_ep,Cable TV Line Quality Level A Locate (Buried) (Existing),L,3,F
-BCATVB,CATVBurB_ep,Cable TV Line Quality Level B Designate (Buried) (Existing),L,3,F
-BCATVC,CATVBurC_ep,Cable TV Line Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-BCATVD,CATVBurD_ep,Cable TV Line Quality Level D Existing Records (Buried) (Existing),L,3,F
-BGV,VaultsBG_ep,Vaults Below Grade (Existing),L,3,F
-BIKE,PMBIKE_ep,Pavement Marking Message - BIKE (Existing),P,1,F
-BIKELN,PMBikeLane_ep,Pavement Marking Symbol - Bicycle (Existing),P,1,F
-BKRK,BikeRack_ep,Bicycle Rack (All Sizes) (Existing),P,1,F
+25MPH,PM25MPH,Pavement Marking Message - 25 MPH (Existing),P,1,F
+AC,PavtAsphaltCrown,Asphalt Pavement Crown (Existing),L,1,G
+ACU,AirCondition,Air Conditioning Unit (Existing),P,1,F
+AGF,AgricultField,Agricultural Field or Farmland (Not Groves or Orchards) (Existing),L,1,F
+AGV,VaultsAG,Vaults Above Grade (Existing),L,3,F
+AHEAD,PMAHEAD,Pavement Marking Message - AHEAD (Existing),P,1,F
+ANT,Antenna,Antenna (Existing),P,3,F
+AP,PavtAsphalt,Asphalt Pavement Edge (Existing),L,1,G
+APRS,Bridge,Bridge Approaches and Slabs (Existing),L,1,G
+ARST,ArchSite,Archeological Site (Existing),L,1,F
+AT,MonumentAT,Control Monuments - Aerial Targets,P,5,F
+ATTN,Attenuator,Attenuator Systems (Existing),L,1,F
+BARW,WallBarrier,Barrier Wall Dividing Traffic (All Types) (Existing),L,1,F
+BAS,Basins,"Sediment Basins, Retention Ponds (Existing)",L,2,G
+BCATVA,CATVBurA,Cable TV Line Quality Level A Locate (Buried) (Existing),L,3,F
+BCATVB,CATVBurB,Cable TV Line Quality Level B Designate (Buried) (Existing),L,3,F
+BCATVC,CATVBurC,Cable TV Line Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+BCATVD,CATVBurD,Cable TV Line Quality Level D Existing Records (Buried) (Existing),L,3,F
+BGV,VaultsBG,Vaults Below Grade (Existing),L,3,F
+BIKE,PMBIKE,Pavement Marking Message - BIKE (Existing),P,1,F
+BIKELN,PMBikeLane,Pavement Marking Symbol - Bicycle (Existing),P,1,F
+BKRK,BikeRack,Bicycle Rack (All Sizes) (Existing),P,1,F
 BL,BaselineSurvey,Baseline Survey,L,6,F
-BLC,BLSurveyCntrl_ep,Baseline Survey Control (Traverse Line),L,5,F
-BLDG,Building_ep,Buildings (Existing),L,1,F
-BLF,BLSurveyField_ep,Baseline Survey Field (Calculated from BLC),L,6,F
+BLC,BLSurveyCntrl,Baseline Survey Control (Traverse Line),L,5,F
+BLDG,Building,Buildings (Existing),L,1,F
+BLF,BLSurveyField,Baseline Survey Field (Calculated from BLC),L,6,F
 BLSS,BaselineSideStreet,Baseline Side Street,L,6,F
-BN,Beacons_ep,Beacons and Path Illumination (Existing),P,3,F
-BNCH,Bench_ep,Bench (Existing),P,1,F
-BNK,BankMent_ep,"Embankment (Manmade, Top or Bottom) (Existing)",L,1,G
-BOH,BuildingOH_ep,Building Roof Overhangs (Encroachments) (Existing),L,1,F
-BOL,Bollard_ep,Bollards (Existing),P,1,F
-BPWRA,ElecBurA_ep,Electrical Quality Level A Locate (Buried) (Existing),L,3,F
-BPWRB,ElecBurB_ep,Electrical Quality Level B Designate (Buried) (Existing),L,3,F
-BPWRC,ElecBurC_ep,Electrical Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-BPWRD,ElecBurD_ep,Electrical Quality Level D Existing Records (Buried) (Existing),L,3,F
-BRCK,PavtBrick_ep,Brick Pavement Edge (Brick Roadways and Sidewalks)  (Existing),L,1,G
-BRDG,BridgeEle_ep,Bridge Elements (Existing),L,4,G
-BSECA,ElecBurSecA_ep,Conductor (Secondary Distribution) Quality Level A Locate (Buried) (Existing),L,3,F
-BSECB,ElecBurSecB_ep,Conductor (Secondary Distribution) Quality Level B Designate (Buried) (Existing),L,3,F
-BSECC,ElecBurSecC_ep,Conductor (Secondary Distribution) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-BSECD,ElecBurSecD_ep,Conductor (Secondary Distribution) Quality Level D Existing Records (Buried) (Existing),L,3,F
-BSTP,BusStop_ep,Bus Stop (Chain for Larger Structures) (Existing),L,1,F
-BTA,TeleBurA_ep,Telephone (All Sizes) Quality Level A Locate (Buried) (Existing),L,3,F
-BTB,TeleBurB_ep,Telephone (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-BTC,TeleBurC_ep,Telephone (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-BTD,TeleBurD_ep,Telephone (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-BTDA,TeleBurDA_ep,"Telephone, DUCT (All Sizes) Quality Level A Locate (Buried) (Existing)",L,3,F
-BTDB,TeleBurDB_ep,"Telephone, DUCT (All Sizes) Quality Level B Designate (Buried) (Existing)",L,3,F
-BTDC,TeleBurDC_ep,"Telephone, DUCT (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing)",L,3,F
-BTDD,TeleBurDD_ep,"Telephone, DUCT (All Sizes) Quality Level D Existing Records (Buried) (Existing)",L,3,F
-BTTA,TeleBurTA_ep,"Telephone, TOLL (All Sizes) Quality Level A Locate (Buried) (Existing)",L,3,F
-BTTB,TeleBurTB_ep,"Telephone, TOLL (All Sizes) Quality Level B Designate (Buried) (Existing)",L,3,F
-BTTC,TeleBurTC_ep,"Telephone, TOLL (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing)",L,3,F
-BTTD,TeleBurTD_ep,"Telephone, TOLL (All Sizes) Quality Level D Existing Records (Buried) (Existing)",L,3,F
-BUMP,PMBUMP_ep,Pavement Marking Message - BUMP (Existing),P,1,F
-BUOY,Buoy_ep,Buoy (Existing),P,1,F
-BUS,PMBUS_ep,Pavement Marking Message - BUS (Existing),P,1,F
-BXC,BoxCulvert_ep,Box Culvert (Existing),L,2,G
+BN,Beacons,Beacons and Path Illumination (Existing),P,3,F
+BNCH,Bench,Bench (Existing),P,1,F
+BNK,BankMent,"Embankment (Manmade, Top or Bottom) (Existing)",L,1,G
+BOH,BuildingOH,Building Roof Overhangs (Encroachments) (Existing),L,1,F
+BOL,Bollard,Bollards (Existing),P,1,F
+BPWRA,ElecBurA,Electrical Quality Level A Locate (Buried) (Existing),L,3,F
+BPWRB,ElecBurB,Electrical Quality Level B Designate (Buried) (Existing),L,3,F
+BPWRC,ElecBurC,Electrical Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+BPWRD,ElecBurD,Electrical Quality Level D Existing Records (Buried) (Existing),L,3,F
+BRCK,PavtBrick,Brick Pavement Edge (Brick Roadways and Sidewalks)  (Existing),L,1,G
+BRDG,BridgeEle,Bridge Elements (Existing),L,4,G
+BSECA,ElecBurSecA,Conductor (Secondary Distribution) Quality Level A Locate (Buried) (Existing),L,3,F
+BSECB,ElecBurSecB,Conductor (Secondary Distribution) Quality Level B Designate (Buried) (Existing),L,3,F
+BSECC,ElecBurSecC,Conductor (Secondary Distribution) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+BSECD,ElecBurSecD,Conductor (Secondary Distribution) Quality Level D Existing Records (Buried) (Existing),L,3,F
+BSTP,BusStop,Bus Stop (Chain for Larger Structures) (Existing),L,1,F
+BTA,TeleBurA,Telephone (All Sizes) Quality Level A Locate (Buried) (Existing),L,3,F
+BTB,TeleBurB,Telephone (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+BTC,TeleBurC,Telephone (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+BTD,TeleBurD,Telephone (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+BTDA,TeleBurDA,"Telephone, DUCT (All Sizes) Quality Level A Locate (Buried) (Existing)",L,3,F
+BTDB,TeleBurDB,"Telephone, DUCT (All Sizes) Quality Level B Designate (Buried) (Existing)",L,3,F
+BTDC,TeleBurDC,"Telephone, DUCT (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing)",L,3,F
+BTDD,TeleBurDD,"Telephone, DUCT (All Sizes) Quality Level D Existing Records (Buried) (Existing)",L,3,F
+BTTA,TeleBurTA,"Telephone, TOLL (All Sizes) Quality Level A Locate (Buried) (Existing)",L,3,F
+BTTB,TeleBurTB,"Telephone, TOLL (All Sizes) Quality Level B Designate (Buried) (Existing)",L,3,F
+BTTC,TeleBurTC,"Telephone, TOLL (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing)",L,3,F
+BTTD,TeleBurTD,"Telephone, TOLL (All Sizes) Quality Level D Existing Records (Buried) (Existing)",L,3,F
+BUMP,PMBUMP,Pavement Marking Message - BUMP (Existing),P,1,F
+BUOY,Buoy,Buoy (Existing),P,1,F
+BUS,PMBUS,Pavement Marking Message - BUS (Existing),P,1,F
+BXC,BoxCulvert,Box Culvert (Existing),L,2,G
 CALCPT,CalcPt,Mapping Calculated 2D Point,P,9,F
-CAN,Canal_ep,"Canal, Lock (Existing)",L,1,F
-CAPA,ElecCAPA_ep,Capacitors (Above Ground) (Existing),L,3,F
-CAPB,ElecCAPB_ep,Capacitors (Buried) (Existing),L,3,F
-CATV,CATVAer_ep,Cable TV Line (Aerial) (Existing),L,3,F
-CATVCA,CATVCondBurA_ep,Cable TV Conduit System Quality Level A Locate (Buried) (Existing),L,3,F
-CATVCB,CATVCondBurB_ep,Cable TV Conduit System Quality Level B Designate (Buried) (Existing),L,3,F
-CATVCC,CATVCondBurC_ep,Cable TV Conduit System Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-CATVCD,CATVCondBurD_ep,Cable TV Conduit System Quality Level D Existing Records (Buried) (Existing),L,3,F
-CATVS,CATVMisc_ep,"Cable TV Service Box and Miscelleneous, Pole (Existing)",P,3,F
-CB,CatchBasin_ep,Catch Basins (Existing),L,2,G
-CBR,CableBarrier_ep,Cable Barrier (Existing),L,1,F
-CCMON,MonumentCCC_ep,Control Monuments - Concrete (Cast),P,5,F
-CCR,CurbRamp_ep,Curb Cut Ramp (Existing),L,1,G
-CDH,MonumentCDH_ep,"Control Monuments - Drill Hole, Plug",P,5,F
-CDRM,MonumentCDR_ep,Control Monuments - Deep Rod Mark,P,5,F
-CEM,Cemetery_ep,"Cemetery, Grave Outlines (Existing)",L,1,F
-CG,CGep_ep,Curb / Curb and Gutter (at EP & FL) (Existing),L,1,G
-CGB,CGBack_ep,Curb and Gutter (Back) (Existing),L,1,G
-CGD,CattleGuard_ep,Cattle Guard (Existing),P,1,F
-CGF,CGFace_ep,Curb and Gutter (Face) (Existing),L,1,G
-CINL,InletCurb_ep,Curb Inlets (Existing),L,2,G
-CIRC,MonumentCIRC_ep,Control Monuments - 5/8 Rod and Cap,P,5,F
+CAN,Canal,"Canal, Lock (Existing)",L,1,F
+CAPA,ElecCAPA,Capacitors (Above Ground) (Existing),L,3,F
+CAPB,ElecCAPB,Capacitors (Buried) (Existing),L,3,F
+CATV,CATVAer,Cable TV Line (Aerial) (Existing),L,3,F
+CATVCA,CATVCondBurA,Cable TV Conduit System Quality Level A Locate (Buried) (Existing),L,3,F
+CATVCB,CATVCondBurB,Cable TV Conduit System Quality Level B Designate (Buried) (Existing),L,3,F
+CATVCC,CATVCondBurC,Cable TV Conduit System Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+CATVCD,CATVCondBurD,Cable TV Conduit System Quality Level D Existing Records (Buried) (Existing),L,3,F
+CATVS,CATVMisc,"Cable TV Service Box and Miscelleneous, Pole (Existing)",P,3,F
+CB,CatchBasin,Catch Basins (Existing),L,2,G
+CBR,CableBarrier,Cable Barrier (Existing),L,1,F
+CCMON,MonumentCCC,Control Monuments - Concrete (Cast),P,5,F
+CCR,CurbRamp,Curb Cut Ramp (Existing),L,1,G
+CDH,MonumentCDH,"Control Monuments - Drill Hole, Plug",P,5,F
+CDRM,MonumentCDR,Control Monuments - Deep Rod Mark,P,5,F
+CEM,Cemetery,"Cemetery, Grave Outlines (Existing)",L,1,F
+CG,CGep,Curb / Curb and Gutter (at EP & FL) (Existing),L,1,G
+CGB,CGBack,Curb and Gutter (Back) (Existing),L,1,G
+CGD,CattleGuard,Cattle Guard (Existing),P,1,F
+CGF,CGFace,Curb and Gutter (Face) (Existing),L,1,G
+CINL,InletCurb,Curb Inlets (Existing),L,2,G
+CIRC,MonumentCIRC,Control Monuments - 5/8 Rod and Cap,P,5,F
 CLC,CLConst_dp,Centerline Construction,L,6,F
-CLMT,TowerTrans_ep,Transmission Tower (Single Column) (Existing),P,3,F
-CLNO,SanitarySewerCLNO_ep,Sanitary Sewer Cleanout (Existing),P,3,F
-CMON,MonumentCC_ep,Monuments - Concrete (Cast),P,6,F
-CMPST,Campstove_ep,"Campstove, Grill, Firepit, BBQ (Existing)",P,1,F
-CNL,MonumentCNL_ep,"Control Monuments - Nail, Spike, Pin",P,5,F
-CNPY,Canopy_ep,"Shelters of All Kinds (Gas Station, Toll Plaza, etc.) (Existing)",L,1,F
-COE,WetlandCOE_ep,Unitied States Army Corps of Engineers (COE) Wetlands (Marsh or Swamp) (Existing),L,1,F
-COL,GovCountyLine_ep,Government: County Line (Existing),L,9,F
-COM,MonumentCOM_ep,Control Monuments - Other Marker?,P,5,F
-CONV,Conveyor_ep,"Conveyor Belt Systems (All Types) (Industrial, Agricultural, etc.) (Existing)",L,1,F
-CPIP,MonumentCPIP_ep,"Control Monuments - Metal Pipe, Rod, Bar",P,5,F
-CPMON,MonumentCCP_ep,Control Monuments - Concrete (Poured),P,5,F
-CPST,MonumentCPST_ep,"Control Monuments - Post, Stake, Staub",P,5,F
-CPVC,PavtConcreteCrown_ep,Concrete Pavement (Crown) (Existing),L,1,G
-CPVJ,PavtConcJoints_ep,Concrete Pavement (Joints) (Existing),L,1,G
-CPVT,PavtConcrete_ep,Concrete Pavement (Edges) (Existing),L,1,G
-CRW,CurbRampWarning_ep,Detectable Warnings on Curb Ramps (Existing),L,1,G
-CSH,Core_ep,Core Sample or Test Hole (Existing),P,1,F
-CSL,ConcSlabs_ep,Concrete Slabs (Existing),L,1,G
-CSTMD,MonumentCSTD_ep,Control Monuments - Stamped Disk,P,5,F
-CSTMP,MonumentCSTP_ep,Control Monuments - Stamped Plate,P,5,F
-CYL,GovCityLimitLine_ep,Government: City Limit Line (Existing),L,9,F
-DECK,Deck_ep,Deck / Porch (Existing),L,1,F
-DEFAULT,PointLocator_ep,Point Locator Symbol (Existing) To Accommodate Bentley Default Output,P,1,F
-DEFAULT_POINT,PointLocator_ep,Point Locator Symbol (Existing) To Accommodate Bentley Default Output,P,1,F
-DEP,WetlandDEP_ep,Water Management Districts (WMD) & Florida Department of Environmental Protection (DEP) Wetlands (Existing),L,1,F
-DF,Dolphins_ep,Dolphins and Fenders (Existing),P,1,F
-DFL,FlowLine_ep,"Ditch Flow Line Direction (Ditches, Swells, etc.) (Existing)",L,2,G
-DH,MonumentDH_ep,"Monuments - Drill Hole, Plug",P,6,F
-DLP,DelineatorPost_ep,"Delineator Post, Metal and Flexible (Existing)",P,1,F
-DMP,Trash_ep,"Dumpster, Trash Disposal (Existing)",P,1,F
-DMPS,SanitarySewerDSta_ep,Sanitary Sewer Dump Station (SS) (Existing),P,3,F
-DOCK,Docks_ep,Docks and Wharfs (Existing),L,1,F
-DRIP,TreeDripLine_ep,Tree Drip Line for Delineating Root Systems (Existing),L,1,F
-DRM,MonumentDR_ep,Monuments - Deep Rod Mark,P,6,F
-DRNB,InletBottom_ep,Drainage Structure Bottoms (Existing),L,2,F
-DRNP,DrainPipes_ep,Drainage Pipes and Spouts (Existing),L,2,F
-DTCH,Ditch_ep,"Ditch (Top, Bottom and Flow Lines) (Existing)",L,2,G
-DTCHI,InletDBI_ep,Ditch Bottom Inlet (Existing),L,2,G
-DTCHP,DitchPavt_ep,Ditch Pavement (Existing),L,2,G
-DUCTA,ConduitA_ep,Utility Conduit & Encasements Quality Level A Locate (Existing),L,3,F
-DUCTB,ConduitB_ep,Utility Conduit & Encasements Quality Level B Designate (Buried) (Existing),L,3,F
-DUCTC,ConduitC_ep,Utility Conduit & Encasements Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-DUCTD,ConduitD_ep,Utility Conduit & Encasements Quality Level D Existing Records (Buried) (Existing),L,3,F
-DUMB,DummyChains_ep,Dummy Chains (Existing),L,1,F
-DWY,Driveway_ep,"Driveway (Drive, Lane, Turnouts) (Existing)",L,1,G
-EAST,PMEAST_ep,Pavement Marking Message - EAST (Existing),P,1,F
-ECP,ElecMultiCtrl_ep,Electric Control Panel with Multiple Controls (Existing),L,3,F
-ELECS,ElecServBox_ep,Electric Service Box (Large) (Existing),L,3,F
-ELEO,ElecOutlet_ep,Electrical Outlet (Existing),P,3,F
-EM,WetlandEM_ep,Edge of Mangrove (Existing),L,1,F
-EOI,SU_Interupt_ep,Subsurface Utility (End of Interuption) (Existing),P,3,F
-ESL,EndangeredL_ep,Endangered Species Line,L,1,F
-ESMT,EaseLine_ep,Easement Lines (Existing),L,9,F
+CLMT,TowerTrans,Transmission Tower (Single Column) (Existing),P,3,F
+CLNO,SanitarySewerCLNO,Sanitary Sewer Cleanout (Existing),P,3,F
+CMON,MonumentCC,Monuments - Concrete (Cast),P,6,F
+CMPST,Campstove,"Campstove, Grill, Firepit, BBQ (Existing)",P,1,F
+CNL,MonumentCNL,"Control Monuments - Nail, Spike, Pin",P,5,F
+CNPY,Canopy,"Shelters of All Kinds (Gas Station, Toll Plaza, etc.) (Existing)",L,1,F
+COE,WetlandCOE,Unitied States Army Corps of Engineers (COE) Wetlands (Marsh or Swamp) (Existing),L,1,F
+COL,GovCountyLine,Government: County Line (Existing),L,9,F
+COM,MonumentCOM,Control Monuments - Other Marker?,P,5,F
+CONV,Conveyor,"Conveyor Belt Systems (All Types) (Industrial, Agricultural, etc.) (Existing)",L,1,F
+CPIP,MonumentCPIP,"Control Monuments - Metal Pipe, Rod, Bar",P,5,F
+CPMON,MonumentCCP,Control Monuments - Concrete (Poured),P,5,F
+CPST,MonumentCPST,"Control Monuments - Post, Stake, Staub",P,5,F
+CPVC,PavtConcreteCrown,Concrete Pavement (Crown) (Existing),L,1,G
+CPVJ,PavtConcJoints,Concrete Pavement (Joints) (Existing),L,1,G
+CPVT,PavtConcrete,Concrete Pavement (Edges) (Existing),L,1,G
+CRW,CurbRampWarning,Detectable Warnings on Curb Ramps (Existing),L,1,G
+CSH,Core,Core Sample or Test Hole (Existing),P,1,F
+CSL,ConcSlabs,Concrete Slabs (Existing),L,1,G
+CSTMD,MonumentCSTD,Control Monuments - Stamped Disk,P,5,F
+CSTMP,MonumentCSTP,Control Monuments - Stamped Plate,P,5,F
+CYL,GovCityLimitLine,Government: City Limit Line (Existing),L,9,F
+DECK,Deck,Deck / Porch (Existing),L,1,F
+DEFAULT,PointLocator,Point Locator Symbol (Existing) To Accommodate Bentley Default Output,P,1,F
+DEFAULT_POINT,PointLocator,Point Locator Symbol (Existing) To Accommodate Bentley Default Output,P,1,F
+DEP,WetlandDEP,Water Management Districts (WMD) & Florida Department of Environmental Protection (DEP) Wetlands (Existing),L,1,F
+DF,Dolphins,Dolphins and Fenders (Existing),P,1,F
+DFL,FlowLine,"Ditch Flow Line Direction (Ditches, Swells, etc.) (Existing)",L,2,G
+DH,MonumentDH,"Monuments - Drill Hole, Plug",P,6,F
+DLP,DelineatorPost,"Delineator Post, Metal and Flexible (Existing)",P,1,F
+DMP,Trash,"Dumpster, Trash Disposal (Existing)",P,1,F
+DMPS,SanitarySewerDSta,Sanitary Sewer Dump Station (SS) (Existing),P,3,F
+DOCK,Docks,Docks and Wharfs (Existing),L,1,F
+DRIP,TreeDripLine,Tree Drip Line for Delineating Root Systems (Existing),L,1,F
+DRM,MonumentDR,Monuments - Deep Rod Mark,P,6,F
+DRNB,InletBottom,Drainage Structure Bottoms (Existing),L,2,F
+DRNP,DrainPipes,Drainage Pipes and Spouts (Existing),L,2,F
+DTCH,Ditch,"Ditch (Top, Bottom and Flow Lines) (Existing)",L,2,G
+DTCHI,InletDBI,Ditch Bottom Inlet (Existing),L,2,G
+DTCHP,DitchPavt,Ditch Pavement (Existing),L,2,G
+DUCTA,ConduitA,Utility Conduit & Encasements Quality Level A Locate (Existing),L,3,F
+DUCTB,ConduitB,Utility Conduit & Encasements Quality Level B Designate (Buried) (Existing),L,3,F
+DUCTC,ConduitC,Utility Conduit & Encasements Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+DUCTD,ConduitD,Utility Conduit & Encasements Quality Level D Existing Records (Buried) (Existing),L,3,F
+DUMB,DummyChains,Dummy Chains (Existing),L,1,F
+DWY,Driveway,"Driveway (Drive, Lane, Turnouts) (Existing)",L,1,G
+EAST,PMEAST,Pavement Marking Message - EAST (Existing),P,1,F
+ECP,ElecMultiCtrl,Electric Control Panel with Multiple Controls (Existing),L,3,F
+ELECS,ElecServBox,Electric Service Box (Large) (Existing),L,3,F
+ELEO,ElecOutlet,Electrical Outlet (Existing),P,3,F
+EM,WetlandEM,Edge of Mangrove (Existing),L,1,F
+EOI,SU_Interupt,Subsurface Utility (End of Interuption) (Existing),P,3,F
+ESL,EndangeredL,Endangered Species Line,L,1,F
+ESMT,EaseLine,Easement Lines (Existing),L,9,F
 ESMTP,EasePerpLine,Easement Lines Perpetual (Proposed),L,9,F
-ESP,EndangeredP_ep,Endangered Species Point,P,1,F
-EXIST,DTMBoundary_ep,Digital Terrain Model (DTM) Boundary (Existing),L,1,G
-FAU,WaterFct_ep,Faucet (Existing),P,3,F
-FC,TankUG_ep,Fill Cap (Buried Tank) (Existing),P,1,F
-FES,EndTreatFES_ep,Flared End Section (Existing),L,2,G
-FFE,FFElev_ep,Finished Floor Elevation (Existing),P,2,F
-FH,FireHydrant_ep,Fire Hydrant (Existing),P,3,F
-FLD,FloodLight_ep,Flood Light (Existing),P,3,F
-FMA,SanitaryFM_A_ep,Force Main (All Sizes) Quality Level A Locate (Existing),L,3,F
-FMB,SanitaryFM_B_ep,Force Main (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-FMC,SanitaryFM_C_ep,Force Main (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-FMD,SanitaryFM_D_ep,Force Main (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-FNC,Fence_ep,Fence (All Types) (Existing),L,1,F
-FO,FOTAer_ep,Fiber Optics Telephone (Aerial) (Size Unknown) (Existing),L,3,F
-FOC,FOCAer_ep,Fiber Optics Cable (Aerial) (Existing),L,3,F
-FOCUA,FOCBurA_ep,Fiber Optics Cable Quality Level A Locate (Buried) (Existing),L,3,F
-FOCUB,FOCBurB_ep,Fiber Optics Cable Quality Level B Designate (Buried) (Existing),L,3,F
-FOCUC,FOCBurC_ep,Fiber Optics Cable Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-FOCUD,FOCBurD_ep,Fiber Optics Cable Quality Level D Existing Records (Buried) (Existing),L,3,F
-FOP,FOEAer_ep,Fiber Optics Electrical (Aerial) (Existing),L,3,F
-FOPUA,FOEBurA_ep,Fiber Optics Electrical Quality Level A Locate (Buried) (Existing),L,3,F
-FOPUB,FOEBurB_ep,Fiber Optics Electrical Quality Level B Designate (Buried) (Existing),L,3,F
-FOPUC,FOEBurC_ep,Fiber Optics Electrical Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-FOPUD,FOEBurD_ep,Fiber Optics Electrical Quality Level D Existing Records (Buried) (Existing),L,3,F
-FOTVUA,FOTVBurA_ep,Fiber Optics Television Quality Level A Locate (Buried) (Existing),L,3,F
-FOTVUB,FOTVBurB_ep,Fiber Optics Television Quality Level B Designate (Buried) (Existing),L,3,F
-FOTVUC,FOTVBurC_ep,Fiber Optics Television Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-FOTVUD,FOTVBurD_ep,Fiber Optics Television Quality Level D Existing Records (Buried) (Existing),L,3,F
-FOUA,FOTBurA_ep,Fiber Optics Telephone Quality Level A Locate (Buried) (Existing),L,3,F
-FOUB,FOTBurB_ep,Fiber Optics Telephone Quality Level B Designate (Buried) (Existing),L,3,F
-FOUC,FOTBurC_ep,Fiber Optics Telephone Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-FOUD,FOTBurD_ep,Fiber Optics Telephone Quality Level D Existing Records (Buried) (Existing),L,3,F
-FP,FlagPole_ep,Flag Pole (Existing),P,1,F
-FUSE,ElecFuse_ep,Fuses (Existing),L,3,F
-GA,Gauges_ep,Gauges (Existing),P,3,F
-GASA,GasA_ep,Gas Line (All Sizes) Quality Level A Locate (Existing),L,3,F
-GASB,GasB_ep,Gas Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-GASC,GasC_ep,Gas Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-GASD,GasD_ep,Gas Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-GBRK,GroundBrkLine_ep,Ground Break Line (Not Slopes or Embankments) (Existing),L,1,G
-GI,InletGutter_ep,Gutter Inlets (All Types) (Existing),L,2,G
-GND,GroundShot_ep,Ground Shot for Digital Terrain Model (DTM) Densification (Hard Bottom Soundings) (Existing),P,1,G
-GOLF,Golf_ep,Golf Course Features (All Types) (Existing),L,1,F
-GRDBL,GuardrailDbl_ep,Guardrail Double Face (Existing),L,1,F
-GRL,GuardrailLt_ep,Guardrail Left (Existing),L,1,F
-GRR,GuardrailRt_ep,Guardrail Right (Existing),L,1,F
-GRT,DrainGrate_ep,Metal Drainage Grate within Concrete Structure (Existing),L,2,F
-GRTL,GovGrantLine_ep,Government: Grant Line (Existing),L,9,F
-GRV,TreeLineGrove_ep,Groves & Orchards (Boundary) (Existing),L,1,F
-GT,Gates_ep,Gates (Existing),L,1,F
-GTM,GasTestMisc_ep,Gas Test & Miscellaneous (Existing),L,3,F
-GYA,GuyWireAnchor_ep,Guy Anchor (Existing),P,3,F
-GYP,GuyWirePole_ep,Guy Pole (Dead-man) (Existing),P,3,F
-GYS,GuyWireSpan_ep,Span Guys (Existing),L,3,F
-HED,ShrubHedge_ep,Hedges and Shrubs (Boundary) (Existing),L,1,F
-HML,Tower_ep,High Mast Lighting Poles (Existing),P,3,F
-HNDC,PMAccessible_ep,Pavement Marking Symbol - Accessible (Handicap) (Existing),P,1,F
-HNDRL,Railing_ep,"Railings (All Types); Piperail, Guiderail, Handrail Used for Pedestrian and Bicycles (Existing)",L,1,F
-HOLE,Hole_ep,Hole (Existing),P,1,F
-HUMP,PMHUMP_ep,Pavement Marking Message - HUMP (Existing),P,1,F
-HVL,ElecAerHVL_ep,High Voltage Transmission Line (Existing),L,3,F
-INCN,Furnace_ep,"Incinerator, Boiler, or Furnace (Existing)",P,1,F
-INV,FlowlineInvert_ep,Flow Line or Invert Elevations (Existing),P,2,F
-IRC,MonumentIRC_ep,Monuments - 5/8 Rod and Cap,P,6,F
-ITCP,ITSCamera_ep,Intelligent Transportation System (ITS) Closed Caption TV Camera Pole (Existing),P,8,F
-ITFCA,ITSFiberCableA_ep,Intelligent Transportation System (ITS) Fiber Cable Quality Level A Locate (Buried) (Existing),L,8,F
-ITFCB,ITSFiberCableB_ep,Intelligent Transportation System (ITS) Fiber Cable Quality Level B Designate (Buried) (Existing),L,8,F
-ITFCC,ITSFiberCableC_ep,Intelligent Transportation System (ITS) Fiber Cable Quality Level C Above Ground Evidence (Buried) (Existing),L,8,F
-ITFCD,ITSFiberCableD_ep,Intelligent Transportation System (ITS) Fiber Cable Quality Level D Existing Records (Buried) (Existing),L,8,F
-ITPS,ITSPwrSupply_ep,"Intelligent Transportation System (ITS) Closed Caption TV Power Supply (Wired, Solar, etc) (Existing)",P,8,F
-ITVS,ITSVehSensor_ep,"Intelligent Transportation System (ITS) Vehicle Sensor, Infared (Existing)",P,8,F
-JB,DrainJnctBox_ep,Drainage Junction Box (Existing),L,2,G
-LANE,PMLANE_ep,Pavement Marking Message - LANE (Existing),P,1,F
-LARW,LARWLine_ep,Limited Access Right of Way Lines (Existing),L,9,F
+ESP,EndangeredP,Endangered Species Point,P,1,F
+EXIST,DTMBoundary,Digital Terrain Model (DTM) Boundary (Existing),L,1,G
+FAU,WaterFct,Faucet (Existing),P,3,F
+FC,TankUG,Fill Cap (Buried Tank) (Existing),P,1,F
+FES,EndTreatFES,Flared End Section (Existing),L,2,G
+FFE,FFElev,Finished Floor Elevation (Existing),P,2,F
+FH,FireHydrant,Fire Hydrant (Existing),P,3,F
+FLD,FloodLight,Flood Light (Existing),P,3,F
+FMA,SanitaryFM_A,Force Main (All Sizes) Quality Level A Locate (Existing),L,3,F
+FMB,SanitaryFM_B,Force Main (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+FMC,SanitaryFM_C,Force Main (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+FMD,SanitaryFM_D,Force Main (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+FNC,Fence,Fence (All Types) (Existing),L,1,F
+FO,FOTAer,Fiber Optics Telephone (Aerial) (Size Unknown) (Existing),L,3,F
+FOC,FOCAer,Fiber Optics Cable (Aerial) (Existing),L,3,F
+FOCUA,FOCBurA,Fiber Optics Cable Quality Level A Locate (Buried) (Existing),L,3,F
+FOCUB,FOCBurB,Fiber Optics Cable Quality Level B Designate (Buried) (Existing),L,3,F
+FOCUC,FOCBurC,Fiber Optics Cable Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+FOCUD,FOCBurD,Fiber Optics Cable Quality Level D Existing Records (Buried) (Existing),L,3,F
+FOP,FOEAer,Fiber Optics Electrical (Aerial) (Existing),L,3,F
+FOPUA,FOEBurA,Fiber Optics Electrical Quality Level A Locate (Buried) (Existing),L,3,F
+FOPUB,FOEBurB,Fiber Optics Electrical Quality Level B Designate (Buried) (Existing),L,3,F
+FOPUC,FOEBurC,Fiber Optics Electrical Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+FOPUD,FOEBurD,Fiber Optics Electrical Quality Level D Existing Records (Buried) (Existing),L,3,F
+FOTVUA,FOTVBurA,Fiber Optics Television Quality Level A Locate (Buried) (Existing),L,3,F
+FOTVUB,FOTVBurB,Fiber Optics Television Quality Level B Designate (Buried) (Existing),L,3,F
+FOTVUC,FOTVBurC,Fiber Optics Television Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+FOTVUD,FOTVBurD,Fiber Optics Television Quality Level D Existing Records (Buried) (Existing),L,3,F
+FOUA,FOTBurA,Fiber Optics Telephone Quality Level A Locate (Buried) (Existing),L,3,F
+FOUB,FOTBurB,Fiber Optics Telephone Quality Level B Designate (Buried) (Existing),L,3,F
+FOUC,FOTBurC,Fiber Optics Telephone Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+FOUD,FOTBurD,Fiber Optics Telephone Quality Level D Existing Records (Buried) (Existing),L,3,F
+FP,FlagPole,Flag Pole (Existing),P,1,F
+FUSE,ElecFuse,Fuses (Existing),L,3,F
+GA,Gauges,Gauges (Existing),P,3,F
+GASA,GasA,Gas Line (All Sizes) Quality Level A Locate (Existing),L,3,F
+GASB,GasB,Gas Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+GASC,GasC,Gas Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+GASD,GasD,Gas Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+GBRK,GroundBrkLine,Ground Break Line (Not Slopes or Embankments) (Existing),L,1,G
+GI,InletGutter,Gutter Inlets (All Types) (Existing),L,2,G
+GND,GroundShot,Ground Shot for Digital Terrain Model (DTM) Densification (Hard Bottom Soundings) (Existing),P,1,G
+GOLF,Golf,Golf Course Features (All Types) (Existing),L,1,F
+GRDBL,GuardrailDbl,Guardrail Double Face (Existing),L,1,F
+GRL,GuardrailLt,Guardrail Left (Existing),L,1,F
+GRR,GuardrailRt,Guardrail Right (Existing),L,1,F
+GRT,DrainGrate,Metal Drainage Grate within Concrete Structure (Existing),L,2,F
+GRTL,GovGrantLine,Government: Grant Line (Existing),L,9,F
+GRV,TreeLineGrove,Groves & Orchards (Boundary) (Existing),L,1,F
+GT,Gates,Gates (Existing),L,1,F
+GTM,GasTestMisc,Gas Test & Miscellaneous (Existing),L,3,F
+GYA,GuyWireAnchor,Guy Anchor (Existing),P,3,F
+GYP,GuyWirePole,Guy Pole (Dead-man) (Existing),P,3,F
+GYS,GuyWireSpan,Span Guys (Existing),L,3,F
+HED,ShrubHedge,Hedges and Shrubs (Boundary) (Existing),L,1,F
+HML,Tower,High Mast Lighting Poles (Existing),P,3,F
+HNDC,PMAccessible,Pavement Marking Symbol - Accessible (Handicap) (Existing),P,1,F
+HNDRL,Railing,"Railings (All Types); Piperail, Guiderail, Handrail Used for Pedestrian and Bicycles (Existing)",L,1,F
+HOLE,Hole,Hole (Existing),P,1,F
+HUMP,PMHUMP,Pavement Marking Message - HUMP (Existing),P,1,F
+HVL,ElecAerHVL,High Voltage Transmission Line (Existing),L,3,F
+INCN,Furnace,"Incinerator, Boiler, or Furnace (Existing)",P,1,F
+INV,FlowlineInvert,Flow Line or Invert Elevations (Existing),P,2,F
+IRC,MonumentIRC,Monuments - 5/8 Rod and Cap,P,6,F
+ITCP,ITSCamera,Intelligent Transportation System (ITS) Closed Caption TV Camera Pole (Existing),P,8,F
+ITFCA,ITSFiberCableA,Intelligent Transportation System (ITS) Fiber Cable Quality Level A Locate (Buried) (Existing),L,8,F
+ITFCB,ITSFiberCableB,Intelligent Transportation System (ITS) Fiber Cable Quality Level B Designate (Buried) (Existing),L,8,F
+ITFCC,ITSFiberCableC,Intelligent Transportation System (ITS) Fiber Cable Quality Level C Above Ground Evidence (Buried) (Existing),L,8,F
+ITFCD,ITSFiberCableD,Intelligent Transportation System (ITS) Fiber Cable Quality Level D Existing Records (Buried) (Existing),L,8,F
+ITPS,ITSPwrSupply,"Intelligent Transportation System (ITS) Closed Caption TV Power Supply (Wired, Solar, etc) (Existing)",P,8,F
+ITVS,ITSVehSensor,"Intelligent Transportation System (ITS) Vehicle Sensor, Infared (Existing)",P,8,F
+JB,DrainJnctBox,Drainage Junction Box (Existing),L,2,G
+LANE,PMLANE,Pavement Marking Message - LANE (Existing),P,1,F
+LARW,LARWLine,Limited Access Right of Way Lines (Existing),L,9,F
 LARWP,LARWLine,Limited Access Right of Way Lines (Proposed),L,9,F
-LEFT,PMLEFT_ep,Pavement Marking Message - LEFT (Existing),P,1,F
+LEFT,PMLEFT,Pavement Marking Message - LEFT (Existing),P,1,F
 LICAG,EaseLicLine,Easement License Agreement Line,L,9,F
-LL,LaneLine_ep,"Pavement Marking - Lane Lines, Delineates Travel Lanes (Existing)",L,1,F
-LMB,LowBrdgMemb_ep,Low Members of the Bridge (Existing),L,4,F
+LL,LaneLine,"Pavement Marking - Lane Lines, Delineates Travel Lanes (Existing)",L,1,F
+LMB,LowBrdgMemb,Low Members of the Bridge (Existing),L,4,F
 LOC,ConstLimits,Construction Limits,L,9,F
-LOTLN,GovLotLine_ep,Government: Lot Line (Existing),L,9,F
-LP,Luminaire_ep,Street Light / Pole (Existing),P,3,F
-LV,SlopesLevee_ep,"Levees, Dikes, or Dams (Top or Bottom) (Existing)",L,1,G
+LOTLN,GovLotLine,Government: Lot Line (Existing),L,9,F
+LP,Luminaire,Street Light / Pole (Existing),P,3,F
+LV,SlopesLevee,"Levees, Dikes, or Dams (Top or Bottom) (Existing)",L,1,G
 MAINT,MaintLine,Maintenance Line,L,9,F
-MAR,WetlandMAR_ep,Edge of Wetlands (Marsh or Swamp) (Existing),L,1,F
-MBX,Mailbox_ep,Mailbox(s) (Existing),P,1,F
-ME,MeterElec_ep,Meter (Electric) (Existing),P,3,F
-MEDI,InletMedian_ep,Median Inlets (Existing),L,2,G
-MEDRL,GovMeanderLine_ep,Government: Meander Line (Existing),L,9,F
-MERGE,PMMERGE_ep,Pavement Marking Message - MERGE (Existing),P,1,F
-MERGLT,PMMergeLeft_ep,Pavement Marking - Merge Left Arrow (Existing),P,1,F
-MERGRT,PMMergeRight_ep,Pavement Marking - Merge Right Arrow (Existing),P,1,F
-MES,EndTreatMES_ep,Mitered End Section (Existing),L,2,G
-MEU,MeterElecBur_ep,Meter (Electric) (Buried) (Existing),P,3,F
-MG,MeterGas_ep,Meter (Gas) (Existing),P,3,F
-MH,ManholeUnknown_ep,Manhole (Unknown) (Existing),P,3,F
-MHCATV,ManholeCOMM_ep,Manhole (Communications) (Existing),P,3,F
-MHD,ManholeSW_ep,Manhole (Storm Water) (Existing),P,2,F
-MHE,ManholeElec_ep,Manhole (Electric) (Existing),P,3,F
-MHG,ManholeGas_ep,Manhole (Gas) (Existing),P,3,F
-MHS,ManholeSS_ep,Manhole (Sanitary Sewer) (Existing),P,3,F
-MHT,ManholeTel_ep,Manhole (Telephone) (Existing),P,3,F
-MHW,ManholeWater_ep,Manhole (Water) (Existing),P,3,F
+MAR,WetlandMAR,Edge of Wetlands (Marsh or Swamp) (Existing),L,1,F
+MBX,Mailbox,Mailbox(s) (Existing),P,1,F
+ME,MeterElec,Meter (Electric) (Existing),P,3,F
+MEDI,InletMedian,Median Inlets (Existing),L,2,G
+MEDRL,GovMeanderLine,Government: Meander Line (Existing),L,9,F
+MERGE,PMMERGE,Pavement Marking Message - MERGE (Existing),P,1,F
+MERGLT,PMMergeLeft,Pavement Marking - Merge Left Arrow (Existing),P,1,F
+MERGRT,PMMergeRight,Pavement Marking - Merge Right Arrow (Existing),P,1,F
+MES,EndTreatMES,Mitered End Section (Existing),L,2,G
+MEU,MeterElecBur,Meter (Electric) (Buried) (Existing),P,3,F
+MG,MeterGas,Meter (Gas) (Existing),P,3,F
+MH,ManholeUnknown,Manhole (Unknown) (Existing),P,3,F
+MHCATV,ManholeCOMM,Manhole (Communications) (Existing),P,3,F
+MHD,ManholeSW,Manhole (Storm Water) (Existing),P,2,F
+MHE,ManholeElec,Manhole (Electric) (Existing),P,3,F
+MHG,ManholeGas,Manhole (Gas) (Existing),P,3,F
+MHS,ManholeSS,Manhole (Sanitary Sewer) (Existing),P,3,F
+MHT,ManholeTel,Manhole (Telephone) (Existing),P,3,F
+MHW,ManholeWater,Manhole (Water) (Existing),P,3,F
 MHWL,MHWL_TIITF_Line,TIITF:Mean / Ordinary High Water Lines,L,9,F
-MISC,TopoMisc_ep,Topography (Miscellaneous) (Existing),L,1,F
+MISC,TopoMisc,Topography (Miscellaneous) (Existing),L,1,F
 MON,MonConRW,Mapping Concrete Monument Right of Way (Annotation Cell),P,9,F
 MONRD,MonRodOpen,Mapping Rod Monument Open (Found) (Annotation Cell),P,9,F
 MONRDS,MonRodSolid,Mapping Rod Monument Solid (Set) (Annotation Cell),P,9,F
 MONSQ,MonConcOpen,Mapping Concrete Monument Open (Found) (Annotation Cell),P,9,F
 MONSQS,MonConcSolid,Mapping Concrete Monument Solid (Set) (Annotation Cell),P,9,F
-MONW,WellMon_ep,"Well Monitoring, Taps (Existing)",P,3,F
-MP,PavtMisc_ep,Pavement Parking Lot/Guardrail/Miscellaneous Pavement (Existing),L,1,G
-MPH,PMMPH_ep,Pavement Marking Message - MPH (Existing),P,1,F
-MS,SignMulti_ep,Multi-column Sign (Large Sign) (Existing),L,1,F
-MU,MeterUnk_ep,Meter (Unknown) (Existing),P,3,F
+MONW,WellMon,"Well Monitoring, Taps (Existing)",P,3,F
+MP,PavtMisc,Pavement Parking Lot/Guardrail/Miscellaneous Pavement (Existing),L,1,G
+MPH,PMMPH,Pavement Marking Message - MPH (Existing),P,1,F
+MS,SignMulti,Multi-column Sign (Large Sign) (Existing),L,1,F
+MU,MeterUnk,Meter (Unknown) (Existing),P,3,F
 MURPHY,Murphy_TIITF_Line,TIITF: Upland TIITF:Murphy Reservations Lines,L,9,F
-MW,MeterWater_ep,Meter (Water) (Existing),P,3,F
-NL,MonumentNL_ep,"Monuments - Nail, Spike, Pin",P,6,F
-NORTH,PMNORTH_ep,Pavement Marking Message - NORTH (Existing),P,1,F
+MW,MeterWater,Meter (Water) (Existing),P,3,F
+NL,MonumentNL,"Monuments - Nail, Spike, Pin",P,6,F
+NORTH,PMNORTH,Pavement Marking Message - NORTH (Existing),P,1,F
 NOTE,TextFeatureLabel,Text - Feature Label,P,1,F
-NPWLA,WaterNP_A_ep,Non-potable Water Line (All Sizes) Quality Level A Locate (Existing),L,3,F
-NPWLB,WaterNP_B_ep,Non-potable Water Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-NPWLC,WaterNP_C_ep,Non-potable Water Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-NPWLD,WaterNP_D_ep,Non-potable Water Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-NSPF,GovParkLine_ep,Government: National or State Park or Forest Line (Existing),L,9,F
-NVAL,NonVehcLine_ep,Existing:Non-Vehicular Access Line,L,9,F
-OBSC,AreaObscured_ep,Obscured Area (Existing),L,1,F
-OM,MonumentOM_ep,Monuments - Other Marker?,P,6,F
-ONLY,PMONLY_ep,Pavement Marking Message - ONLY (Existing),P,1,F
-OP,ShrubOrnamental_ep,Ornamental Plant (Existing),P,1,F
-PASS,PMPASS_ep,Pavement Marking Message - PASS (Existing),P,1,F
-PAVBRK,PavtBreak_ep,Pavement Slope Break Line (Existing),L,1,G
-PCULV,PipeCulvert_ep,Pipe Culvert (Existing),L,2,F
-PED,PMPED_ep,Pavement Marking Message - PED (Existing),P,1,F
-PETROA,Oil_A_ep,Oil Line (All Sizes) Quality Level A Locate (Existing),L,3,F
-PETROB,Oil_B_ep,Oil Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-PETROC,Oil_C_ep,Oil Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-PETROD,Oil_D_ep,Oil Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-PHW,HazardWaste_ep,"Potential Hazardous Waste Site (Old Gas Stations, Dry Cleaners, etc.) (Existing)",P,1,F
-PIL,PilingPt_ep,"Pilings, Piers, or Columns (Existing)",P,1,F
-PILE,PilingColumn_ep,Pilings and Columns (All Types) (Existing),L,1,F
-PIP,MonumentPIP_ep,"Monuments - Metal Pipe, Rod, Bar",P,6,F
-PIPENA,PipeEncaseA_ep,Pipe Encasements Quality Level A Locate (Existing),L,3,F
-PIPENB,PipeEncaseB_ep,Pipe Encasements Quality Level B Designate (Buried) (Existing),L,3,F
-PIPENC,PipeEncaseC_ep,Pipe Encasements Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-PIPEND,PipeEncaseD_ep,Pipe Encasements Quality Level D Existing Records (Buried) (Existing),L,3,F
-PKGM,ParkMeter_ep,Parking Meter (Existing),P,1,F
-PLEQ,Playground_ep,Playground Equipment (Existing),P,1,F
-PLNT,LandscapeBordr_ep,Landscape Planter Structures and Areas (Existing),L,1,F
-PMON,MonumentCP_ep,Monuments - Concrete (Poured),P,6,F
-PMP,PumpNonPet_ep,Pump (Non Petroleum) (Existing),P,3,F
-PMPF,Pump_ep,Pump (Petroleum / Fuel) (Existing),P,3,F
-PMPIS,PumpIsland_ep,Pump Island (Existing),L,1,F
-PMPST,SanitarySewerPSta_ep,Pump Station (Sanitary Sewer) (Existing),P,3,F
-PMRK,PMRK_ep,Pavement Marking - Line Markings (Exclude Travel Lanes) (Existing),L,1,F
-POOL,Pools_ep,Pools and Fountains (Not Ponds) (All Types) (Existing),L,1,F
-POST,Post_ep,Post or Pole (Not Monuments) (Existing),P,1,F
-PP,PoleElec_ep,Electrical Pole (Existing),P,3,F
-PPT,PoleElecT_ep,Electrical Pole With Transformer (Existing),P,3,F
-PRI,ElecAerPri_ep,Conductors (Primary Distribution) (Aerial) (Existing),L,3,F
-PROP,PropertyLine_ep,Property Lines / Lot Lines (Existing),L,9,F
+NPWLA,WaterNP_A,Non-potable Water Line (All Sizes) Quality Level A Locate (Existing),L,3,F
+NPWLB,WaterNP_B,Non-potable Water Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+NPWLC,WaterNP_C,Non-potable Water Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+NPWLD,WaterNP_D,Non-potable Water Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+NSPF,GovParkLine,Government: National or State Park or Forest Line (Existing),L,9,F
+NVAL,NonVehcLine,Existing:Non-Vehicular Access Line,L,9,F
+OBSC,AreaObscured,Obscured Area (Existing),L,1,F
+OM,MonumentOM,Monuments - Other Marker?,P,6,F
+ONLY,PMONLY,Pavement Marking Message - ONLY (Existing),P,1,F
+OP,ShrubOrnamental,Ornamental Plant (Existing),P,1,F
+PASS,PMPASS,Pavement Marking Message - PASS (Existing),P,1,F
+PAVBRK,PavtBreak,Pavement Slope Break Line (Existing),L,1,G
+PCULV,PipeCulvert,Pipe Culvert (Existing),L,2,F
+PED,PMPED,Pavement Marking Message - PED (Existing),P,1,F
+PETROA,Oil_A,Oil Line (All Sizes) Quality Level A Locate (Existing),L,3,F
+PETROB,Oil_B,Oil Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+PETROC,Oil_C,Oil Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+PETROD,Oil_D,Oil Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+PHW,HazardWaste,"Potential Hazardous Waste Site (Old Gas Stations, Dry Cleaners, etc.) (Existing)",P,1,F
+PIL,PilingPt,"Pilings, Piers, or Columns (Existing)",P,1,F
+PILE,PilingColumn,Pilings and Columns (All Types) (Existing),L,1,F
+PIP,MonumentPIP,"Monuments - Metal Pipe, Rod, Bar",P,6,F
+PIPENA,PipeEncaseA,Pipe Encasements Quality Level A Locate (Existing),L,3,F
+PIPENB,PipeEncaseB,Pipe Encasements Quality Level B Designate (Buried) (Existing),L,3,F
+PIPENC,PipeEncaseC,Pipe Encasements Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+PIPEND,PipeEncaseD,Pipe Encasements Quality Level D Existing Records (Buried) (Existing),L,3,F
+PKGM,ParkMeter,Parking Meter (Existing),P,1,F
+PLEQ,Playground,Playground Equipment (Existing),P,1,F
+PLNT,LandscapeBordr,Landscape Planter Structures and Areas (Existing),L,1,F
+PMON,MonumentCP,Monuments - Concrete (Poured),P,6,F
+PMP,PumpNonPet,Pump (Non Petroleum) (Existing),P,3,F
+PMPF,Pump,Pump (Petroleum / Fuel) (Existing),P,3,F
+PMPIS,PumpIsland,Pump Island (Existing),L,1,F
+PMPST,SanitarySewerPSta,Pump Station (Sanitary Sewer) (Existing),P,3,F
+PMRK,PMRK,Pavement Marking - Line Markings (Exclude Travel Lanes) (Existing),L,1,F
+POOL,Pools,Pools and Fountains (Not Ponds) (All Types) (Existing),L,1,F
+POST,Post,Post or Pole (Not Monuments) (Existing),P,1,F
+PP,PoleElec,Electrical Pole (Existing),P,3,F
+PPT,PoleElecT,Electrical Pole With Transformer (Existing),P,3,F
+PRI,ElecAerPri,Conductors (Primary Distribution) (Aerial) (Existing),L,3,F
+PROP,PropertyLine,Property Lines / Lot Lines (Existing),L,9,F
 PRWM,MonPermRW,Mapping Permanent Right of Way Monument (Annotation Cell),P,9,F
-PS,PedSignal_ep,"Pedestrian Signal Unit, Signage (Existing)",P,1,F
-PST,MonumentPST_ep,"Monuments - Post, Stake, Staub",P,6,F
-PWR,ElecAer_ep,Electrical Conductors (Distribution & Transmission) (Aerial) (Existing),L,3,F
-QDEL,SU_Delineator_ep,Subsurface Utility (Quality Level Delineator) (Existing),P,3,F
-QLA,SU_QLA_ep,Subsurface Utility Quality Level A Locate (Existing),P,3,F
-QLB,SU_QLB_ep,Subsurface Utility Quality Level B Designate (Existing),P,3,F
-QLC,SU_QLC_ep,Subsurface Utility Quality Level C Above Ground Evidence (Existing),P,3,F
-QLD,SU_QLD_ep,Subsurface Utility Quality Level D Existing Records (Existing),P,3,F
-QQTRS,GovQtrQtrLine_ep,Government: Quarter / Quarter Section Line (Existing),L,9,F
-QTREW,GovQtrSectCnrEW_ep,Government: 1/4 Section Corner E or W (Existing),P,9,F
-QTRNS,GovQtrSectCnrNS_ep,Government: 1/4 Section Corner N or S (Existing),P,9,F
-QTRS,GovQuarterLine_ep,Government: Quarter Section Line (Existing),L,9,F
-RAAL,PMRoundaboutApproachL_ep,Pavement Marking - Roundabout Approach Left Arrow (Existing),P,1,F
-RAALT,PMRoundaboutApproachLT_ep,Pavement Marking - Roundabout Approach Left-Thru Arrow (Existing),P,1,F
-RAFL,PMRoundaboutFishL_ep,Pavement Marking - Roundabout Fish-hook Left Arrow (Existing),P,1,F
-RAFLR,PMRoundaboutFishLR_ep,Pavement Marking - Roundabout Fish-hook Left-Right Arrow (Existing),P,1,F
-RAFT,PMRoundaboutFishT_ep,Pavement Marking - Roundabout Fish-hook Thru Arrow (Existing),P,1,F
-RAFTL,PMRoundaboutFishTL_ep,Pavement Marking - Roundabout Fish-hook Thru-Left Arrow (Existing),P,1,F
-RAFTLR,PMRoundaboutFishTLR_ep,Pavement Marking - Roundabout Fish-hook Thru-Left-Right Arrow (Existing),P,1,F
-RAFTR,PMRoundaboutFishTR_ep,Pavement Marking - Roundabout Fish-hook Thru-Right Arrow (Existing),P,1,F
-RAMP,AccessRamp_ep,"Accessible Ramp (For Buildings, Docks, Sidewalks, etc. ) (Not Curbs) (Existing)",L,1,G
-RD,Trail_ep,"Roadway,Trail (Unpaved) (Existing)",L,1,G
-REDULT,PMLaneReduceLeft_ep,Pavement Marking Message - Lane Reduction Left Arrow (Existing),P,1,F
-REDURT,PMLaneReduceRight_ep,Pavement Marking Message - Lane Reduction Right Arrow (Existing),P,1,F
+PS,PedSignal,"Pedestrian Signal Unit, Signage (Existing)",P,1,F
+PST,MonumentPST,"Monuments - Post, Stake, Staub",P,6,F
+PWR,ElecAer,Electrical Conductors (Distribution & Transmission) (Aerial) (Existing),L,3,F
+QDEL,SU_Delineator,Subsurface Utility (Quality Level Delineator) (Existing),P,3,F
+QLA,SU_QLA,Subsurface Utility Quality Level A Locate (Existing),P,3,F
+QLB,SU_QLB,Subsurface Utility Quality Level B Designate (Existing),P,3,F
+QLC,SU_QLC,Subsurface Utility Quality Level C Above Ground Evidence (Existing),P,3,F
+QLD,SU_QLD,Subsurface Utility Quality Level D Existing Records (Existing),P,3,F
+QQTRS,GovQtrQtrLine,Government: Quarter / Quarter Section Line (Existing),L,9,F
+QTREW,GovQtrSectCnrEW,Government: 1/4 Section Corner E or W (Existing),P,9,F
+QTRNS,GovQtrSectCnrNS,Government: 1/4 Section Corner N or S (Existing),P,9,F
+QTRS,GovQuarterLine,Government: Quarter Section Line (Existing),L,9,F
+RAAL,PMRoundaboutApproachL,Pavement Marking - Roundabout Approach Left Arrow (Existing),P,1,F
+RAALT,PMRoundaboutApproachLT,Pavement Marking - Roundabout Approach Left-Thru Arrow (Existing),P,1,F
+RAFL,PMRoundaboutFishL,Pavement Marking - Roundabout Fish-hook Left Arrow (Existing),P,1,F
+RAFLR,PMRoundaboutFishLR,Pavement Marking - Roundabout Fish-hook Left-Right Arrow (Existing),P,1,F
+RAFT,PMRoundaboutFishT,Pavement Marking - Roundabout Fish-hook Thru Arrow (Existing),P,1,F
+RAFTL,PMRoundaboutFishTL,Pavement Marking - Roundabout Fish-hook Thru-Left Arrow (Existing),P,1,F
+RAFTLR,PMRoundaboutFishTLR,Pavement Marking - Roundabout Fish-hook Thru-Left-Right Arrow (Existing),P,1,F
+RAFTR,PMRoundaboutFishTR,Pavement Marking - Roundabout Fish-hook Thru-Right Arrow (Existing),P,1,F
+RAMP,AccessRamp,"Accessible Ramp (For Buildings, Docks, Sidewalks, etc. ) (Not Curbs) (Existing)",L,1,G
+RD,Trail,"Roadway,Trail (Unpaved) (Existing)",L,1,G
+REDULT,PMLaneReduceLeft,Pavement Marking Message - Lane Reduction Left Arrow (Existing),P,1,F
+REDURT,PMLaneReduceRight,Pavement Marking Message - Lane Reduction Right Arrow (Existing),P,1,F
 REFL,RefPtLine,Survey Reference Point Line / Detail (Miscellaneous),L,6,F
-RETW,WallRetainEarth_ep,Wall Holding Earth (All) (Existing),L,1,G
-RG,GasReg_ep,Gas Regulator (Existing),P,3,F
-RIGHT,PMRIGHT_ep,Pavement Marking Message - RIGHT (Existing),P,1,F
-RIP,RipRap_ep,"Rip Rap, Rubble (Existing)",L,1,G
-RLS,PMRLS_ep,Pavement Marking Symbol - Restricted Lane (Existing),P,1,F
-ROW,RWLine_ep,Right of Way Lines (Existing),L,9,F
+RETW,WallRetainEarth,Wall Holding Earth (All) (Existing),L,1,G
+RG,GasReg,Gas Regulator (Existing),P,3,F
+RIGHT,PMRIGHT,Pavement Marking Message - RIGHT (Existing),P,1,F
+RIP,RipRap,"Rip Rap, Rubble (Existing)",L,1,G
+RLS,PMRLS,Pavement Marking Symbol - Restricted Lane (Existing),P,1,F
+ROW,RWLine,Right of Way Lines (Existing),L,9,F
 ROWP,RWLine,Right of Way Lines (Proposed),L,9,F
-RR,RailroadTracks_ep,"Railroad Tracks (Rail, Bed) (Existing)",L,1,F
+RR,RailroadTracks,"Railroad Tracks (Rail, Bed) (Existing)",L,1,F
 RRCL,RRBaseline,Baseline:Rail Road Centerline,L,6,F
-RRMP,RailroadMP_ep,Railroad Milepost (Existing),P,1,F
-RRS,RailroadSwitch_ep,Railroad Switch (Existing),P,1,F
-RRWS,RailroadWarn_ep,Railroad Warning Sign (Existing),P,1,F
-RRX,RailroadXing_ep,"Railroad Crossing (Roadway Platforms), Railroad Signal w/ Gate (Existing)",L,1,F
-RXR,PMRXR_ep,Pavement Marking Symbol - Railroad Crossing Symbol (Existing),P,1,F
-SAT,MonumentSAT_ep,Monuments - Hub and Tac,P,6,F
-SATD,SateDish_ep,Satellite Dish Antenna (Existing),P,3,F
-SCHOOL,PMSCHOOL_ep,Pavement Marking Message - SCHOOL (Existing),P,1,F
-SCT,TreeLineScatter_ep,Scattered Trees (Boundary) (Existing),L,1,F
-SE,SanitarySewerEff_ep,Sanitary Effluent (Open Channel) (Existing),L,3,F
-SEAW,WallSea_ep,Sea Walls (Existing),L,1,G
-SEC,ElecAerSec_ep,Conductors (Secondary Distribution) (Aerial) (Existing),L,3,F
-SECT,GovSectionLine_ep,Government:  Section Lines (Existiing),L,9,F
-SEW,EndTreatSEW_ep,Straight Endwall (Existing),L,2,G
-SGNC,SignColumn_ep,Cantilevered Sign Column (Large) (Existing),P,1,F
-SGNT,SignTrussOH_ep,Trusses and Cantilevers for Overhead Signs (Existing),L,1,F
-SHARLN,PMSharedLane_ep,Pavement Marking Symbol - Shared Lane (with bicycles) (Existing),P,1,F
-SHLDR,ShldrPaved_ep,Shoulder Edge (Paved) (Existing),L,1,G
-SHP,PoleShared_ep,Shared Pole (Existing),P,3,F
-SHPT,PoleSharedT_ep,Shared Pole with Transformer (Existing),P,3,F
-SHR,Shrub_ep,"Shrub, Bush (Existing)",P,1,F
-SHRC,ShrubConiferous_ep,Coniferous Shrub (Existing),P,1,F
-SHRD,ShrubDeciduous_ep,Deciduous Shrub (Existing),P,1,F
-SHWM,WaterSeasHghMrk_ep,"Seasonal High Water Mark (Bridges, Drainage Ponds and Trees as marked by Environmental) (Existing)",P,2,F
-SIG,Signal_ep,Signal Head (Existing),P,1,F
-SIGC,SignalControl_ep,Signal Controller (Existing),P,1,F
-SIGNAL,PMSIGNAL_ep,Pavement Marking Message - SIGNAL (Existing),P,1,F
-SIGP,SignalPedestal_ep,Signal on Pedestal (Existing),P,1,F
-SILO,Silo_ep,Silo (Existing),P,1,F
-SILT,GroundShotSilt_ep,Top Elevation of Muck or Silt (Soft Bottom Soundings),P,1,G
-SLC,LiteCond_ep,Street Lighting Conduit (Existing),L,3,F
-SLOW,PMSLOW_ep,Pavement Marking Message - SLOW (Existing),P,1,F
-SLP,Slopes_ep,Natural Slopes (Top or Bottom) (Existing),L,1,G
+RRMP,RailroadMP,Railroad Milepost (Existing),P,1,F
+RRS,RailroadSwitch,Railroad Switch (Existing),P,1,F
+RRWS,RailroadWarn,Railroad Warning Sign (Existing),P,1,F
+RRX,RailroadXing,"Railroad Crossing (Roadway Platforms), Railroad Signal w/ Gate (Existing)",L,1,F
+RXR,PMRXR,Pavement Marking Symbol - Railroad Crossing Symbol (Existing),P,1,F
+SAT,MonumentSAT,Monuments - Hub and Tac,P,6,F
+SATD,SateDish,Satellite Dish Antenna (Existing),P,3,F
+SCHOOL,PMSCHOOL,Pavement Marking Message - SCHOOL (Existing),P,1,F
+SCT,TreeLineScatter,Scattered Trees (Boundary) (Existing),L,1,F
+SE,SanitarySewerEff,Sanitary Effluent (Open Channel) (Existing),L,3,F
+SEAW,WallSea,Sea Walls (Existing),L,1,G
+SEC,ElecAerSec,Conductors (Secondary Distribution) (Aerial) (Existing),L,3,F
+SECT,GovSectionLine,Government:  Section Lines (Existiing),L,9,F
+SEW,EndTreatSEW,Straight Endwall (Existing),L,2,G
+SGNC,SignColumn,Cantilevered Sign Column (Large) (Existing),P,1,F
+SGNT,SignTrussOH,Trusses and Cantilevers for Overhead Signs (Existing),L,1,F
+SHARLN,PMSharedLane,Pavement Marking Symbol - Shared Lane (with bicycles) (Existing),P,1,F
+SHLDR,ShldrPaved,Shoulder Edge (Paved) (Existing),L,1,G
+SHP,PoleShared,Shared Pole (Existing),P,3,F
+SHPT,PoleSharedT,Shared Pole with Transformer (Existing),P,3,F
+SHR,Shrub,"Shrub, Bush (Existing)",P,1,F
+SHRC,ShrubConiferous,Coniferous Shrub (Existing),P,1,F
+SHRD,ShrubDeciduous,Deciduous Shrub (Existing),P,1,F
+SHWM,WaterSeasHghMrk,"Seasonal High Water Mark (Bridges, Drainage Ponds and Trees as marked by Environmental) (Existing)",P,2,F
+SIG,Signal,Signal Head (Existing),P,1,F
+SIGC,SignalControl,Signal Controller (Existing),P,1,F
+SIGNAL,PMSIGNAL,Pavement Marking Message - SIGNAL (Existing),P,1,F
+SIGP,SignalPedestal,Signal on Pedestal (Existing),P,1,F
+SILO,Silo,Silo (Existing),P,1,F
+SILT,GroundShotSilt,Top Elevation of Muck or Silt (Soft Bottom Soundings),P,1,G
+SLC,LiteCond,Street Lighting Conduit (Existing),L,3,F
+SLOW,PMSLOW,Pavement Marking Message - SLOW (Existing),P,1,F
+SLP,Slopes,Natural Slopes (Top or Bottom) (Existing),L,1,G
 SLV,SubVacOrigLotLine,Subdivision Vacated or Original Lot Line (Existing),L,9,F
-SMA,SignalSupport_ep,Signal Supports (Including Mast Arm) (Existing),P,1,F
-SMAE,SignalSupportExt_ep,Signal Support Mast Arm Extension (Existing),L,1,F
-SOUTH,PMSOUTH_ep,Pavement Marking Message - SOUTH (Existing),P,1,F
-SP,WaterStandpipe_ep,Standpipe (Existing),P,3,F
-SPD,DrainSpecial_ep,Special Drainage Feature (Describe) (Existing),L,2,F
-SPEW,EndTreatSPEW_ep,Special Endwall (Existing),L,2,G
-SPH,Sprinkler_ep,Sprinkler Head (Existing),P,3,F
-SPL,DrainSpillwy_ep,"Spillways, Flumes or Scuppers (Existing)",L,2,G
-SPLE,ITSFiberSpliceE_ep,Intelligent Transportation System (ITS) Fiber Spliced Enclosure (Existing),P,8,F
-SPLV,ITSFiberSpliceV_ep,Intelligent Transportation System (ITS) Fiber Spliced Vault (Buried) (Existing),P,8,F
-SPR,Tributary_ep,Spring (Water Source) (Existing),P,1,F
-SRVC,JunctBox_ep,Junction Box / Service Cabinet (Elec/Tel) (Existing),P,3,F
-SSA,SanitarySewerA_ep,Sanitary Sewer (All Sizes) Quality Level A Locate (Existing),L,3,F
-SSB,SanitarySewerB_ep,Sanitary Sewer (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-SSC,SanitarySewerC_ep,Sanitary Sewer (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-SSD,SanitarySewerD_ep,Sanitary Sewer (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-SSP,SpanWireP_ep,Signal / Span Wire Pole (Existing),P,1,F
-SSS,SignSingle_ep,Sign (Single Pole Support) (Existing),P,1,F
-SSW,SpanWire_ep,Signal / Span Wire (Existing),L,1,F
-STAL,PMSTAL_ep,Pavement Marking - Straight and Turn Arrow Left (Existing),P,1,F
-STALR,PMTALRS_ep,"Pavement Marking - Turn Arrow Left, Right and Straight (Existing)",P,1,F
-STAR,PMSTAR_ep,Pavement Marking - Straight and Turn Arrow Right (Existing),P,1,F
-STAROW,PMSTAROW_ep,Pavement Marking - Straight Through Direction Arrow (Existing),P,1,F
-STCKP,StockPile_ep,"Stock Piles (All Types) (Dirt, Gravel, Sand, etc.) (Existing)",L,1,G
-STEAMA,SteamA_ep,Steam Line Quality Level A Locate (Existing),L,3,F
-STEAMB,SteamB_ep,Steam Line Quality Level B Designate (Buried) (Existing),L,3,F
-STEAMC,SteamC_ep,Steam Line Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-STEAMD,SteamD_ep,Steam Line Quality Level D Existing Records (Buried) (Existing),L,3,F
-STL,GovStateLine_ep,Government: State Line (Existing),L,9,F
-STM,Stump_ep,Stump (Existing),P,1,F
-STMD,MonumentSTD_ep,Monuments - Stamped Disk,P,6,F
-STMP,MonumentSTP_ep,Monuments - Stamped Plate,P,6,F
-STOP,PMSTOP_ep,Pavement Marking Message - STOP (Existing),P,1,F
-STP,Stairs_ep,"Stairways, Steps (Existing)",L,1,F
-STRM,StreamEdge_ep,Stream Edge (Existing),L,1,G
-STRMC,StreamCtr_ep,Stream Center (Existing),L,1,G
-STS,StormSewer_ep,Storm Sewer (All Sizes) (Drain Pipes and Spouts) (Existing),L,2,F
-STTK,TankStor_ep,Storage Tank (Existing),P,1,F
+SMA,SignalSupport,Signal Supports (Including Mast Arm) (Existing),P,1,F
+SMAE,SignalSupportExt,Signal Support Mast Arm Extension (Existing),L,1,F
+SOUTH,PMSOUTH,Pavement Marking Message - SOUTH (Existing),P,1,F
+SP,WaterStandpipe,Standpipe (Existing),P,3,F
+SPD,DrainSpecial,Special Drainage Feature (Describe) (Existing),L,2,F
+SPEW,EndTreatSPEW,Special Endwall (Existing),L,2,G
+SPH,Sprinkler,Sprinkler Head (Existing),P,3,F
+SPL,DrainSpillwy,"Spillways, Flumes or Scuppers (Existing)",L,2,G
+SPLE,ITSFiberSpliceE,Intelligent Transportation System (ITS) Fiber Spliced Enclosure (Existing),P,8,F
+SPLV,ITSFiberSpliceV,Intelligent Transportation System (ITS) Fiber Spliced Vault (Buried) (Existing),P,8,F
+SPR,Tributary,Spring (Water Source) (Existing),P,1,F
+SRVC,JunctBox,Junction Box / Service Cabinet (Elec/Tel) (Existing),P,3,F
+SSA,SanitarySewerA,Sanitary Sewer (All Sizes) Quality Level A Locate (Existing),L,3,F
+SSB,SanitarySewerB,Sanitary Sewer (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+SSC,SanitarySewerC,Sanitary Sewer (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+SSD,SanitarySewerD,Sanitary Sewer (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+SSP,SpanWireP,Signal / Span Wire Pole (Existing),P,1,F
+SSS,SignSingle,Sign (Single Pole Support) (Existing),P,1,F
+SSW,SpanWire,Signal / Span Wire (Existing),L,1,F
+STAL,PMSTAL,Pavement Marking - Straight and Turn Arrow Left (Existing),P,1,F
+STALR,PMTALRS,"Pavement Marking - Turn Arrow Left, Right and Straight (Existing)",P,1,F
+STAR,PMSTAR,Pavement Marking - Straight and Turn Arrow Right (Existing),P,1,F
+STAROW,PMSTAROW,Pavement Marking - Straight Through Direction Arrow (Existing),P,1,F
+STCKP,StockPile,"Stock Piles (All Types) (Dirt, Gravel, Sand, etc.) (Existing)",L,1,G
+STEAMA,SteamA,Steam Line Quality Level A Locate (Existing),L,3,F
+STEAMB,SteamB,Steam Line Quality Level B Designate (Buried) (Existing),L,3,F
+STEAMC,SteamC,Steam Line Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+STEAMD,SteamD,Steam Line Quality Level D Existing Records (Buried) (Existing),L,3,F
+STL,GovStateLine,Government: State Line (Existing),L,9,F
+STM,Stump,Stump (Existing),P,1,F
+STMD,MonumentSTD,Monuments - Stamped Disk,P,6,F
+STMP,MonumentSTP,Monuments - Stamped Plate,P,6,F
+STOP,PMSTOP,Pavement Marking Message - STOP (Existing),P,1,F
+STP,Stairs,"Stairways, Steps (Existing)",L,1,F
+STRM,StreamEdge,Stream Edge (Existing),L,1,G
+STRMC,StreamCtr,Stream Center (Existing),L,1,G
+STS,StormSewer,Storm Sewer (All Sizes) (Drain Pipes and Spouts) (Existing),L,2,F
+STTK,TankStor,Storage Tank (Existing),P,1,F
 SUBL,SubDivLine,Subdivision Line (Existing),L,9,F
 SUEL,SUEL_TIITF_Line,DEP:TIITF:Safe Upland Elevation Lines or Jurisdictional Lines established by DEP methodology,L,9,F
-SUN,PMSUN_ep,Pavement Marking Message - SUN (Existing),P,1,F
-SW,Switchgear_ep,Switchgear & Appurtenances (Existing),L,3,F
-SWG,RailroadSgnalG_ep,Railroad Signal with Gate (Existing),P,1,F
-SWK,SidewalkFront_ep,Sidewalk (Fronts) (Existing),L,1,G
-SWKB,SidewalkBack_ep,Sidewalk (Backs) (Existing),L,1,G
-TAL,PMTAL_ep,Pavement Marking - Turn Arrow Left (Existing),P,1,F
-TALR,PMTALR_ep,Pavement Marking - Turn Arrow Left and Right (Existing),P,1,F
-TAR,PMTAR_ep,Pavement Marking - Turn Arrow Right (Existing),P,1,F
-TB,TeleBooth_ep,Telephone Booth (Existing),P,3,F
-TCALM,PMTrafCalm_ep,Pavement Marking Symbol - Traffic Calm Warning (Existing),P,1,F
-TEL,TeleAer_ep,Telephone Line (Aerial) (Existing),L,3,F
-TELP,TelePole_ep,Telephone Pole (Existing),P,3,F
-TELS,TeleServBox_ep,Telephone Service Box (Large) (Existing),L,3,F
-TESMT,EaseTempLine_ep,Easement Lines Temporary (Existing),L,9,F
+SUN,PMSUN,Pavement Marking Message - SUN (Existing),P,1,F
+SW,Switchgear,Switchgear & Appurtenances (Existing),L,3,F
+SWG,RailroadSgnalG,Railroad Signal with Gate (Existing),P,1,F
+SWK,SidewalkFront,Sidewalk (Fronts) (Existing),L,1,G
+SWKB,SidewalkBack,Sidewalk (Backs) (Existing),L,1,G
+TAL,PMTAL,Pavement Marking - Turn Arrow Left (Existing),P,1,F
+TALR,PMTALR,Pavement Marking - Turn Arrow Left and Right (Existing),P,1,F
+TAR,PMTAR,Pavement Marking - Turn Arrow Right (Existing),P,1,F
+TB,TeleBooth,Telephone Booth (Existing),P,3,F
+TCALM,PMTrafCalm,Pavement Marking Symbol - Traffic Calm Warning (Existing),P,1,F
+TEL,TeleAer,Telephone Line (Aerial) (Existing),L,3,F
+TELP,TelePole,Telephone Pole (Existing),P,3,F
+TELS,TeleServBox,Telephone Service Box (Large) (Existing),L,3,F
+TESMT,EaseTempLine,Easement Lines Temporary (Existing),L,9,F
 TESMTP,EaseTempLine,Easement Lines Temporary (Proposed),L,9,F
-TFD,SignalLoop_ep,Traffic Detector Loops (Existing),L,1,F
-TFSP,TrafSeparator_ep,Traffic Separator (Existing),L,1,F
-TG,StreamGauge_ep,Stream or Tide Gauge (Existing),P,1,F
-THA,SU_QLATestHole_ep,Subsurface Utility Test Hole (QLA Only) (Existing),P,3,F
-TMPW,TempBarrier_ep,Temporary Barrier Dividing Traffic (All) (Existing) (Temporary),L,1,F
-TO,PMTO_ep,Pavement Marking Message - TO (Existing),P,1,F
-TPD,TelePed_ep,Telephone Pedestal / Service (Existing),P,3,F
-TRANSA,ElecBurPriA_ep,Conductors (Primary Distribution) Quality Level A Locate (Buried) (Existing),L,3,F
-TRANSB,ElecBurPriB_ep,Conductors (Primary Distribution) Quality Level B Designate (Buried) (Existing),L,3,F
-TRANSC,ElecBurPriC_ep,Conductors (Primary Distribution) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-TRANSD,ElecBurPriD_ep,Conductors (Primary Distribution) Quality Level D Existing Records (Buried) (Existing),L,3,F
-TRD,Treadle_ep,"Treadle, Axle Sensor (Existing)",L,1,F
-TREE,Tree_ep,Trees (Unknown) (Existing),P,1,F
-TREEC,TreeConiferous_ep,Coniferous Tree (Existing),P,1,F
-TREECI,TreeCitrus_ep,Citrus Tree (Existing),P,1,F
-TREECY,TreeCypress_ep,Cypress Tree (Existing),P,1,F
-TREED,TreeDeciduous_ep,Deciduous Tree (Existing),P,1,F
-TREEOA,TreeOak_ep,Oak Tree (Existing),P,1,F
-TREEPA,TreePalm_ep,Palm Tree (Existing),P,1,F
-TREEPC,TreePalmCluster_ep,Palm Tree Cluster (Existing),P,1,F
-TREEPI,TreePine_ep,Pine Tree (Existing),P,1,F
-TRNF,Transformer_ep,Transformer (Existing),P,3,F
-TURN,PMTURN_ep,Pavement Marking Message - TURN (Existing),P,1,F
-TWP,GovTwpRgeLine_ep,Government: Township and Range Government Survey Line,L,9,F
-TX,PavtTractorXing_ep,Tractor Crossings (Existing),L,1,F
-UD,UnderDrain_ep,Underdrains and Cross Drains (Existing),L,2,F
-UDBX,UnderDrainBx_ep,Underdrain Box (Existing),P,2,F
-UEW,EndTreatUEW_ep,U-Type Endwall (Existing),L,2,G
-UMISC,UtilMisc_ep,Utility Items (Miscellaneous) (Existing),L,3,F
-UMKR,UtilMarker_ep,Subsurface Utility Marker (Existing),P,3,F
-UNPS,ShldrUnpaved_ep,Shoulders (Unpaved) (Existing),L,1,G
-UTURN,PMUTurn_ep,Pavement Marking - U-Turn Arrow (Existing),P,1,F
-VB,ValveBox_ep,Valve Box (Existing),P,3,F
-VBG,ValveBoxGas_ep,Valve Box (Gas) (Existing),P,3,F
-VBNPW,ValveBoxWtrNP_ep,Valve Box (Non-potable Water) (Existing),P,3,F
-VBS,ValveBoxSwr_ep,Valve Box (Sewer) (Existing),P,3,F
-VBW,ValveBoxWtr_ep,Valve Box (Water) (Existing),P,3,F
-VC,ValveCover_ep,Valve Cover (Unknown) (Existing),P,3,F
-VCEF,ValveCvrEff_ep,Valve Cover (Effluent) (Existing),P,3,F
-VCG,ValveCvrGas_ep,Valve Cover (Gas) (Existing),P,3,F
-VCNPW,ValveCvrWaterNP_ep,Valve Cover (Non-potable Water) (Existing),P,3,F
-VCRW,ValveCvrWtrRaw_ep,Valve Cover (Raw Water) (Existing),P,3,F
-VCS,ValveCvrSewer_ep,Valve Cover (Sewer) (Existing),P,3,F
-VCW,ValveCvrWater_ep,Valve Cover (Water) (Existing),P,3,F
-VLV,Valve_ep,Valve (Unknown) (Existing),P,3,F
-VLVB,ValveBFP_ep,"Valve (Back Flow Preventer), Valve Box (Existing)",P,3,F
-VLVG,ValveGas_ep,"Valve, Valve Box (Gas) (Existing)",P,3,F
-VLVNPW,ValveWaterNP_ep,"Valve, Valve Box (Water) (Non Potable) (Existing)",P,3,F
-VLVS,ValveSewer_ep,"Valve, Valve Box (Sewer) (Existing)",P,3,F
-VLVW,ValveWater_ep,"Valve, Valve Box (Water) (Existing)",P,3,F
-VNT,Vent_ep,Vent (Unknown) (Existing),P,3,F
-VNTG,VentGas_ep,Vent (Gas) (Existing),P,3,F
-VNTS,VentSewer_ep,Vent (Sewer) (Existing),P,3,F
-VOID,VoidArea_ep,Void Area (No Locations Collected) (Existing),L,1,F
-WALL,Wall_ep,Walls (Existing),L,1,F
-WDL,TreeLineWoods_ep,Woods Line (Existing),L,1,F
-WEDG,WaterEdge_ep,Edge of Water (Existing),L,1,G
-WELL,Well_ep,Well (Any Size) (Existing),P,3,F
-WEST,PMWEST_ep,Pavement Marking Message - WEST (Existing),P,1,F
-WEW,EndTreatWEW_ep,Winged Endwall (Existing),L,2,G
-WIM,WindMill_ep,Wind Mill (Existing),P,1,F
-WLA,WaterA_ep,Water Line (All Sizes) Quality Level A Locate (Existing),L,3,F
-WLB,WaterB_ep,Water Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
-WLC,WaterC_ep,Water Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
-WLD,WaterD_ep,Water Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
-WLPT,WetlandSym_ep,Wetland Point (Existing),P,1,F
-WPB,PullBox_ep,Wiring Pull Box (Existing),P,3,F
-WWAROW,PMWrongWayArrow_ep,Pavement Marking - Wrong Way Arrow (Existing),P,1,F
-XING,PMXING_ep,Pavement Marking Message - XING (Existing),P,1,F
-XO,PavtXover_ep,Crossovers and Detours (Temporary) (Existing),L,1,F
-XS,XSPt_ep,"Cross Section Point, Station",P,7,F
-XSC,XSPatternlines_ep,Cross Section Chain (Existing),L,7,F
-YD,YardDrain_ep,Yard Drain (Existing),L,2,F
-YIELD,PMYIELD_ep,Pavement Marking Message - YIELD (Existing),P,1,F
-YLDAHD,PMYieldAhead_ep,Pavement Marking - Yield Ahead Warning Triangle (Existing),P,1,F
-ZONE,PMZONE_ep,Pavement Marking Message - ZONE (Existing),P,1,F
+TFD,SignalLoop,Traffic Detector Loops (Existing),L,1,F
+TFSP,TrafSeparator,Traffic Separator (Existing),L,1,F
+TG,StreamGauge,Stream or Tide Gauge (Existing),P,1,F
+THA,SU_QLATestHole,Subsurface Utility Test Hole (QLA Only) (Existing),P,3,F
+TMPW,TempBarrier,Temporary Barrier Dividing Traffic (All) (Existing) (Temporary),L,1,F
+TO,PMTO,Pavement Marking Message - TO (Existing),P,1,F
+TPD,TelePed,Telephone Pedestal / Service (Existing),P,3,F
+TRANSA,ElecBurPriA,Conductors (Primary Distribution) Quality Level A Locate (Buried) (Existing),L,3,F
+TRANSB,ElecBurPriB,Conductors (Primary Distribution) Quality Level B Designate (Buried) (Existing),L,3,F
+TRANSC,ElecBurPriC,Conductors (Primary Distribution) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+TRANSD,ElecBurPriD,Conductors (Primary Distribution) Quality Level D Existing Records (Buried) (Existing),L,3,F
+TRD,Treadle,"Treadle, Axle Sensor (Existing)",L,1,F
+TREE,Tree,Trees (Unknown) (Existing),P,1,F
+TREEC,TreeConiferous,Coniferous Tree (Existing),P,1,F
+TREECI,TreeCitrus,Citrus Tree (Existing),P,1,F
+TREECY,TreeCypress,Cypress Tree (Existing),P,1,F
+TREED,TreeDeciduous,Deciduous Tree (Existing),P,1,F
+TREEOA,TreeOak,Oak Tree (Existing),P,1,F
+TREEPA,TreePalm,Palm Tree (Existing),P,1,F
+TREEPC,TreePalmCluster,Palm Tree Cluster (Existing),P,1,F
+TREEPI,TreePine,Pine Tree (Existing),P,1,F
+TRNF,Transformer,Transformer (Existing),P,3,F
+TURN,PMTURN,Pavement Marking Message - TURN (Existing),P,1,F
+TWP,GovTwpRgeLine,Government: Township and Range Government Survey Line,L,9,F
+TX,PavtTractorXing,Tractor Crossings (Existing),L,1,F
+UD,UnderDrain,Underdrains and Cross Drains (Existing),L,2,F
+UDBX,UnderDrainBx,Underdrain Box (Existing),P,2,F
+UEW,EndTreatUEW,U-Type Endwall (Existing),L,2,G
+UMISC,UtilMisc,Utility Items (Miscellaneous) (Existing),L,3,F
+UMKR,UtilMarker,Subsurface Utility Marker (Existing),P,3,F
+UNPS,ShldrUnpaved,Shoulders (Unpaved) (Existing),L,1,G
+UTURN,PMUTurn,Pavement Marking - U-Turn Arrow (Existing),P,1,F
+VB,ValveBox,Valve Box (Existing),P,3,F
+VBG,ValveBoxGas,Valve Box (Gas) (Existing),P,3,F
+VBNPW,ValveBoxWtrNP,Valve Box (Non-potable Water) (Existing),P,3,F
+VBS,ValveBoxSwr,Valve Box (Sewer) (Existing),P,3,F
+VBW,ValveBoxWtr,Valve Box (Water) (Existing),P,3,F
+VC,ValveCover,Valve Cover (Unknown) (Existing),P,3,F
+VCEF,ValveCvrEff,Valve Cover (Effluent) (Existing),P,3,F
+VCG,ValveCvrGas,Valve Cover (Gas) (Existing),P,3,F
+VCNPW,ValveCvrWaterNP,Valve Cover (Non-potable Water) (Existing),P,3,F
+VCRW,ValveCvrWtrRaw,Valve Cover (Raw Water) (Existing),P,3,F
+VCS,ValveCvrSewer,Valve Cover (Sewer) (Existing),P,3,F
+VCW,ValveCvrWater,Valve Cover (Water) (Existing),P,3,F
+VLV,Valve,Valve (Unknown) (Existing),P,3,F
+VLVB,ValveBFP,"Valve (Back Flow Preventer), Valve Box (Existing)",P,3,F
+VLVG,ValveGas,"Valve, Valve Box (Gas) (Existing)",P,3,F
+VLVNPW,ValveWaterNP,"Valve, Valve Box (Water) (Non Potable) (Existing)",P,3,F
+VLVS,ValveSewer,"Valve, Valve Box (Sewer) (Existing)",P,3,F
+VLVW,ValveWater,"Valve, Valve Box (Water) (Existing)",P,3,F
+VNT,Vent,Vent (Unknown) (Existing),P,3,F
+VNTG,VentGas,Vent (Gas) (Existing),P,3,F
+VNTS,VentSewer,Vent (Sewer) (Existing),P,3,F
+VOID,VoidArea,Void Area (No Locations Collected) (Existing),L,1,F
+WALL,Wall,Walls (Existing),L,1,F
+WDL,TreeLineWoods,Woods Line (Existing),L,1,F
+WEDG,WaterEdge,Edge of Water (Existing),L,1,G
+WELL,Well,Well (Any Size) (Existing),P,3,F
+WEST,PMWEST,Pavement Marking Message - WEST (Existing),P,1,F
+WEW,EndTreatWEW,Winged Endwall (Existing),L,2,G
+WIM,WindMill,Wind Mill (Existing),P,1,F
+WLA,WaterA,Water Line (All Sizes) Quality Level A Locate (Existing),L,3,F
+WLB,WaterB,Water Line (All Sizes) Quality Level B Designate (Buried) (Existing),L,3,F
+WLC,WaterC,Water Line (All Sizes) Quality Level C Above Ground Evidence (Buried) (Existing),L,3,F
+WLD,WaterD,Water Line (All Sizes) Quality Level D Existing Records (Buried) (Existing),L,3,F
+WLPT,WetlandSym,Wetland Point (Existing),P,1,F
+WPB,PullBox,Wiring Pull Box (Existing),P,3,F
+WWAROW,PMWrongWayArrow,Pavement Marking - Wrong Way Arrow (Existing),P,1,F
+XING,PMXING,Pavement Marking Message - XING (Existing),P,1,F
+XO,PavtXover,Crossovers and Detours (Temporary) (Existing),L,1,F
+XS,XSPt,"Cross Section Point, Station",P,7,F
+XSC,XSPatternlines,Cross Section Chain (Existing),L,7,F
+YD,YardDrain,Yard Drain (Existing),L,2,F
+YIELD,PMYIELD,Pavement Marking Message - YIELD (Existing),P,1,F
+YLDAHD,PMYieldAhead,Pavement Marking - Yield Ahead Warning Triangle (Existing),P,1,F
+ZONE,PMZONE,Pavement Marking Message - ZONE (Existing),P,1,F
