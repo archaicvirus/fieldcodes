@@ -1,3 +1,4 @@
+console.log("NEW SCRIPT LOADED v4");
 document.addEventListener("DOMContentLoaded", () => {
   const columns = [
     { key: "featureCode", label: "Feature Code" },
